@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import heroCard from "@/assets/hero-card.jpg";
+import logoWhite from "@/assets/logo-white.png";
 
 const Hero = () => {
   return (
@@ -10,10 +11,17 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left animate-fade-in">
+            <div className="mb-8 flex justify-center lg:justify-start">
+              <img 
+                src={logoWhite} 
+                alt="PagoPay Logo" 
+                className="h-12 w-auto"
+              />
+            </div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 text-primary-foreground leading-tight">
               SINGLE APP FOR
               <br />
-              <span className="bg-gradient-to-r from-accent to-primary-glow bg-clip-text text-transparent">
+              <span className="bg-gradient-accent bg-clip-text text-transparent">
                 SPENDING, SENDING,
               </span>
               <br />
@@ -25,7 +33,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button 
                 size="lg" 
-                className="bg-background text-primary hover:bg-background/90 shadow-[var(--shadow-glow)] transition-all duration-300 hover:scale-105"
+                className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-[var(--shadow-glow)] transition-all duration-300 hover:scale-105 font-semibold"
               >
                 Get PagoPay Card
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -33,7 +41,7 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 variant="outline"
-                className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-sm"
+                className="border-primary-foreground/20 bg-primary-foreground/5 text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-sm"
               >
                 Partner with Us
               </Button>
