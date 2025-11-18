@@ -6,22 +6,22 @@ const securityFeatures = [
   {
     icon: Shield,
     title: "Military-Grade Encryption",
-    description: "Your data is protected with AES-256 encryption, the same standard used by banks and governments worldwide.",
+    description: "All sensitive data is protected using AES-256 encryption, the same military-grade standard trusted by banks and governments across the globe.",
   },
   {
     icon: Lock,
-    title: "Multi-Factor Authentication",
-    description: "Add extra layers of security with biometric authentication and 2FA to keep your account safe.",
+    title: "Multi-Factor & Biometric Authentication",
+    description: "Secure your account with two-factor authentication (2FA) and biometric login, giving you full control and added protection from unauthorized access.",
   },
   {
     icon: Eye,
-    title: "Real-Time Monitoring",
-    description: "Our AI-powered systems monitor transactions 24/7 to detect and prevent fraudulent activity.",
+    title: "Real-Time AI-Powered Monitoring",
+    description: "Our systems are continuously monitored by AI-driven fraud detection engines, scanning for suspicious activity 24/7 and automatically blocking threats in real time.",
   },
   {
     icon: FileCheck,
-    title: "Regulatory Compliance",
-    description: "Fully licensed and compliant with international financial regulations and data protection laws.",
+    title: "Full Regulatory Compliance",
+    description: "PagoPay is in process of registering with FINTRAC (Canada) and operates under strict adherence to international AML, KYC, and data privacy regulations, including GDPR and PCI DSS standards.",
   },
 ];
 
@@ -43,8 +43,8 @@ const Security = () => {
             Security You Can Trust
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Your financial security is our top priority. We employ cutting-edge technology 
-            and industry best practices to protect your assets and personal information.
+            At PagoPay, your security isn't an afterthought — it's our foundation. We use advanced technology 
+            and adhere to the highest industry standards to ensure your funds, data, and identity remain safe at all times.
           </p>
         </div>
         
@@ -55,8 +55,8 @@ const Security = () => {
               className="border-border bg-card/80 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 hover:shadow-[var(--shadow-glow)]"
             >
               <CardContent className="p-8">
-                <div className="mb-4 inline-flex p-4 rounded-xl bg-gradient-hero">
-                  <feature.icon className="h-8 w-8 text-primary-foreground" />
+                <div className="mb-4 inline-flex p-4 rounded-xl bg-gradient-accent">
+                  <feature.icon className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="text-2xl font-semibold mb-3 text-foreground">
                   {feature.title}

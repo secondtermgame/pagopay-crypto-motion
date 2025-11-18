@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import heroCard from "@/assets/hero-card.jpg";
+import heroCard from "@/assets/hero-card.png";
 import logoWhite from "@/assets/logo-white.png";
 
 const Hero = () => {

@@ -1,4 +1,6 @@
 import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { PrivacyPolicyDialog, TermsOfServiceDialog, CookiePolicyDialog } from "./LegalPolicies";
+import { Button } from "./ui/button";
 
 const Footer = () => {
   return (
@@ -6,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-2xl font-bold mb-4 bg-gradient-hero bg-clip-text text-transparent">
+            <h3 className="text-2xl font-bold mb-4 text-primary">
               PagoPay
             </h3>
             <p className="text-muted-foreground">
@@ -54,20 +56,31 @@ const Footer = () => {
         <div className="border-t border-border pt-8">
           <div className="text-sm text-muted-foreground space-y-4">
             <p className="leading-relaxed">
-              <strong>Legal Disclaimer:</strong> PagoPay is a financial technology company and not a bank. 
-              Banking services are provided by our licensed partner institutions. Cryptocurrency investments 
-              carry risk, and the value of digital assets may fluctuate. PagoPay card services are subject to 
-              identity verification and approval. Fees may apply for certain transactions. Please refer to our 
-              Terms of Service and Privacy Policy for complete details. PagoPay is committed to regulatory 
-              compliance and operates in accordance with applicable financial services laws. By using PagoPay 
-              services, you acknowledge that you have read and understood these terms.
+              <strong>Legal Disclaimer:</strong> PagoPay (9538-8310 Québec Inc.) is a financial technology company and not a bank. 
+              Banking services are provided by our licensed partner institutions. Cryptocurrency investments carry risk, 
+              and the value of digital assets may fluctuate. PagoPay card services are subject to identity verification 
+              and approval. Fees may apply for certain transactions. Please refer to our Terms of Service and Privacy Policy 
+              for complete details. PagoPay is committed to regulatory compliance and operates in accordance with applicable 
+              financial services laws. By using PagoPay services, you acknowledge that you have read and understood these terms.
             </p>
             <div className="flex flex-col sm:flex-row justify-between items-center gap-4 pt-4">
               <p>© 2025 PagoPay. All rights reserved.</p>
               <div className="flex gap-6">
-                <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
-                <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
-                <a href="#" className="hover:text-primary transition-colors">Cookie Policy</a>
+                <PrivacyPolicyDialog>
+                  <Button variant="link" className="text-muted-foreground hover:text-primary p-0 h-auto">
+                    Privacy Policy
+                  </Button>
+                </PrivacyPolicyDialog>
+                <TermsOfServiceDialog>
+                  <Button variant="link" className="text-muted-foreground hover:text-primary p-0 h-auto">
+                    Terms of Service
+                  </Button>
+                </TermsOfServiceDialog>
+                <CookiePolicyDialog>
+                  <Button variant="link" className="text-muted-foreground hover:text-primary p-0 h-auto">
+                    Cookie Policy
+                  </Button>
+                </CookiePolicyDialog>
               </div>
             </div>
           </div>

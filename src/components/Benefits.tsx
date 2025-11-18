@@ -2,12 +2,12 @@ import appPreview from "@/assets/app-preview.jpg";
 import { Check } from "lucide-react";
 
 const benefits = [
-  "Freedom to Move. Power to Spend",
   "Simple Crypto-to-Fiat Swaps",
-  "Global Acceptance",
-  "Real-time Exchange Rates",
-  "Zero Hidden Fees",
-  "24/7 Customer Support",
+  "Global Spending with Virtual or Physical Cards",
+  "Real-Time Exchange Rates",
+  "No Hidden Fees",
+  "Bank-Grade Security",
+  "24/7 Human Support",
 ];
 
 const Benefits = () => {
@@ -25,19 +25,19 @@ const Benefits = () => {
           
           <div className="order-1 lg:order-2">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Built For Every Coin You Touch
+              Built for Every Asset You Own
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
-              Whether you're holding Bitcoin, Ethereum, or any other cryptocurrency, 
-              PagoPay makes it effortless to use your digital assets in the real world.
+              Whether you're holding Bitcoin, Ethereum, or stablecoins, PagoPay gives you instant access to your crypto — 
+              and the power to spend it like cash.
             </p>
             
             <div className="space-y-4">
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start gap-3">
                   <div className="flex-shrink-0 mt-1">
-                    <div className="h-6 w-6 rounded-full bg-gradient-hero flex items-center justify-center">
-                      <Check className="h-4 w-4 text-primary-foreground" />
+                    <div className="h-6 w-6 rounded-full bg-gradient-accent flex items-center justify-center">
+                      <Check className="h-4 w-4 text-primary" />
                     </div>
                   </div>
                   <p className="text-lg text-foreground font-medium">
