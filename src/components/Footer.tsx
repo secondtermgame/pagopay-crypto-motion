@@ -1,4 +1,4 @@
-import { Twitter, Linkedin } from "lucide-react";
+import { X, Linkedin } from "lucide-react";
 import { PrivacyPolicyDialog, TermsOfServiceDialog, CookiePolicyDialog } from "./LegalPolicies";
 import { Button } from "./ui/button";
 
@@ -38,7 +38,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4 text-foreground">Follow Us</h4>
             <div className="flex gap-4">
               <a href="https://www.x.com/mypagopay" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                <Twitter className="h-5 w-5" />
+                <X className="h-5 w-5" />
               </a>
               <a href="https://www.linkedin.com/company/mypagopay" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin className="h-5 w-5" />
