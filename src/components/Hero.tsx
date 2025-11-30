@@ -1,10 +1,15 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import heroCard from "@/assets/hero-card.png";
 import logoWhite from "@/assets/logo-white.png";
+import { SignupForm } from "@/components/SignupForm";
 
 const Hero = () => {
+  const [isSignupOpen, setIsSignupOpen] = useState(false);
+
   return (
+    <>
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0djItaDJWMzRoLTJ6bTAtNGgydjJoLTJ2LTJ6bS0yIDJoLTJ2Mmgydi0yem0wLTJoMnYyaC0ydi0yem0wIDRoMnYyaC0ydi0yem0tMi0yaDJ2Mmgtdi0yem0wIDRoMnYyaC0ydi0yem0tMiAyaDJ2Mmgtdi0yeiIvPjwvZz48L2c+PC9zdmc+')] opacity-30"></div>
       
@@ -34,6 +39,7 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-[var(--shadow-glow)] transition-all duration-300 hover:scale-105 font-semibold"
+                onClick={() => setIsSignupOpen(true)}
               >
                 Get PagoPay Card
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -60,7 +66,10 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
+      <SignupForm open={isSignupOpen} onOpenChange={setIsSignupOpen} />
     </section>
+    </>
   );
 };
 
