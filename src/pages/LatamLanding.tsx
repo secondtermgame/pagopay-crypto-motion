@@ -148,7 +148,7 @@ const LatamLanding = () => {
                   Empieza ahora
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
-                <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 rounded-full text-lg px-10 py-6 font-semibold">
+                <Button size="lg" variant="outline" className="border-latam-lime/50 text-latam-lime hover:bg-latam-lime/10 rounded-full text-lg px-10 py-6 font-semibold">
                   <Download className="mr-2 h-5 w-5" />
                   Descargar app
                 </Button>
