@@ -230,6 +230,7 @@ const LatamLanding = () => {
               );
             })}
           </div>
+          <p className="text-center text-gray-400 mt-8 text-sm font-medium">{t("latam.howItWorks.note")}</p>
         </div>
       </section>
 

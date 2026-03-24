@@ -143,9 +143,9 @@
     "cta": "Obtén tu cuenta gratis",
     "downloadApp": "Descargar app",
     "hero": {
-      "heading1": "Gasta tu crypto",
-      "heading2": "en dólares",
-      "subtitle": "Convierte BTC, ETH y USDT a dólares al instante — y paga donde quieras con tu tarjeta PagoPay.",
+      "heading1": "Envía tu crypto.",
+      "heading2": "Nosotros lo convertimos. Tú pagas.",
+      "subtitle": "Deposita tu crypto en tu cuenta PagoPay. Se convierte automáticamente a USD. Usa tu tarjeta en cualquier lugar del mundo.",
       "trust": "Seguro • Instantáneo • Sin complicaciones"
     },
     "balance": {
@@ -153,12 +153,13 @@
       "topup": "+ Recargar"
     },
     "howItWorks": {
-      "heading": "3 pasos para empezar a gastar",
+      "heading": "Cómo funciona",
       "step": "Paso",
+      "note": "Sin pasos extra. Todo ocurre automáticamente.",
       "steps": [
-        { "title": "Deposita tu crypto", "desc": "Envía BTC, ETH o USDT a tu billetera" },
-        { "title": "Convierte a dólares", "desc": "Cambio instantáneo a USD a tasas en tiempo real" },
-        { "title": "Paga donde quieras", "desc": "Usa tu tarjeta en todo el mundo, online o en tienda" }
+        { "title": "Envía tu crypto", "desc": "Deposita BTC, ETH o USDT en tu cuenta PagoPay." },
+        { "title": "Conversión automática", "desc": "Tu crypto se convierte automáticamente a USD." },
+        { "title": "Paga sin límites", "desc": "Usa tu tarjeta PagoPay en cualquier lugar del mundo." }
       ]
     },
     "benefits": {
