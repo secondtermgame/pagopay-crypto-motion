@@ -55,23 +55,23 @@
   },
   "security": {
     "heading": "Security You Can Trust",
-    "subtitle": "At PagoPay, your security isn't an afterthought — it's our foundation. We use advanced technology and adhere to the highest industry standards to ensure your funds, data, and identity remain safe at all times.",
+    "subtitle": "At <strong>PagoPay</strong>, your security isn't an afterthought — it's our foundation. We use advanced technology and adhere to the highest industry standards to ensure your funds, data, and identity remain safe at all times.",
     "items": [
       {
         "title": "Military-Grade Encryption",
-        "description": "All sensitive data is protected using AES-256 encryption, the same military-grade standard trusted by banks and governments across the globe."
+        "description": "All sensitive data is protected using <strong>AES-256 encryption</strong>, the same military-grade standard trusted by banks and governments across the globe."
       },
       {
         "title": "Multi-Factor & Biometric Authentication",
-        "description": "Secure your account with two-factor authentication (2FA) and biometric login, giving you full control and added protection from unauthorized access."
+        "description": "Secure your account with <strong>two-factor authentication (2FA)</strong> and <strong>biometric login</strong>, giving you full control and added protection from unauthorized access."
       },
       {
         "title": "Real-Time AI-Powered Monitoring",
-        "description": "Our systems are continuously monitored by AI-driven fraud detection engines, scanning for suspicious activity 24/7 and automatically blocking threats in real time."
+        "description": "Our systems are continuously monitored by <strong>AI-driven fraud detection engines</strong>, scanning for suspicious activity 24/7 and automatically blocking threats in real time."
       },
       {
         "title": "Full Regulatory Compliance",
-        "description": "PagoPay is in process of registering with FINTRAC (Canada) and operates under strict adherence to international AML, KYC, and data privacy regulations, including GDPR and PCI DSS standards."
+        "description": "PagoPay is in process of registering with <strong>FINTRAC (Canada)</strong> and operates under strict adherence to <strong>international AML, KYC, and data privacy regulations</strong>, including GDPR and PCI DSS standards."
       }
     ]
   },

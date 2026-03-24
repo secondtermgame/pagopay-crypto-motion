@@ -1,55 +1,44 @@
-import { Shield, Lock, Eye, FileCheck } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
-import securityBg from "@/assets/security-bg.jpg";
+import { CreditCard, Fingerprint, ScanEye, Scale } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
-const icons = [Shield, Lock, Eye, FileCheck];
+const icons = [CreditCard, Fingerprint, ScanEye, Scale];
 
 const Security = () => {
   const { t } = useTranslation();
   const items = t("security.items", { returnObjects: true }) as { title: string; description: string }[];
 
   return (
-    <section id="security" className="py-24 relative overflow-hidden">
-      <div
-        className="absolute inset-0 opacity-10"
-        style={{
-          backgroundImage: `url(${securityBg})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      />
-
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
+    <section id="security" className="py-24 bg-background">
+      <div className="container mx-auto px-4">
+        <div className="mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
             {t("security.heading")}
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            {t("security.subtitle")}
-          </p>
+          <p
+            className="text-lg text-muted-foreground max-w-3xl"
+            dangerouslySetInnerHTML={{ __html: t("security.subtitle") }}
+          />
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {items.map((feature, index) => {
             const Icon = icons[index];
             return (
-              <Card
+              <div
                 key={index}
-                className="border-border bg-card/80 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 hover:shadow-[var(--shadow-glow)]"
+                className="rounded-2xl bg-accent p-8 cursor-default hover:-translate-y-2 hover:shadow-xl transition-all duration-300"
               >
-                <CardContent className="p-8">
-                  <div className="mb-4 inline-flex p-4 rounded-xl bg-gradient-accent">
-                    <Icon className="h-8 w-8 text-primary" />
-                  </div>
-                  <h3 className="text-2xl font-semibold mb-3 text-foreground">
-                    {feature.title}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {feature.description}
-                  </p>
-                </CardContent>
-              </Card>
+                <div className="mb-5 inline-flex p-3 rounded-xl bg-primary/10">
+                  <Icon className="h-7 w-7 text-accent-foreground" />
+                </div>
+                <h3 className="text-lg font-bold uppercase mb-3 text-foreground tracking-wide">
+                  {feature.title}
+                </h3>
+                <p
+                  className="text-sm text-muted-foreground leading-relaxed"
+                  dangerouslySetInnerHTML={{ __html: feature.description }}
+                />
+              </div>
             );
           })}
         </div>
