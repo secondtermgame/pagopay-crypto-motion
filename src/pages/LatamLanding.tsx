@@ -25,6 +25,7 @@ const LatamLanding = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [regionDropdownOpen, setRegionDropdownOpen] = useState(false);
+  const [langDropdownOpen, setLangDropdownOpen] = useState(false);
 
   // Default to Spanish for LATAM if not already ES or EN
   useEffect(() => {
@@ -40,11 +41,11 @@ const LatamLanding = () => {
   }, []);
 
   useEffect(() => {
-    if (!regionDropdownOpen) return;
-    const close = () => setRegionDropdownOpen(false);
+    if (!regionDropdownOpen && !langDropdownOpen) return;
+    const close = () => { setRegionDropdownOpen(false); setLangDropdownOpen(false); };
     document.addEventListener("click", close);
     return () => document.removeEventListener("click", close);
-  }, [regionDropdownOpen]);
+  }, [regionDropdownOpen, langDropdownOpen]);
 
   const switchRegion = (regionId: Region) => {
     const config = getRegionById(regionId);
@@ -93,17 +94,29 @@ const LatamLanding = () => {
               {t("latam.cta")}
             </Button>
 
-            {/* Language switcher */}
-            <div className="flex items-center gap-1">
-              {["es", "en"].map((lang) => (
-                <button
-                  key={lang}
-                  onClick={() => i18n.changeLanguage(lang)}
-                  className={`text-xs font-semibold px-2 py-1 rounded transition-colors ${i18n.language === lang ? "bg-white/20 text-white" : "text-white/60 hover:text-white"}`}
-                >
-                  {lang.toUpperCase()}
-                </button>
-              ))}
+            {/* Language dropdown */}
+            <div className="relative">
+              <button
+                onClick={(e) => { e.stopPropagation(); setLangDropdownOpen(!langDropdownOpen); }}
+                className="flex items-center gap-1 text-white/80 hover:text-white text-sm font-medium transition-colors border border-white/30 rounded px-2 py-1"
+              >
+                <Globe className="h-3.5 w-3.5" />
+                {i18n.language === "es" ? "🇪🇸" : "🇬🇧"} {i18n.language.toUpperCase()}
+                <ChevronDown className="h-3 w-3" />
+              </button>
+              {langDropdownOpen && (
+                <div className="absolute right-0 top-full mt-2 bg-latam-dark/95 backdrop-blur-md border border-white/20 rounded-lg shadow-xl overflow-hidden min-w-[140px]">
+                  {["es", "en"].map((lang) => (
+                    <button
+                      key={lang}
+                      onClick={() => { i18n.changeLanguage(lang); setLangDropdownOpen(false); }}
+                      className={`w-full text-left px-4 py-2.5 text-sm transition-colors ${i18n.language === lang ? "bg-white/20 text-white font-semibold" : "text-white/80 hover:bg-white/10 hover:text-white"}`}
+                    >
+                      {lang === "es" ? "🇪🇸 Español" : "🇬🇧 English"}
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
 
             {/* Region selector */}
