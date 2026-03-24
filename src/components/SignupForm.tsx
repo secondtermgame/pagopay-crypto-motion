@@ -34,6 +34,7 @@ declare global {
 }
 
 export function SignupForm({ open, onOpenChange }: SignupFormProps) {
+  const { t } = useTranslation();
   const formContainerRef = useRef<HTMLDivElement>(null);
   const scriptLoadedRef = useRef(false);
 
