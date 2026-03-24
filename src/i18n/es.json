@@ -123,5 +123,12 @@
   "signup": {
     "title": "Obtén tu tarjeta PagoPay",
     "description": "Completa el formulario a continuación para iniciar tu solicitud. Nos pondremos en contacto contigo pronto."
+  },
+  "region": {
+    "global": "Mundial",
+    "latam": "América Latina",
+    "africa": "África",
+    "asia": "Asia",
+    "selector": "Región"
   }
 }
