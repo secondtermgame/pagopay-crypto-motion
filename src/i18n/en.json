@@ -9,8 +9,8 @@
   "hero": {
     "heading1": "YOUR MONEY,",
     "heading2": "IN MOTION",
-    "subtitle": "PagoPay makes finances simple, no matter crypto or fiat",
-    "cta": "Get PagoPay Card"
+    "subtitle": "The crypto card that lets you spend Bitcoin, Ethereum, and stablecoins anywhere — instantly converted, zero hassle.",
+    "cta": "Get Your Free Card"
   },
   "balance": {
     "title": "Balance",
@@ -19,7 +19,7 @@
   },
   "features": {
     "heading": "Your Money, In Motion",
-    "subtitle": "Experience seamless financial control across crypto and fiat — with instant transfers, effortless swaps, and secure card access. All powered by PagoPay's modern wallet and real-time infrastructure.",
+    "subtitle": "One app to store, send, swap, and spend crypto like cash. Instant transfers, real-time conversions, and a prepaid card that works worldwide.",
     "walletHeading": "All-In-One Digital Wallet for Crypto and Fiat",
     "items": [
       {
@@ -42,15 +42,15 @@
   },
   "benefits": {
     "heading": "Built for Every Asset You Own",
-    "subtitle": "Whether you're holding Bitcoin, Ethereum, or stablecoins, PagoPay gives you instant access to your crypto — and the power to spend it like cash.",
+    "subtitle": "Whether you hold Bitcoin, Ethereum, or stablecoins — spend them like cash with the PagoPay crypto card. No delays, no complexity.",
     "slogan": "Freedom to Move. Power to Spend.",
     "items": [
-      "Simple Crypto-to-Fiat Swaps",
-      "Global Spending with Virtual or Physical Cards",
-      "Real-Time Exchange Rates",
-      "No Hidden Fees",
-      "Bank-Grade Security",
-      "24/7 Human Support"
+      "One-Tap Crypto-to-USD Conversion",
+      "Spend Globally with Virtual or Physical Cards",
+      "Real-Time Exchange Rates, No Surprises",
+      "Zero Hidden Fees — Transparent Pricing",
+      "Bank-Grade Security on Every Transaction",
+      "24/7 Human Support When You Need It"
     ]
   },
   "security": {
@@ -138,63 +138,63 @@
       "benefits": "Benefits",
       "security": "Security"
     },
-    "cta": "Get started",
+    "cta": "Get your free card",
     "downloadApp": "Download app",
     "hero": {
-      "heading1": "Use your crypto",
-      "heading2": "like real money",
-      "subtitle": "Convert your crypto and pay anywhere in the world instantly.",
-      "trust": "Secure • Fast • No hassle"
+      "heading1": "Spend your crypto",
+      "heading2": "like dollars",
+      "subtitle": "Convert BTC, ETH, and USDT to USD instantly — and pay anywhere with your PagoPay card.",
+      "trust": "Secure • Instant • Zero hassle"
     },
     "balance": {
       "title": "Balance",
       "topup": "+ Top up"
     },
     "howItWorks": {
-      "heading": "How it works",
+      "heading": "3 steps to start spending",
       "step": "Step",
       "steps": [
-        { "title": "Send your crypto", "desc": "Deposit BTC, ETH or USDT" },
-        { "title": "Convert instantly", "desc": "Swap to USD in seconds" },
-        { "title": "Pay easily", "desc": "Use your card worldwide" }
+        { "title": "Deposit your crypto", "desc": "Send BTC, ETH or USDT to your wallet" },
+        { "title": "Convert to dollars", "desc": "Instant swap to USD at real-time rates" },
+        { "title": "Pay anywhere", "desc": "Use your card worldwide, online or in-store" }
       ]
     },
     "benefits": {
-      "heading": "Everything you need",
+      "heading": "Why 100K+ users choose PagoPay",
       "items": [
-        { "title": "No borders", "desc": "Use your money in any country" },
-        { "title": "Low fees", "desc": "More control for you" },
-        { "title": "Fast and simple", "desc": "All from your phone" },
-        { "title": "Secure", "desc": "Protection on every transaction" }
+        { "title": "No borders", "desc": "Spend your dollars in any country" },
+        { "title": "Lowest fees", "desc": "Keep more of your money" },
+        { "title": "Ready in minutes", "desc": "Sign up and pay from your phone" },
+        { "title": "Always protected", "desc": "Military-grade encryption on every transaction" }
       ]
     },
     "showcase": {
-      "heading1": "All in one",
-      "heading2": " place",
-      "subtitle": "Control your money, convert crypto and pay easily from the PagoPay app.",
+      "heading1": "Everything",
+      "heading2": " in one app",
+      "subtitle": "Convert crypto, manage your balance, and pay — all from the PagoPay app.",
       "checks": [
-        "Convert crypto to USD",
-        "Pay with virtual or physical card",
-        "Check your balances in real time"
+        "Instant crypto to USD conversion",
+        "Virtual and physical prepaid card",
+        "Real-time balance and transaction tracking"
       ],
       "paymentSuccess": "Payment successful"
     },
     "trust": {
-      "heading": "Your money is protected",
-      "subtitle": "We work with global partners to guarantee security and transparency.",
+      "heading": "Your dollars are protected",
+      "subtitle": "We partner with regulated financial institutions to keep your funds secure.",
       "items": [
-        { "title": "Secure technology", "desc": "Military-grade encryption for every transaction" },
-        { "title": "Global compliance", "desc": "Regulated under international AML and KYC standards" },
-        { "title": "Reliable infrastructure", "desc": "Regulated partners and continuous auditing" }
+        { "title": "AES-256 encryption", "desc": "The same standard used by banks and governments" },
+        { "title": "Fully regulated", "desc": "Compliant with international AML and KYC standards" },
+        { "title": "Audited infrastructure", "desc": "Continuous monitoring and third-party audits" }
       ]
     },
     "finalCta": {
-      "heading": "Get started today with PagoPay",
-      "subtitle": "Open your free account in minutes",
-      "button": "Create account"
+      "heading": "Start spending your crypto today",
+      "subtitle": "Open your free account in under 3 minutes",
+      "button": "Create free account"
     },
     "footer": {
-      "tagline": "Your crypto, your real money.",
+      "tagline": "Your crypto. Your dollars. Your freedom.",
       "product": "Product",
       "legal": "Legal",
       "support": "Support",

@@ -9,8 +9,8 @@
   "hero": {
     "heading1": "TU DINERO,",
     "heading2": "EN MOVIMIENTO",
-    "subtitle": "PagoPay simplifica tus finanzas, ya sea cripto o moneda fiduciaria",
-    "cta": "Obtén tu Tarjeta PagoPay"
+    "subtitle": "La tarjeta crypto que te permite gastar Bitcoin, Ethereum y stablecoins en cualquier lugar — conversión instantánea, cero complicaciones.",
+    "cta": "Obtén tu Tarjeta Gratis"
   },
   "balance": {
     "title": "Saldo",
@@ -19,7 +19,7 @@
   },
   "features": {
     "heading": "Tu Dinero, En Movimiento",
-    "subtitle": "Experimenta un control financiero fluido entre cripto y fiat — con transferencias instantáneas, intercambios sin esfuerzo y acceso seguro a tu tarjeta. Todo impulsado por la billetera moderna e infraestructura en tiempo real de PagoPay.",
+    "subtitle": "Una app para guardar, enviar, convertir y gastar crypto como efectivo. Transferencias instantáneas, conversiones en tiempo real y una tarjeta prepagada que funciona en todo el mundo.",
     "walletHeading": "Billetera Digital Todo-en-Uno para Cripto y Fiat",
     "items": [
       {
@@ -42,15 +42,15 @@
   },
   "benefits": {
     "heading": "Diseñado para Cada Activo que Posees",
-    "subtitle": "Ya sea que tengas Bitcoin, Ethereum o stablecoins, PagoPay te da acceso instantáneo a tu cripto — y el poder de gastarlo como efectivo.",
+    "subtitle": "Ya sea que tengas Bitcoin, Ethereum o stablecoins — gástalos como efectivo con la tarjeta crypto PagoPay. Sin demoras, sin complicaciones.",
     "slogan": "Libertad para Moverte. Poder para Gastar.",
     "items": [
-      "Intercambios Simples de Cripto a Fiat",
-      "Gastos Globales con Tarjetas Virtuales o Físicas",
-      "Tasas de Cambio en Tiempo Real",
-      "Sin Comisiones Ocultas",
-      "Seguridad de Nivel Bancario",
-      "Soporte Humano 24/7"
+      "Conversión de Crypto a USD con Un Toque",
+      "Gasta Globalmente con Tarjeta Virtual o Física",
+      "Tasas de Cambio en Tiempo Real, Sin Sorpresas",
+      "Cero Comisiones Ocultas — Precios Transparentes",
+      "Seguridad Bancaria en Cada Transacción",
+      "Soporte Humano 24/7 Cuando lo Necesites"
     ]
   },
   "security": {
@@ -138,63 +138,63 @@
       "benefits": "Beneficios",
       "security": "Seguridad"
     },
-    "cta": "Empieza ahora",
+    "cta": "Obtén tu tarjeta gratis",
     "downloadApp": "Descargar app",
     "hero": {
-      "heading1": "Usa tu crypto",
-      "heading2": "como dinero real",
-      "subtitle": "Convierte tu crypto y paga en cualquier lugar del mundo al instante.",
-      "trust": "Seguro • Rápido • Sin complicaciones"
+      "heading1": "Gasta tu crypto",
+      "heading2": "en dólares",
+      "subtitle": "Convierte BTC, ETH y USDT a dólares al instante — y paga donde quieras con tu tarjeta PagoPay.",
+      "trust": "Seguro • Instantáneo • Sin complicaciones"
     },
     "balance": {
       "title": "Saldo",
       "topup": "+ Recargar"
     },
     "howItWorks": {
-      "heading": "Cómo funciona",
+      "heading": "3 pasos para empezar a gastar",
       "step": "Paso",
       "steps": [
-        { "title": "Envía tu crypto", "desc": "Deposita BTC, ETH o USDT" },
-        { "title": "Convierte al instante", "desc": "Cambia a USD en segundos" },
-        { "title": "Paga fácilmente", "desc": "Usa tu tarjeta en todo el mundo" }
+        { "title": "Deposita tu crypto", "desc": "Envía BTC, ETH o USDT a tu billetera" },
+        { "title": "Convierte a dólares", "desc": "Cambio instantáneo a USD a tasas en tiempo real" },
+        { "title": "Paga donde quieras", "desc": "Usa tu tarjeta en todo el mundo, online o en tienda" }
       ]
     },
     "benefits": {
-      "heading": "Todo lo que necesitas",
+      "heading": "Por qué más de 100K usuarios eligen PagoPay",
       "items": [
-        { "title": "Sin fronteras", "desc": "Usa tu dinero en cualquier país" },
-        { "title": "Bajas comisiones", "desc": "Más control para ti" },
-        { "title": "Rápido y simple", "desc": "Todo desde tu celular" },
-        { "title": "Seguro", "desc": "Protección en cada transacción" }
+        { "title": "Sin fronteras", "desc": "Gasta tus dólares en cualquier país" },
+        { "title": "Las comisiones más bajas", "desc": "Quédate con más de tu dinero" },
+        { "title": "Listo en minutos", "desc": "Regístrate y paga desde tu celular" },
+        { "title": "Siempre protegido", "desc": "Encriptación militar en cada transacción" }
       ]
     },
     "showcase": {
-      "heading1": "Todo en un",
-      "heading2": " solo lugar",
-      "subtitle": "Controla tu dinero, convierte crypto y paga fácilmente desde la app PagoPay.",
+      "heading1": "Todo",
+      "heading2": " en una app",
+      "subtitle": "Convierte crypto, gestiona tu saldo y paga — todo desde la app PagoPay.",
       "checks": [
-        "Convierte crypto a USD",
-        "Paga con tarjeta virtual o física",
-        "Consulta tus balances en tiempo real"
+        "Conversión instantánea de crypto a dólares",
+        "Tarjeta prepagada virtual y física",
+        "Seguimiento de saldo y transacciones en tiempo real"
       ],
       "paymentSuccess": "Pago exitoso"
     },
     "trust": {
-      "heading": "Tu dinero está protegido",
-      "subtitle": "Trabajamos con partners globales para garantizar seguridad y transparencia.",
+      "heading": "Tus dólares están protegidos",
+      "subtitle": "Trabajamos con instituciones financieras reguladas para mantener tus fondos seguros.",
       "items": [
-        { "title": "Tecnología segura", "desc": "Encriptación de nivel militar para cada transacción" },
-        { "title": "Cumplimiento global", "desc": "Regulados bajo estándares internacionales AML y KYC" },
-        { "title": "Infraestructura confiable", "desc": "Partners regulados y auditoría continua" }
+        { "title": "Encriptación AES-256", "desc": "El mismo estándar que usan bancos y gobiernos" },
+        { "title": "Totalmente regulado", "desc": "Cumplimiento con estándares internacionales AML y KYC" },
+        { "title": "Infraestructura auditada", "desc": "Monitoreo continuo y auditorías de terceros" }
       ]
     },
     "finalCta": {
-      "heading": "Empieza hoy con PagoPay",
-      "subtitle": "Abre tu cuenta gratis en minutos",
-      "button": "Crear cuenta"
+      "heading": "Empieza a gastar tu crypto hoy",
+      "subtitle": "Abre tu cuenta gratis en menos de 3 minutos",
+      "button": "Crear cuenta gratis"
     },
     "footer": {
-      "tagline": "Tu crypto, tu dinero real.",
+      "tagline": "Tu crypto. Tus dólares. Tu libertad.",
       "product": "Producto",
       "legal": "Legal",
       "support": "Soporte",
