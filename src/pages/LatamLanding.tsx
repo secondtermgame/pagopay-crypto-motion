@@ -191,7 +191,10 @@ const LatamLanding = () => {
 
             <div className="relative animate-scale-in">
               <div className="relative animate-float">
-                <img src={heroCard} alt="PagoPay Card" className="w-full h-auto max-w-lg mx-auto drop-shadow-2xl" />
+                <div className="relative w-full max-w-lg mx-auto">
+                  <img src={heroCard} alt="PagoPay Card" className="w-full h-auto drop-shadow-2xl" />
+                  <p className="absolute bottom-6 left-6 text-white/90 text-sm md:text-base font-semibold tracking-wide drop-shadow-lg">{t("latam.hero.cardSlogan")}</p>
+                </div>
                 <div className="absolute top-4 left-4 md:top-8 md:left-0 bg-white/10 backdrop-blur-xl rounded-2xl p-4 border border-white/20 shadow-2xl">
                   <p className="text-white/60 text-xs font-medium mb-1">{t("latam.balance.title")}</p>
                   <p className="text-white text-2xl font-bold">$2,200.50</p>
