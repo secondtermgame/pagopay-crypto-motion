@@ -21,7 +21,7 @@ const RegionalLanding = () => {
 
   useEffect(() => {
     // If invalid region, redirect to global
-    if (region && !["latam", "africa", "asia"].includes(region)) {
+    if (region && !["latam", "africa"].includes(region)) {
       navigate("/", { replace: true });
       return;
     }
