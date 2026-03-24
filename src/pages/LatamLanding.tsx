@@ -274,7 +274,7 @@ const LatamLanding = () => {
                     </div>
                     <div>
                       <p className="text-xs text-gray-400">{t("latam.showcase.paymentSuccess")}</p>
-                      <p className="text-sm font-bold text-latam-dark">- $850.00 MXN</p>
+                      <p className="text-sm font-bold text-latam-dark">- $45.00 USD</p>
                     </div>
                   </div>
                 </div>
