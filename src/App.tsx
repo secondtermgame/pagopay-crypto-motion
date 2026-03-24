@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import RegionalLanding from "./pages/RegionalLanding";
 import LatamLanding from "./pages/LatamLanding";
+import AfricaLanding from "./pages/AfricaLanding";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
