@@ -129,3 +129,13 @@ All colors MUST be HSL.
   --latam-orange: 90 70% 50%;
   --latam-pink: 163 65% 30%;
 }
+
+/* Africa Landing Page Theme */
+.africa-theme {
+  --africa-gold: 38 92% 50%;
+  --africa-amber: 25 95% 53%;
+  --africa-earth: 20 30% 12%;
+  --africa-teal: 163 50% 30%;
+  --africa-dark: 20 20% 8%;
+  --africa-warm: 30 60% 45%;
+}
