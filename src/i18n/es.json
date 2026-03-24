@@ -179,7 +179,7 @@
       "subtitle": "Convierte crypto, gestiona tu saldo y paga — todo desde la app PagoPay.",
       "checks": [
         "Conversión instantánea de crypto a dólares",
-        "Tarjeta prepagada virtual y física",
+        "Tarjeta prepagada física",
         "Seguimiento de saldo y transacciones en tiempo real"
       ],
       "paymentSuccess": "Pago exitoso"
