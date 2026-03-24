@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { Menu, X, Globe, ChevronDown, ArrowRight, Send, RefreshCw, CreditCard, Globe2, Coins, Zap, Shield, Lock, ShieldCheck, CheckCircle, Linkedin, Download } from "lucide-react";
+import { Menu, X, Globe, ChevronDown, ArrowRight, Send, RefreshCw, CreditCard, Globe2, Coins, Zap, Shield, Lock, ShieldCheck, CheckCircle, Linkedin, Download, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Region, regions, getRegionById } from "@/lib/regions";
 import { useNavigate } from "react-router-dom";
@@ -12,8 +12,8 @@ import appPreview from "@/assets/app-preview.jpg";
 
 const stepIcons = [Send, RefreshCw, CreditCard];
 const stepColors = ["from-latam-purple to-latam-purple/80", "from-latam-teal to-latam-teal/80", "from-latam-lime to-latam-cyan"];
-const benefitIcons = [Globe2, Coins, Zap, Shield];
-const benefitGradients = ["from-latam-teal to-latam-cyan", "from-latam-orange to-latam-pink", "from-latam-lime to-latam-cyan", "from-latam-purple to-latam-teal"];
+const benefitIcons = [Globe2, Coins, Eye, Zap, Shield, Coins];
+const benefitGradients = ["from-latam-teal to-latam-cyan", "from-latam-orange to-latam-pink", "from-latam-purple to-latam-teal", "from-latam-lime to-latam-cyan", "from-latam-purple to-latam-teal", "from-latam-teal to-latam-lime"];
 const trustIcons = [Lock, ShieldCheck, Shield];
 const trustGradients = ["from-latam-purple to-latam-teal", "from-latam-teal to-latam-cyan", "from-latam-lime to-latam-teal"];
 
@@ -243,7 +243,7 @@ const LatamLanding = () => {
             <div className="w-20 h-1.5 bg-gradient-to-r from-latam-lime to-latam-cyan rounded-full mx-auto" />
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {benefits.map((item, i) => {
               const Icon = benefitIcons[i];
               return (

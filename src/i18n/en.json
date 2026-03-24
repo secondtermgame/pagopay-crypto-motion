@@ -48,7 +48,9 @@
       "One-Tap Crypto-to-USD Conversion",
       "Spend Globally with Virtual or Physical Cards",
       "Real-Time Exchange Rates, No Surprises",
-      "Zero Hidden Fees — Transparent Pricing",
+      "Zero FX Fees — Pay Internationally for Free",
+      "Zero Hidden Fees — What You See Is What You Pay",
+      "Low Conversion Fees — More Crypto in Your Pocket",
       "Bank-Grade Security on Every Transaction",
       "24/7 Human Support When You Need It"
     ]
@@ -163,7 +165,9 @@
       "heading": "Why 100K+ users choose PagoPay",
       "items": [
         { "title": "No borders", "desc": "Spend your dollars in any country" },
-        { "title": "Lowest fees", "desc": "Keep more of your money" },
+        { "title": "Zero FX fees", "desc": "No foreign exchange fees, ever" },
+        { "title": "No hidden fees", "desc": "Transparent pricing — what you see is what you pay" },
+        { "title": "Low conversion fees", "desc": "Keep more of your crypto" },
         { "title": "Ready in minutes", "desc": "Sign up and pay from your phone" },
         { "title": "Always protected", "desc": "Military-grade encryption on every transaction" }
       ]
