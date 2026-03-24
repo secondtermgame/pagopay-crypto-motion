@@ -406,7 +406,7 @@ const LatamLanding = () => {
 
           <div className="border-t border-white/10 pt-8">
             <p className="text-xs text-white/30 leading-relaxed mb-4">
-              {t("latam.footer.disclaimer")}
+              {t("footer.disclaimer")}
             </p>
             <p className="text-sm text-white/40">{t("latam.footer.copyright")}</p>
           </div>
