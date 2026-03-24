@@ -55,23 +55,23 @@
   },
   "security": {
     "heading": "Seguridad en la que Puedes Confiar",
-    "subtitle": "En PagoPay, tu seguridad no es algo secundario — es nuestra base. Utilizamos tecnología avanzada y nos adherimos a los más altos estándares de la industria para garantizar que tus fondos, datos e identidad permanezcan seguros en todo momento.",
+    "subtitle": "En <strong>PagoPay</strong>, tu seguridad no es algo secundario — es nuestra base. Utilizamos tecnología avanzada y nos adherimos a los más altos estándares de la industria para garantizar que tus fondos, datos e identidad permanezcan seguros en todo momento.",
     "items": [
       {
         "title": "Encriptación de Grado Militar",
-        "description": "Todos los datos sensibles están protegidos utilizando encriptación AES-256, el mismo estándar de grado militar confiado por bancos y gobiernos de todo el mundo."
+        "description": "Todos los datos sensibles están protegidos utilizando <strong>encriptación AES-256</strong>, el mismo estándar de grado militar confiado por bancos y gobiernos de todo el mundo."
       },
       {
         "title": "Autenticación Multifactor y Biométrica",
-        "description": "Asegura tu cuenta con autenticación de dos factores (2FA) e inicio de sesión biométrico, dándote control total y protección adicional contra acceso no autorizado."
+        "description": "Asegura tu cuenta con <strong>autenticación de dos factores (2FA)</strong> e <strong>inicio de sesión biométrico</strong>, dándote control total y protección adicional contra acceso no autorizado."
       },
       {
         "title": "Monitoreo en Tiempo Real con IA",
-        "description": "Nuestros sistemas son monitoreados continuamente por motores de detección de fraude impulsados por IA, escaneando actividad sospechosa 24/7 y bloqueando automáticamente amenazas en tiempo real."
+        "description": "Nuestros sistemas son monitoreados continuamente por <strong>motores de detección de fraude impulsados por IA</strong>, escaneando actividad sospechosa 24/7 y bloqueando automáticamente amenazas en tiempo real."
       },
       {
         "title": "Cumplimiento Regulatorio Completo",
-        "description": "PagoPay está en proceso de registro con FINTRAC (Canadá) y opera bajo estricta adherencia a las regulaciones internacionales de AML, KYC y privacidad de datos, incluyendo los estándares GDPR y PCI DSS."
+        "description": "PagoPay está en proceso de registro con <strong>FINTRAC (Canadá)</strong> y opera bajo estricta adherencia a las <strong>regulaciones internacionales de AML, KYC y privacidad de datos</strong>, incluyendo los estándares GDPR y PCI DSS."
       }
     ]
   },
