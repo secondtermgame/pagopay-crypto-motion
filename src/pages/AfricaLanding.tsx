@@ -93,9 +93,6 @@ const AfricaLanding = () => {
                 {link.label}
               </button>
             ))}
-            <Button onClick={openSignup} className="bg-africa-gold text-africa-dark hover:bg-africa-gold/90 font-bold rounded-full px-6">
-              {t("africa.cta")}
-            </Button>
 
             {/* Language dropdown */}
             <div className="relative">
