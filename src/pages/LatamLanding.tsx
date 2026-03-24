@@ -107,7 +107,7 @@ const LatamLanding = () => {
                 <ChevronDown className="h-3 w-3" />
               </button>
               {langDropdownOpen && (
-                <div className="absolute right-0 top-full mt-2 bg-latam-dark/95 backdrop-blur-md border border-white/20 rounded-lg shadow-xl overflow-hidden min-w-[140px]">
+                <div className="absolute right-0 top-full mt-2 bg-latam-dark border border-white/20 rounded-lg shadow-xl overflow-hidden min-w-[140px]">
                   {["es", "en"].map((lang) => (
                     <button
                       key={lang}
@@ -129,7 +129,7 @@ const LatamLanding = () => {
                 <ChevronDown className="h-3 w-3" />
               </button>
               {regionDropdownOpen && (
-                <div className="absolute right-0 top-full mt-2 bg-latam-dark/95 backdrop-blur-md border border-white/20 rounded-lg shadow-xl overflow-hidden min-w-[160px]">
+                <div className="absolute right-0 top-full mt-2 bg-latam-dark border border-white/20 rounded-lg shadow-xl overflow-hidden min-w-[160px]">
                   {regions.map((r) => (
                     <button key={r.id} onClick={() => switchRegion(r.id)} className={`w-full text-left px-4 py-2.5 text-sm transition-colors ${"latam" === r.id ? "bg-white/20 text-white font-semibold" : "text-white/80 hover:bg-white/10 hover:text-white"}`}>
                       {t(`region.${r.id}`)}
@@ -146,7 +146,7 @@ const LatamLanding = () => {
         </div>
 
         {mobileOpen && (
-          <div className="md:hidden bg-latam-dark/95 backdrop-blur-md border-t border-white/10">
+          <div className="md:hidden bg-latam-dark border-t border-white/10">
             <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
               {navLinks.map((link) => (
                 <button key={link.href} onClick={() => scrollTo(link.href)} className="text-white/80 hover:text-white text-left text-sm font-medium">
