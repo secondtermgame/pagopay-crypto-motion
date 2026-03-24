@@ -123,5 +123,12 @@
   "signup": {
     "title": "Get your PagoPay card",
     "description": "Fill out the form below to start your application. We'll get back to you shortly."
+  },
+  "region": {
+    "global": "Global",
+    "latam": "Latin America",
+    "africa": "Africa",
+    "asia": "Asia",
+    "selector": "Region"
   }
 }
