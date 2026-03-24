@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { Menu, X, Globe, ChevronDown, ArrowRight, Send, RefreshCw, CreditCard, Globe2, Coins, Zap, Shield, Lock, ShieldCheck, CheckCircle, Linkedin, Download } from "lucide-react";
+import { Menu, X, Globe, ChevronDown, ArrowRight, Send, RefreshCw, CreditCard, Globe2, Coins, Zap, Shield, Lock, ShieldCheck, CheckCircle, Linkedin, Download, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Region, regions, getRegionById } from "@/lib/regions";
 import { useNavigate } from "react-router-dom";
