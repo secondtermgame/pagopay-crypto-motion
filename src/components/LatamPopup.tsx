@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { X, Bitcoin, ArrowRight, CreditCard, DollarSign, BadgeCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import mascot from "@/assets/pagopay-mascot.png";
+
 
 const DISMISS_KEY = "pagopay_latam_popup_dismissed";
 
