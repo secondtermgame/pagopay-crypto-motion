@@ -188,7 +188,7 @@
       "heading": "Tus dólares están protegidos",
       "subtitle": "Trabajamos con instituciones financieras reguladas para mantener tus fondos seguros.",
       "items": [
-        { "title": "Encriptación AES-256", "desc": "El mismo estándar que usan bancos y gobiernos" },
+        { "title": "Encriptación de nivel bancario", "desc": "El más alto estándar de protección de datos" },
         { "title": "Totalmente regulado", "desc": "Cumplimiento con estándares internacionales AML y KYC" },
         { "title": "Infraestructura auditada", "desc": "Monitoreo continuo y auditorías de terceros" }
       ]

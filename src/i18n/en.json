@@ -188,7 +188,7 @@
       "heading": "Your dollars are protected",
       "subtitle": "We partner with regulated financial institutions to keep your funds secure.",
       "items": [
-        { "title": "AES-256 encryption", "desc": "The same standard used by banks and governments" },
+        { "title": "Bank-level encryption", "desc": "The highest standard of data protection" },
         { "title": "Fully regulated", "desc": "Compliant with international AML and KYC standards" },
         { "title": "Audited infrastructure", "desc": "Continuous monitoring and third-party audits" }
       ]
