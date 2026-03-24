@@ -9,7 +9,7 @@ import { LatamPopup } from "@/components/LatamPopup";
 import { PrivacyPolicyDialog, TermsOfServiceDialog, CookiePolicyDialog } from "@/components/LegalPolicies";
 import logoWhite from "@/assets/pagopay-white.png";
 import heroCard from "@/assets/hero-card.png";
-import appPreview from "@/assets/app-preview.jpg";
+import appPreview from "@/assets/app-phone-mockup.png";
 
 const stepIcons = [Send, RefreshCw, CreditCard];
 const stepColors = ["from-latam-purple to-latam-purple/80", "from-latam-teal to-latam-teal/80", "from-latam-lime to-latam-cyan"];
