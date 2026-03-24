@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Region, regions, getRegionById } from "@/lib/regions";
 import { useNavigate } from "react-router-dom";
 import { SignupForm } from "@/components/SignupForm";
+import { LatamPopup } from "@/components/LatamPopup";
 import { PrivacyPolicyDialog, TermsOfServiceDialog, CookiePolicyDialog } from "@/components/LegalPolicies";
 import logoWhite from "@/assets/pagopay-white.png";
 import heroCard from "@/assets/hero-card.png";
