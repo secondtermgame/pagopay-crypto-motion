@@ -95,9 +95,6 @@ const LatamLanding = () => {
                 {link.label}
               </button>
             ))}
-            <Button onClick={openSignup} className="bg-latam-lime text-latam-dark hover:bg-latam-lime/90 font-bold rounded-full px-6">
-              {t("latam.cta")}
-            </Button>
 
             {/* Language dropdown */}
             <div className="relative">
