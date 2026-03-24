@@ -179,7 +179,7 @@
       "subtitle": "Convert crypto, manage your balance, and pay — all from the PagoPay app.",
       "checks": [
         "Instant crypto to USD conversion",
-        "Virtual and physical prepaid card",
+        "Physical prepaid card",
         "Real-time balance and transaction tracking"
       ],
       "paymentSuccess": "Payment successful"
