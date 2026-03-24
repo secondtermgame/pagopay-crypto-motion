@@ -12,8 +12,8 @@ import appPreview from "@/assets/app-preview.jpg";
 
 const stepIcons = [Send, RefreshCw, CreditCard];
 const stepColors = ["from-latam-purple to-latam-purple/80", "from-latam-teal to-latam-teal/80", "from-latam-lime to-latam-cyan"];
-const benefitIcons = [Globe2, Coins, Zap, Shield];
-const benefitGradients = ["from-latam-teal to-latam-cyan", "from-latam-orange to-latam-pink", "from-latam-lime to-latam-cyan", "from-latam-purple to-latam-teal"];
+const benefitIcons = [Globe2, Coins, Eye, Zap, Shield, Coins];
+const benefitGradients = ["from-latam-teal to-latam-cyan", "from-latam-orange to-latam-pink", "from-latam-purple to-latam-teal", "from-latam-lime to-latam-cyan", "from-latam-purple to-latam-teal", "from-latam-teal to-latam-lime"];
 const trustIcons = [Lock, ShieldCheck, Shield];
 const trustGradients = ["from-latam-purple to-latam-teal", "from-latam-teal to-latam-cyan", "from-latam-lime to-latam-teal"];
 
