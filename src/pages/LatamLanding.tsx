@@ -51,6 +51,9 @@ const LatamLanding = () => {
   const switchRegion = (regionId: Region) => {
     const config = getRegionById(regionId);
     localStorage.setItem("pagopay_region_chosen", "true");
+    if (regionId === "latam") i18n.changeLanguage("es");
+    else if (regionId === "africa") i18n.changeLanguage("en");
+    else i18n.changeLanguage("en");
     navigate(config.path);
     setRegionDropdownOpen(false);
     setMobileOpen(false);
