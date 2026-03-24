@@ -80,7 +80,7 @@ const LatamLanding = () => {
   return (
     <div className="min-h-screen scroll-smooth latam-theme">
       {/* ==================== NAVBAR ==================== */}
-      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-primary/95 backdrop-blur-md shadow-lg" : "bg-transparent"}`}>
+      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-latam-dark shadow-lg" : "bg-transparent"}`}>
         <div className="container mx-auto px-4 flex items-center justify-between h-16">
           <a href="#inicio" onClick={() => scrollTo("#inicio")}>
             <img src={logoWhite} alt="PagoPay" className="h-8 w-auto" />
