@@ -64,10 +64,8 @@ const Navbar = ({ currentRegion = "global" }: NavbarProps) => {
   const switchRegion = (regionId: Region) => {
     const config = getRegionById(regionId);
     localStorage.setItem("pagopay_region_chosen", "true");
-    // Switch language to region default if current isn't available
-    if (!config.languages.includes(i18n.language)) {
-      i18n.changeLanguage(config.defaultLang);
-    }
+    if (regionId === "latam") i18n.changeLanguage("es");
+    else i18n.changeLanguage(config.defaultLang);
     navigate(config.path);
     setRegionDropdownOpen(false);
     setMobileOpen(false);
