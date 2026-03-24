@@ -1,4 +1,4 @@
-import appPreview from "@/assets/app-preview.jpg";
+import pagopay3d from "@/assets/pagopay-3d.png";
 import { Check } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
