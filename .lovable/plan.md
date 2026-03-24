@@ -1,84 +1,42 @@
 
 
-## Analysis Summary
+## Plan: Redesign Security Section to Match Reference
 
-The live mypagopay.com site has the same copy as our current build, plus these additional elements we're missing:
+### What changes
 
-1. **Sticky navigation** with hamburger menu (links: Home, About, PagoPay, Security, FAQ)
-2. **Hero section** uses "YOUR MONEY, IN MOTION" (not "SINGLE APP FOR SPENDING, SENDING, AND BANKING") with a cleaner left-aligned layout, balance widget overlay, and the transparent card
-3. **Crypto ticker bar** - scrolling marquee of live crypto prices (Bitcoin, Ethereum, Tether, etc.) between FAQ and footer
-4. **Footer** is minimal: nav links (Home, About, PagoPay, Security, FAQ) + social icons (X, LinkedIn) -- no legal disclaimer block or legal policy links in the footer itself
-5. **No separate legal policy dialogs in footer** - the privacy policy consent is inline in the signup form only
-6. **English + Spanish** - full i18n for the entire site
+**1. Layout: 2-column grid → 4-column grid**
+- Change from `md:grid-cols-2` to `md:grid-cols-2 lg:grid-cols-4` so all 4 cards sit in one row on desktop (matching the screenshot).
 
-### What needs to change
+**2. Card styling to match reference**
+- Light green/lime background (`bg-[#d4f5a0]` or similar) instead of dark `bg-card/80`.
+- Rounded corners with a subtle green border.
+- Dark text (near-black) for titles and body, not `text-foreground`/`text-muted-foreground`.
+- Titles rendered in uppercase bold (matching the screenshot's style).
 
-The copy between the two sites is essentially identical (features, benefits, security, FAQ). The main differences are structural/stylistic. Here's the plan:
+**3. Interactive lift on hover**
+- Add `hover:-translate-y-2 hover:shadow-xl transition-all duration-300` to each card so they lift when hovered.
 
----
+**4. Bold inline text in descriptions**
+- The reference shows specific phrases bolded within descriptions (e.g., "**AES-256 encryption**", "**two-factor authentication (2FA)**", "**biometric login**", "**AI-driven fraud detection engines**", "**FINTRAC (Canada)**", "**international AML, KYC, and data privacy regulations**").
+- Update the i18n JSON (both `en.json` and `es.json`) to split each description into segments with a `bold` flag, OR use a simpler approach: store descriptions with `<strong>` HTML tags and render with `dangerouslySetInnerHTML`.
 
-### Step 1: Add i18n infrastructure
+**5. Heading/subtitle alignment**
+- Change from centered to left-aligned text (matching screenshot).
+- "At **PagoPay**" in subtitle has "PagoPay" bolded — use HTML rendering for this too.
 
-- Install `react-i18next` and `i18next`
-- Create `src/i18n/` with `en.json` and `es.json` translation files containing all site copy
-- Add a language switcher component (EN/ES toggle in the nav)
-- Wrap the app with `I18nextProvider`
+**6. Remove background image overlay**
+- The reference has a clean white/light background, no dark overlay image.
 
-### Step 2: Create a sticky Navbar component
+**7. Update icons**
+- Match the reference icons more closely: use `CreditCard` (or `Laptop`), `FileCode`, `Clock`, `Monitor` from lucide-react to better match the screenshot's icon style.
 
-- PagoPay logo (pagopay-white.png on dark/hero, pagopay-black.png on light sections)
-- Nav links: Home, About, PagoPay, Security, FAQ (smooth scroll anchors)
-- Hamburger menu on mobile
-- Language switcher (EN | ES)
-- Background changes on scroll (transparent over hero, solid on scroll)
+### Files to modify
 
-### Step 3: Update Hero section
+- **`src/components/Security.tsx`** — New layout, card styles, hover effect, left-aligned heading, HTML-rendered descriptions, updated icons, remove background image.
+- **`src/i18n/en.json`** — Update `security.subtitle` and each `security.items[].description` to include `<strong>` tags around bolded phrases.
+- **`src/i18n/es.json`** — Same `<strong>` tag updates for Spanish translations.
 
-- Change heading to "YOUR MONEY, IN MOTION" (matching the live site)
-- Left-aligned text, right side shows transparent card with a floating balance widget overlay
-- Keep "Get PagoPay Card" CTA with HubSpot modal
-- Remove "Partner with Us" button (not on live site)
-- Remove the old full-width logo from the hero (it's now in the navbar)
+### Technical detail
 
-### Step 4: Update section copy to match live site
-
-- **Features section**: Content matches -- keep as-is but add section `id="about"` for nav anchor
-- **Benefits section**: Add "Freedom to Move. Power to Spend." subtitle, update benefit descriptions to match live site (e.g., "Convert crypto to EUR, USD or local currency in seconds")
-- **Security section**: Content matches -- add `id="security"` anchor
-- **FAQ section**: Content matches -- add `id="faq"` anchor
-
-### Step 5: Add Crypto Ticker component
-
-- Scrolling marquee bar showing live crypto prices
-- Fetch from CoinGecko public API (no key needed) via a simple client-side fetch
-- Display: coin name, price, with infinite scroll animation
-- Place between FAQ and Footer
-
-### Step 6: Simplify Footer
-
-- Match the live site's minimal footer: nav links + social icons (X, LinkedIn)
-- Move legal disclaimer and policy dialogs: keep them accessible but in a less prominent position (small links below the nav)
-- Keep existing legal policy dialog components
-
-### Step 7: Translate all content
-
-- Extract all hardcoded strings from every component into i18n keys
-- Create complete Spanish translations for all copy, legal policies, FAQ, etc.
-
----
-
-### Assets needed from you
-
-We have most assets already. One thing to confirm:
-- **Balance widget image**: The live site shows a floating "Balance $2200.50 / Top up" widget over the hero card. Do you have this as a separate asset, or should we build it as a styled HTML element?
-- **3D card image** (`pagopay-3d.png`): Used in the features section on the live site. We don't have this asset. Can you provide it, or should we skip it?
-
-### Technical details
-
-- **i18n**: `react-i18next` with JSON resource bundles, browser language detection, `localStorage` persistence
-- **Crypto ticker**: CoinGecko `/api/v3/coins/markets` endpoint (free, no API key), CSS `@keyframes` marquee animation, 60-second refresh interval
-- **Navbar scroll**: `useEffect` with `IntersectionObserver` or scroll listener to toggle transparent/solid background
-- **Section anchors**: `id` attributes + `scroll-behavior: smooth` in CSS
-- **Files modified**: Hero.tsx, Footer.tsx, Features.tsx, Benefits.tsx, FAQ.tsx, Security.tsx, App.tsx, index.css
-- **Files created**: `src/components/Navbar.tsx`, `src/components/CryptoTicker.tsx`, `src/i18n/en.json`, `src/i18n/es.json`, `src/i18n/index.ts`
+Descriptions will use `dangerouslySetInnerHTML={{ __html: feature.description }}` to render the bold tags. This is safe since the content comes from our own i18n JSON files, not user input.
 
