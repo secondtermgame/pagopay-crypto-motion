@@ -1,4 +1,4 @@
-export type Region = "global" | "latam" | "africa" | "asia";
+export type Region = "global" | "latam" | "africa";
 
 export interface RegionConfig {
   id: Region;
@@ -11,7 +11,7 @@ export const regions: RegionConfig[] = [
   { id: "global", path: "/", languages: ["en", "es", "fr"], defaultLang: "en" },
   { id: "latam", path: "/latam", languages: ["es", "en"], defaultLang: "es" },
   { id: "africa", path: "/africa", languages: ["fr", "en"], defaultLang: "fr" },
-  { id: "asia", path: "/asia", languages: ["en"], defaultLang: "en" },
+  
 ];
 
 export const getRegionByPath = (path: string): RegionConfig => {
@@ -36,16 +36,8 @@ const africaCountries = new Set([
   "TZ", "TG", "TN", "UG", "ZM", "ZW",
 ]);
 
-const asiaCountries = new Set([
-  "AF", "AM", "AZ", "BH", "BD", "BT", "BN", "KH", "CN", "GE", "IN", "ID",
-  "IR", "IQ", "IL", "JP", "JO", "KZ", "KW", "KG", "LA", "LB", "MY", "MV",
-  "MN", "MM", "NP", "OM", "PK", "PH", "QA", "SA", "SG", "KR", "LK", "SY",
-  "TW", "TJ", "TH", "TL", "TR", "TM", "AE", "UZ", "VN", "YE",
-]);
-
 export const getRegionFromCountryCode = (code: string): Region => {
   if (latamCountries.has(code)) return "latam";
   if (africaCountries.has(code)) return "africa";
-  if (asiaCountries.has(code)) return "asia";
   return "global";
 };
