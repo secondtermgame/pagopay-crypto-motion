@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { X } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 interface SignupFormProps {
   open: boolean;
@@ -33,6 +34,7 @@ declare global {
 }
 
 export function SignupForm({ open, onOpenChange }: SignupFormProps) {
+  const { t } = useTranslation();
   const formContainerRef = useRef<HTMLDivElement>(null);
   const scriptLoadedRef = useRef(false);
 
@@ -87,9 +89,9 @@ export function SignupForm({ open, onOpenChange }: SignupFormProps) {
         aria-describedby="hubspot-form-description"
       >
         <DialogHeader>
-          <DialogTitle className="text-2xl font-bold">Get your PagoPay card</DialogTitle>
+          <DialogTitle className="text-2xl font-bold">{t("signup.title")}</DialogTitle>
           <DialogDescription id="hubspot-form-description">
-            Fill out the form below to start your application. We'll get back to you shortly.
+            {t("signup.description")}
           </DialogDescription>
         </DialogHeader>
 

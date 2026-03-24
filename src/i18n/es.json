@@ -1,0 +1,127 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "pagopay": "PagoPay",
+    "security": "Seguridad",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "heading1": "TU DINERO,",
+    "heading2": "EN MOVIMIENTO",
+    "subtitle": "PagoPay simplifica tus finanzas, ya sea cripto o moneda fiduciaria",
+    "cta": "Obtén tu Tarjeta PagoPay"
+  },
+  "balance": {
+    "title": "Saldo",
+    "amount": "$2,200.50",
+    "topup": "Recargar"
+  },
+  "features": {
+    "heading": "Tu Dinero, En Movimiento",
+    "subtitle": "Experimenta un control financiero fluido entre cripto y fiat — con transferencias instantáneas, intercambios sin esfuerzo y acceso seguro a tu tarjeta. Todo impulsado por la billetera moderna e infraestructura en tiempo real de PagoPay.",
+    "walletHeading": "Billetera Digital Todo-en-Uno para Cripto y Fiat",
+    "items": [
+      {
+        "title": "Billeteras Custodiadas Seguras",
+        "description": "Almacena y gestiona fácilmente tus activos cripto en una billetera custodiada segura — conectada a tu tarjeta prepagada y accesible desde cualquier lugar, en cualquier momento."
+      },
+      {
+        "title": "Transferencias Instantáneas entre Billeteras",
+        "description": "Envía cripto o fiat al instante a otros usuarios de PagoPay — ya sea al otro lado de la calle o del mundo. Las transferencias se liquidan en segundos sin complicaciones."
+      },
+      {
+        "title": "Intercambios Inteligentes de Divisas",
+        "description": "Convierte entre cripto y fiat a tasas en tiempo real con un margen bajo y claro. Sin comisiones ocultas — solo precios transparentes y competitivos."
+      },
+      {
+        "title": "Seguridad de Nivel Empresarial",
+        "description": "Tus fondos están protegidos por encriptación estándar de la industria, infraestructura segura y KYC verificado. Todos los pagos e intercambios están protegidos a través de nuestros socios regulados."
+      }
+    ]
+  },
+  "benefits": {
+    "heading": "Diseñado para Cada Activo que Posees",
+    "subtitle": "Ya sea que tengas Bitcoin, Ethereum o stablecoins, PagoPay te da acceso instantáneo a tu cripto — y el poder de gastarlo como efectivo.",
+    "slogan": "Libertad para Moverte. Poder para Gastar.",
+    "items": [
+      "Intercambios Simples de Cripto a Fiat",
+      "Gastos Globales con Tarjetas Virtuales o Físicas",
+      "Tasas de Cambio en Tiempo Real",
+      "Sin Comisiones Ocultas",
+      "Seguridad de Nivel Bancario",
+      "Soporte Humano 24/7"
+    ]
+  },
+  "security": {
+    "heading": "Seguridad en la que Puedes Confiar",
+    "subtitle": "En PagoPay, tu seguridad no es algo secundario — es nuestra base. Utilizamos tecnología avanzada y nos adherimos a los más altos estándares de la industria para garantizar que tus fondos, datos e identidad permanezcan seguros en todo momento.",
+    "items": [
+      {
+        "title": "Encriptación de Grado Militar",
+        "description": "Todos los datos sensibles están protegidos utilizando encriptación AES-256, el mismo estándar de grado militar confiado por bancos y gobiernos de todo el mundo."
+      },
+      {
+        "title": "Autenticación Multifactor y Biométrica",
+        "description": "Asegura tu cuenta con autenticación de dos factores (2FA) e inicio de sesión biométrico, dándote control total y protección adicional contra acceso no autorizado."
+      },
+      {
+        "title": "Monitoreo en Tiempo Real con IA",
+        "description": "Nuestros sistemas son monitoreados continuamente por motores de detección de fraude impulsados por IA, escaneando actividad sospechosa 24/7 y bloqueando automáticamente amenazas en tiempo real."
+      },
+      {
+        "title": "Cumplimiento Regulatorio Completo",
+        "description": "PagoPay está en proceso de registro con FINTRAC (Canadá) y opera bajo estricta adherencia a las regulaciones internacionales de AML, KYC y privacidad de datos, incluyendo los estándares GDPR y PCI DSS."
+      }
+    ]
+  },
+  "faq": {
+    "heading": "Preguntas Frecuentes",
+    "subtitle": "Todo lo que necesitas saber sobre PagoPay",
+    "items": [
+      {
+        "question": "1. ¿Qué es PagoPay?",
+        "answer": "PagoPay es una plataforma de billetera digital y tarjeta que te permite almacenar, enviar, convertir y gastar tanto criptomonedas como moneda fiduciaria. Carga tu billetera usando cripto o transferencia bancaria, convierte sin problemas y paga globalmente donde se acepten las principales tarjetas."
+      },
+      {
+        "question": "2. ¿Cómo empiezo con PagoPay?",
+        "answer": "Comenzar es rápido y fácil. Crea una cuenta, completa tu verificación de identidad y fondea tu billetera usando cripto o una cuenta bancaria conectada. Una vez aprobado, puedes solicitar tu tarjeta PagoPay virtual o física y comenzar a gastar tus fondos en todo el mundo.\n\nSé de los primeros en acceder a PagoPay. Regístrate ahora para reservar tu lugar y recibir acceso anticipado a nuestras tarjetas mientras nos expandimos por Canadá, las Américas y Europa."
+      },
+      {
+        "question": "3. ¿Qué criptomonedas soporta PagoPay?",
+        "answer": "PagoPay soporta una amplia gama de criptomonedas principales, incluyendo Bitcoin, Ethereum, USDT, USDC y muchas otras. Nuestra plataforma está diseñada para evolucionar con las necesidades del usuario, por lo que continuamente expandimos nuestra lista de activos soportados para asegurar la máxima flexibilidad."
+      },
+      {
+        "question": "4. ¿Hay alguna tarifa por usar PagoPay?",
+        "answer": "PagoPay sigue un modelo de precios transparente y escalonado diseñado para adaptarse a tu uso y volumen. No hay tarifas de mantenimiento mensual. Aplicamos una tarifa de conversión competitiva cuando intercambias entre cripto y fiat, y nuestros niveles ofrecen tarifas reducidas para mayor uso."
+      },
+      {
+        "question": "5. ¿Mi dinero está seguro con PagoPay?",
+        "answer": "Sí. En PagoPay, la seguridad es fundamental. Utilizamos encriptación AES-256, autenticación multifactor y nos asociamos con custodios regulados como ALT 5 Sigma para proteger los fondos de los usuarios y gestionar las operaciones cripto. Todos los saldos de tarjetas fiat se mantienen con bancos emisores autorizados y cumplimos plenamente con las regulaciones financieras y de protección de datos internacionales."
+      },
+      {
+        "question": "6. ¿Puedo usar PagoPay internacionalmente?",
+        "answer": "Sí. Las tarjetas PagoPay se pueden usar en todo el mundo donde se acepten las principales redes de tarjetas. Aunque todas las tarjetas actualmente operan en USD, no cobramos tarifas adicionales de cambio de divisas cuando gastas en otras monedas."
+      },
+      {
+        "question": "7. ¿Cuánto tardan las conversiones de cripto a fiat?",
+        "answer": "Las conversiones de cripto a fiat en PagoPay se procesan instantáneamente a tasas de mercado. Cuando cargas tu tarjeta o inicias un intercambio en la app, tu cripto se convierte inmediatamente a USD y queda disponible para gastar. No hay demoras y tus fondos están disponibles tan pronto como se confirma la transacción."
+      },
+      {
+        "question": "8. ¿Qué debo hacer si mi tarjeta se pierde o es robada?",
+        "answer": "Si tu tarjeta PagoPay se pierde o es robada, puedes congelarla inmediatamente dentro de la app para prevenir uso no autorizado. Nuestro equipo de soporte está disponible 24/7 para ayudarte a asegurar tu cuenta y emitir una tarjeta de reemplazo rápidamente."
+      }
+    ]
+  },
+  "footer": {
+    "disclaimer": "Aviso Legal: PagoPay (9538-8310 Québec Inc.) es una empresa de tecnología financiera y no es un banco. Los servicios bancarios son proporcionados por nuestras instituciones asociadas autorizadas. Las inversiones en criptomonedas conllevan riesgo y el valor de los activos digitales puede fluctuar. Los servicios de tarjeta PagoPay están sujetos a verificación de identidad y aprobación. Pueden aplicarse tarifas para ciertas transacciones. Consulte nuestros Términos de Servicio y Política de Privacidad para detalles completos.",
+    "copyright": "© 2025 PagoPay. Todos los derechos reservados.",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio",
+    "cookies": "Política de Cookies"
+  },
+  "signup": {
+    "title": "Obtén tu tarjeta PagoPay",
+    "description": "Completa el formulario a continuación para iniciar tu solicitud. Nos pondremos en contacto contigo pronto."
+  }
+}

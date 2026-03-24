@@ -109,6 +109,10 @@ export default {
             transform: "translateY(-20px)",
           },
         },
+        "marquee": {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -116,6 +120,7 @@ export default {
         "fade-in": "fade-in 0.6s ease-out",
         "scale-in": "scale-in 0.4s ease-out",
         "float": "float 6s ease-in-out infinite",
+        "marquee": "marquee 30s linear infinite",
       },
       backgroundImage: {
         "gradient-hero": "var(--gradient-hero)",

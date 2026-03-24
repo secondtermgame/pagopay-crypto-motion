@@ -1,0 +1,127 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "pagopay": "PagoPay",
+    "security": "Security",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "heading1": "YOUR MONEY,",
+    "heading2": "IN MOTION",
+    "subtitle": "PagoPay makes finances simple, no matter crypto or fiat",
+    "cta": "Get PagoPay Card"
+  },
+  "balance": {
+    "title": "Balance",
+    "amount": "$2,200.50",
+    "topup": "Top up"
+  },
+  "features": {
+    "heading": "Your Money, In Motion",
+    "subtitle": "Experience seamless financial control across crypto and fiat — with instant transfers, effortless swaps, and secure card access. All powered by PagoPay's modern wallet and real-time infrastructure.",
+    "walletHeading": "All-In-One Digital Wallet for Crypto and Fiat",
+    "items": [
+      {
+        "title": "Secure Custodial Wallets",
+        "description": "Easily store and manage your crypto assets in one secure, custodial wallet — connected to your prepaid card and accessible anywhere, anytime."
+      },
+      {
+        "title": "Instant Wallet-to-Wallet Transfers",
+        "description": "Send crypto or fiat instantly to other PagoPay users — whether they're across the street or across the world. Transfers settle in seconds with zero hassle."
+      },
+      {
+        "title": "Smart Currency Swaps",
+        "description": "Convert between crypto and fiat at real-time rates with a clear, low-margin spread. No hidden fees — just transparent, competitive pricing."
+      },
+      {
+        "title": "Enterprise-Grade Security",
+        "description": "Your funds are protected by industry-standard encryption, secure infrastructure, and verified KYC. All payments and exchanges are safeguarded via our regulated partners."
+      }
+    ]
+  },
+  "benefits": {
+    "heading": "Built for Every Asset You Own",
+    "subtitle": "Whether you're holding Bitcoin, Ethereum, or stablecoins, PagoPay gives you instant access to your crypto — and the power to spend it like cash.",
+    "slogan": "Freedom to Move. Power to Spend.",
+    "items": [
+      "Simple Crypto-to-Fiat Swaps",
+      "Global Spending with Virtual or Physical Cards",
+      "Real-Time Exchange Rates",
+      "No Hidden Fees",
+      "Bank-Grade Security",
+      "24/7 Human Support"
+    ]
+  },
+  "security": {
+    "heading": "Security You Can Trust",
+    "subtitle": "At PagoPay, your security isn't an afterthought — it's our foundation. We use advanced technology and adhere to the highest industry standards to ensure your funds, data, and identity remain safe at all times.",
+    "items": [
+      {
+        "title": "Military-Grade Encryption",
+        "description": "All sensitive data is protected using AES-256 encryption, the same military-grade standard trusted by banks and governments across the globe."
+      },
+      {
+        "title": "Multi-Factor & Biometric Authentication",
+        "description": "Secure your account with two-factor authentication (2FA) and biometric login, giving you full control and added protection from unauthorized access."
+      },
+      {
+        "title": "Real-Time AI-Powered Monitoring",
+        "description": "Our systems are continuously monitored by AI-driven fraud detection engines, scanning for suspicious activity 24/7 and automatically blocking threats in real time."
+      },
+      {
+        "title": "Full Regulatory Compliance",
+        "description": "PagoPay is in process of registering with FINTRAC (Canada) and operates under strict adherence to international AML, KYC, and data privacy regulations, including GDPR and PCI DSS standards."
+      }
+    ]
+  },
+  "faq": {
+    "heading": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about PagoPay",
+    "items": [
+      {
+        "question": "1. What is PagoPay?",
+        "answer": "PagoPay is a digital wallet and card platform that lets you store, send, convert, and spend both crypto and fiat currencies. Load your wallet using crypto or bank transfer, convert seamlessly, and pay globally wherever major cards are accepted."
+      },
+      {
+        "question": "2. How Do I Get Started with PagoPay?",
+        "answer": "Getting started is fast and easy. Create an account, complete your identity verification, and fund your wallet using crypto or a connected bank account. Once approved, you can request your virtual or physical PagoPay card and begin spending your funds worldwide.\n\nBe among the first to access PagoPay. Sign up now to reserve your spot and receive early access to our cards as we roll out across Canada, the Americas and Europe."
+      },
+      {
+        "question": "3. Which cryptocurrencies does PagoPay support?",
+        "answer": "PagoPay supports a wide range of major cryptocurrencies, including Bitcoin, Ethereum, USDT, USDC, and many others. Our platform is designed to evolve with user needs, so we continuously expand our list of supported assets to ensure maximum flexibility. Whether you're using crypto for everyday purchases or managing your portfolio, PagoPay gives you the freedom to convert and spend with ease."
+      },
+      {
+        "question": "4. Are there any fees for using PagoPay?",
+        "answer": "PagoPay follows a transparent, tiered pricing model designed to match your usage and volume. There are no monthly maintenance fees. We apply a competitive conversion fee when you exchange between crypto and fiat, and our tiers offer reduced rates for higher usage. For a full breakdown of fees across all tiers, visit our pricing page."
+      },
+      {
+        "question": "5. Is my money safe with PagoPay?",
+        "answer": "Yes. At PagoPay, security is fundamental. We use AES-256 encryption, multi-factor authentication, and partner with regulated custodians like ALT 5 Sigma to safeguard user funds and manage crypto operations. All fiat card balances are held with licensed issuing banks, and we comply fully with international financial and data protection regulations. Your money is handled with the same care and protection as traditional financial institutions."
+      },
+      {
+        "question": "6. Can I use PagoPay internationally?",
+        "answer": "Yes. PagoPay cards can be used worldwide anywhere major card networks are accepted. While all cards currently operate in USD, we do not charge any additional foreign exchange fees when you spend in other currencies. Your crypto is converted to USD at the point of load or transaction, giving you a seamless and cost-efficient global payment experience."
+      },
+      {
+        "question": "7. How long do crypto-to-fiat conversions take?",
+        "answer": "Crypto-to-fiat conversions on PagoPay are processed instantly at market rates. When you load your card or initiate a swap in the app, your crypto is immediately converted to USD and made available for spending. There are no delays and your funds are usable as soon as the transaction is confirmed."
+      },
+      {
+        "question": "8. What should I do if my card is lost or stolen?",
+        "answer": "If your PagoPay card is lost or stolen, you can immediately freeze it within the app to prevent unauthorized use. Our support team is available 24/7 to assist you with securing your account and issuing a replacement card promptly."
+      }
+    ]
+  },
+  "footer": {
+    "disclaimer": "Legal Disclaimer: PagoPay (9538-8310 Québec Inc.) is a financial technology company and not a bank. Banking services are provided by our licensed partner institutions. Cryptocurrency investments carry risk, and the value of digital assets may fluctuate. PagoPay card services are subject to identity verification and approval. Fees may apply for certain transactions. Please refer to our Terms of Service and Privacy Policy for complete details. PagoPay is committed to regulatory compliance and operates in accordance with applicable financial services laws. By using PagoPay services, you acknowledge that you have read and understood these terms.",
+    "copyright": "© 2025 PagoPay. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy"
+  },
+  "signup": {
+    "title": "Get your PagoPay card",
+    "description": "Fill out the form below to start your application. We'll get back to you shortly."
+  }
+}
