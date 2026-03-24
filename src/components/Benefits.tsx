@@ -12,9 +12,9 @@ const Benefits = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
             <img
-              src={appPreview}
-              alt="PagoPay App"
-              className="w-full max-w-md mx-auto rounded-3xl shadow-2xl"
+              src={pagopay3d}
+              alt="PagoPay"
+              className="w-full max-w-sm mx-auto animate-float drop-shadow-2xl"
             />
           </div>
 
