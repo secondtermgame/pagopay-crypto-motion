@@ -296,7 +296,7 @@ const AfricaLanding = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1 relative">
               <div className="relative mx-auto max-w-sm">
-                <img src={appPreview} alt="PagoPay App" className="w-full rounded-[2.5rem] shadow-2xl" />
+                <img src={appPreviewEn} alt="PagoPay App" className="w-full rounded-[2.5rem] shadow-2xl" />
                 <div className="absolute -bottom-4 -right-4 md:-right-8 bg-card rounded-2xl p-4 shadow-2xl border border-border animate-float">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-full bg-gradient-to-br from-africa-gold to-africa-teal flex items-center justify-center">
