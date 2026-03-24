@@ -243,7 +243,7 @@ const LatamLanding = () => {
             <div className="w-20 h-1.5 bg-gradient-to-r from-latam-lime to-latam-cyan rounded-full mx-auto" />
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {benefits.map((item, i) => {
               const Icon = benefitIcons[i];
               return (
