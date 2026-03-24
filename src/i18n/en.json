@@ -155,7 +155,7 @@
       "step": "Step",
       "steps": [
         { "title": "Send your crypto", "desc": "Deposit BTC, ETH or USDT" },
-        { "title": "Convert instantly", "desc": "Swap to local currency in seconds" },
+        { "title": "Convert instantly", "desc": "Swap to USD in seconds" },
         { "title": "Pay easily", "desc": "Use your card worldwide" }
       ]
     },
