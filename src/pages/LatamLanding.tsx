@@ -25,6 +25,7 @@ const LatamLanding = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [regionDropdownOpen, setRegionDropdownOpen] = useState(false);
+  const [langDropdownOpen, setLangDropdownOpen] = useState(false);
 
   // Default to Spanish for LATAM if not already ES or EN
   useEffect(() => {
