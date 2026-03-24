@@ -118,3 +118,14 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+/* LATAM Landing Page Theme */
+.latam-theme {
+  --latam-purple: 271 81% 56%;
+  --latam-dark: 260 30% 10%;
+  --latam-teal: 174 72% 36%;
+  --latam-lime: 84 81% 44%;
+  --latam-cyan: 187 85% 53%;
+  --latam-orange: 28 87% 55%;
+  --latam-pink: 340 82% 52%;
+}
