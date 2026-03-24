@@ -78,7 +78,7 @@ const AfricaLanding = () => {
   return (
     <div className="min-h-screen scroll-smooth africa-theme">
       {/* ==================== NAVBAR ==================== */}
-      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-primary/95 backdrop-blur-md shadow-lg" : "bg-transparent"}`}>
+      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-[#1a1a2e] shadow-lg" : "bg-transparent"}`}>
         <div className="container mx-auto px-4 flex items-center justify-between h-16">
           <a href="#home-africa" onClick={() => scrollTo("#home-africa")}>
             <img src={logoWhite} alt="PagoPay" className="h-8 w-auto" />
