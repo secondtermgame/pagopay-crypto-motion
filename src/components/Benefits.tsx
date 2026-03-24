@@ -19,7 +19,7 @@ const Benefits = () => {
           </div>
 
           <div className="order-1 lg:order-2">
-            <p className="text-accent-foreground font-semibold text-lg mb-2 bg-gradient-accent bg-clip-text text-transparent">
+            <p className="font-semibold text-lg mb-2 text-primary">
               {t("benefits.slogan")}
             </p>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
