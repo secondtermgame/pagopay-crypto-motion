@@ -208,6 +208,81 @@
       "cookies": "Cookie Policy",
       "disclaimer": "Legal Disclaimer: PagoPay is a financial technology platform and not a bank. Certain banking or payment services may be provided through licensed financial institution partners. PagoPay Payment Services is operated by 9538-8310 Québec Inc., a registered Money Services Business with FINTRAC. Cryptocurrency transactions involve risk and the value of digital assets may fluctuate. PagoPay is operated from Canada. Services are provided cross-border and may not be regulated in your jurisdiction. Card services are issued by licensed partners outside your country.",
       "copyright": "© 2025 PagoPay. All rights reserved."
+  },
+  "africa": {
+    "nav": {
+      "home": "Home",
+      "howItWorks": "How it works",
+      "benefits": "Benefits",
+      "security": "Security"
+    },
+    "cta": "Get your free account",
+    "hero": {
+      "heading1": "Send money home.",
+      "heading2": "Pay anywhere.",
+      "subtitle": "Convert your crypto to USD instantly. Spend with your PagoPay card across Africa and beyond — no bank account needed.",
+      "trust": "Secure • Instant • No hidden fees"
+    },
+    "balance": {
+      "title": "Balance",
+      "topup": "+ Top up"
+    },
+    "howItWorks": {
+      "heading": "How it works",
+      "step": "Step",
+      "note": "No extra steps. Everything happens automatically.",
+      "steps": [
+        { "title": "Deposit your crypto", "desc": "Send BTC, ETH or USDT to your PagoPay wallet." },
+        { "title": "Instant conversion", "desc": "Your crypto is automatically converted to USD." },
+        { "title": "Spend or withdraw", "desc": "Use your PagoPay card anywhere or withdraw at any ATM." }
+      ]
+    },
+    "benefits": {
+      "heading": "Built for Africa. Accepted everywhere.",
+      "items": [
+        { "title": "No borders", "desc": "Pay in any country, any currency" },
+        { "title": "Zero FX fees", "desc": "No foreign exchange fees when you spend" },
+        { "title": "No bank needed", "desc": "All you need is your phone and crypto" },
+        { "title": "Instant transfers", "desc": "Send money to family and friends in seconds" },
+        { "title": "ATM withdrawals", "desc": "Get cash from any ATM worldwide" },
+        { "title": "Always protected", "desc": "Bank-level security on every transaction" }
+      ]
+    },
+    "showcase": {
+      "heading1": "Your money,",
+      "heading2": " your way",
+      "subtitle": "Convert crypto, manage your balance, send money, and pay — all from the PagoPay app.",
+      "checks": [
+        "Instant crypto to USD conversion",
+        "Physical prepaid card",
+        "Real-time balance and transaction tracking"
+      ],
+      "paymentSuccess": "Payment successful"
+    },
+    "trust": {
+      "heading": "Your funds are protected",
+      "subtitle": "We partner with regulated financial institutions to keep your money safe.",
+      "items": [
+        { "title": "Bank-level encryption", "desc": "The highest standard of data protection" },
+        { "title": "Fully regulated", "desc": "Compliant with international AML and KYC standards" },
+        { "title": "Audited infrastructure", "desc": "Continuous monitoring and third-party audits" }
+      ]
+    },
+    "finalCta": {
+      "heading": "Start spending your crypto today",
+      "subtitle": "Open your free account in under 3 minutes",
+      "button": "Create free account"
+    },
+    "footer": {
+      "tagline": "Your crypto. Your money. Your freedom.",
+      "product": "Product",
+      "legal": "Legal",
+      "support": "Support",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy",
+      "disclaimer": "Legal Disclaimer: PagoPay is a financial technology platform and not a bank. Certain banking or payment services may be provided through licensed financial institution partners. PagoPay Payment Services is operated by 9538-8310 Québec Inc., a registered Money Services Business with FINTRAC. Cryptocurrency transactions involve risk and the value of digital assets may fluctuate. PagoPay is operated from Canada. Services are provided cross-border and may not be regulated in your jurisdiction. Card services are issued by licensed partners outside your country.",
+      "copyright": "© 2025 PagoPay. All rights reserved."
     }
   }
 }

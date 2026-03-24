@@ -130,5 +130,81 @@
     "africa": "Afrique",
     "asia": "Asie",
     "selector": "Région"
+  },
+  "africa": {
+    "nav": {
+      "home": "Accueil",
+      "howItWorks": "Comment ça marche",
+      "benefits": "Avantages",
+      "security": "Sécurité"
+    },
+    "cta": "Créer un compte gratuit",
+    "hero": {
+      "heading1": "Envoyez de l'argent.",
+      "heading2": "Payez partout.",
+      "subtitle": "Convertissez vos crypto en USD instantanément. Payez avec votre carte PagoPay en Afrique et dans le monde — sans compte bancaire.",
+      "trust": "Sécurisé • Instantané • Sans frais cachés"
+    },
+    "balance": {
+      "title": "Solde",
+      "topup": "+ Recharger"
+    },
+    "howItWorks": {
+      "heading": "Comment ça marche",
+      "step": "Étape",
+      "note": "Aucune étape supplémentaire. Tout est automatique.",
+      "steps": [
+        { "title": "Déposez vos crypto", "desc": "Envoyez du BTC, ETH ou USDT vers votre compte PagoPay." },
+        { "title": "Conversion instantanée", "desc": "Vos crypto sont automatiquement convertis en USD." },
+        { "title": "Dépensez ou retirez", "desc": "Utilisez votre carte PagoPay partout ou retirez à n'importe quel guichet." }
+      ]
+    },
+    "benefits": {
+      "heading": "Conçu pour l'Afrique. Accepté partout.",
+      "items": [
+        { "title": "Sans frontières", "desc": "Payez dans n'importe quel pays, n'importe quelle devise" },
+        { "title": "Zéro frais FX", "desc": "Pas de frais de change lorsque vous dépensez" },
+        { "title": "Pas de banque nécessaire", "desc": "Tout ce qu'il vous faut, c'est votre téléphone et vos crypto" },
+        { "title": "Transferts instantanés", "desc": "Envoyez de l'argent à votre famille en quelques secondes" },
+        { "title": "Retraits aux guichets", "desc": "Obtenez du cash à n'importe quel guichet dans le monde" },
+        { "title": "Toujours protégé", "desc": "Sécurité bancaire sur chaque transaction" }
+      ]
+    },
+    "showcase": {
+      "heading1": "Votre argent,",
+      "heading2": " à votre façon",
+      "subtitle": "Convertissez vos crypto, gérez votre solde, envoyez de l'argent et payez — tout depuis l'appli PagoPay.",
+      "checks": [
+        "Conversion crypto vers USD instantanée",
+        "Carte prépayée physique",
+        "Suivi du solde et des transactions en temps réel"
+      ],
+      "paymentSuccess": "Paiement réussi"
+    },
+    "trust": {
+      "heading": "Vos fonds sont protégés",
+      "subtitle": "Nous collaborons avec des institutions financières réglementées pour garder votre argent en sécurité.",
+      "items": [
+        { "title": "Chiffrement bancaire", "desc": "Le plus haut standard de protection des données" },
+        { "title": "Entièrement réglementé", "desc": "Conforme aux normes internationales AML et KYC" },
+        { "title": "Infrastructure auditée", "desc": "Surveillance continue et audits par des tiers" }
+      ]
+    },
+    "finalCta": {
+      "heading": "Commencez à dépenser vos crypto aujourd'hui",
+      "subtitle": "Ouvrez votre compte gratuit en moins de 3 minutes",
+      "button": "Créer un compte gratuit"
+    },
+    "footer": {
+      "tagline": "Vos crypto. Votre argent. Votre liberté.",
+      "product": "Produit",
+      "legal": "Juridique",
+      "support": "Support",
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d'utilisation",
+      "cookies": "Politique de cookies",
+      "disclaimer": "Avis juridique : PagoPay est une plateforme de technologie financière et non une banque. Certains services bancaires ou de paiement peuvent être fournis par des institutions financières partenaires autorisées. PagoPay est exploité depuis le Canada. Les services sont fournis de manière transfrontalière et peuvent ne pas être réglementés dans votre juridiction. Les services de carte sont émis par des partenaires agréés en dehors de votre pays.",
+      "copyright": "© 2025 PagoPay. Tous droits réservés."
+    }
   }
 }
