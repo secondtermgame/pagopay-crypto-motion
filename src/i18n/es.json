@@ -159,7 +159,7 @@
       "steps": [
         { "title": "Envía tu crypto", "desc": "Deposita BTC, ETH o USDT en tu cuenta PagoPay." },
         { "title": "Conversión automática", "desc": "Tu crypto se convierte automáticamente a USD." },
-        { "title": "Paga sin límites", "desc": "Usa tu tarjeta PagoPay en cualquier lugar del mundo." }
+        { "title": "Paga sin límites", "desc": "Usa tu tarjeta PagoPay en cualquier lugar del mundo o retira en cualquier cajero automático." }
       ]
     },
     "benefits": {

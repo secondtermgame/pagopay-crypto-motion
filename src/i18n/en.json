@@ -159,7 +159,7 @@
       "steps": [
         { "title": "Send your crypto", "desc": "Deposit BTC, ETH or USDT into your PagoPay account." },
         { "title": "Automatic conversion", "desc": "Your crypto is automatically converted to USD." },
-        { "title": "Pay without limits", "desc": "Use your PagoPay card anywhere in the world." }
+        { "title": "Pay without limits", "desc": "Use your PagoPay card anywhere in the world or withdraw at any ATM." }
       ]
     },
     "benefits": {
