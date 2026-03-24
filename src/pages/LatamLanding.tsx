@@ -412,6 +412,7 @@ const LatamLanding = () => {
       </footer>
 
       <SignupForm open={isSignupOpen} onOpenChange={setIsSignupOpen} />
+      <LatamPopup onSignup={() => setIsSignupOpen(true)} />
     </div>
   );
 };
