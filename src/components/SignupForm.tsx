@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { X } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 interface SignupFormProps {
   open: boolean;
