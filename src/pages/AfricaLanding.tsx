@@ -438,7 +438,7 @@ const AfricaLanding = () => {
 
           <div className="border-t border-primary-foreground/10 pt-8">
             <p className="text-xs text-primary-foreground/30 leading-relaxed mb-4">
-              {t("africa.footer.disclaimer")}
+              {t("footer.disclaimer")}
             </p>
             <p className="text-sm text-primary-foreground/40">{t("africa.footer.copyright")}</p>
           </div>
