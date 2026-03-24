@@ -1,4 +1,4 @@
-export type Region = "global" | "latam" | "africa" | "asia";
+export type Region = "global" | "latam" | "africa";
 
 export interface RegionConfig {
   id: Region;
