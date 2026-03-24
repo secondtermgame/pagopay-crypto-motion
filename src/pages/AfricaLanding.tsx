@@ -385,6 +385,8 @@ const AfricaLanding = () => {
         </div>
       </section>
 
+      <CryptoTicker />
+
       {/* ==================== FOOTER ==================== */}
       <footer className="bg-foreground text-primary-foreground">
         <div className="container mx-auto px-4 py-16">
