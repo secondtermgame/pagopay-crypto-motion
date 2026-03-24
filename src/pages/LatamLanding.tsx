@@ -41,11 +41,11 @@ const LatamLanding = () => {
   }, []);
 
   useEffect(() => {
-    if (!regionDropdownOpen) return;
-    const close = () => setRegionDropdownOpen(false);
+    if (!regionDropdownOpen && !langDropdownOpen) return;
+    const close = () => { setRegionDropdownOpen(false); setLangDropdownOpen(false); };
     document.addEventListener("click", close);
     return () => document.removeEventListener("click", close);
-  }, [regionDropdownOpen]);
+  }, [regionDropdownOpen, langDropdownOpen]);
 
   const switchRegion = (regionId: Region) => {
     const config = getRegionById(regionId);
