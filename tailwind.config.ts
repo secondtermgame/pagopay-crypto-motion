@@ -57,6 +57,14 @@ export default {
           orange: "hsl(var(--latam-orange, 28 87% 55%))",
           pink: "hsl(var(--latam-pink, 340 82% 52%))",
         },
+        africa: {
+          gold: "hsl(var(--africa-gold, 38 92% 50%))",
+          amber: "hsl(var(--africa-amber, 25 95% 53%))",
+          earth: "hsl(var(--africa-earth, 20 30% 12%))",
+          teal: "hsl(var(--africa-teal, 163 50% 30%))",
+          dark: "hsl(var(--africa-dark, 20 20% 8%))",
+          warm: "hsl(var(--africa-warm, 30 60% 45%))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
