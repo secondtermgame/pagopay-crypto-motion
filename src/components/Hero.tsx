@@ -47,7 +47,7 @@ const Hero = () => {
                   className="w-full h-auto max-w-lg mx-auto"
                 />
                 {/* Balance widget overlay */}
-                <div className="absolute top-4 right-4 md:top-8 md:right-0 bg-primary-foreground/10 backdrop-blur-md rounded-2xl p-4 border border-primary-foreground/20 shadow-lg">
+                <div className="absolute top-4 left-4 md:top-8 md:left-0 bg-primary-foreground/10 backdrop-blur-md rounded-2xl p-4 border border-primary-foreground/20 shadow-lg">
                   <p className="text-primary-foreground/70 text-xs font-medium mb-1">{t("balance.title")}</p>
                   <p className="text-primary-foreground text-2xl font-bold">{t("balance.amount")}</p>
                   <button className="mt-2 flex items-center gap-1 text-accent text-xs font-semibold">
