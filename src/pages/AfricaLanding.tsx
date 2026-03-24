@@ -67,6 +67,7 @@ const AfricaLanding = () => {
     { label: t("africa.nav.howItWorks"), href: "#how-it-works" },
     { label: t("africa.nav.benefits"), href: "#benefits" },
     { label: t("africa.nav.security"), href: "#security" },
+    { label: t("nav.faq"), href: "#faq" },
   ];
 
   const steps = t("africa.howItWorks.steps", { returnObjects: true }) as { title: string; desc: string }[];
@@ -364,6 +365,35 @@ const AfricaLanding = () => {
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== FAQ ==================== */}
+      <section id="faq" className="py-24 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl md:text-5xl font-extrabold text-foreground mb-4">
+                {t("faq.heading")}
+              </h2>
+              <div className="w-20 h-1.5 bg-gradient-to-r from-africa-gold to-africa-teal rounded-full mx-auto mb-4" />
+              <p className="text-xl text-muted-foreground">{t("faq.subtitle")}</p>
+            </div>
+
+            <div className="space-y-4">
+              {(t("faq.items", { returnObjects: true }) as { question: string; answer: string }[]).map((faq, index) => (
+                <details key={index} className="group border border-border rounded-lg px-6 transition-colors open:border-africa-gold/50">
+                  <summary className="flex items-center justify-between py-4 cursor-pointer text-left text-lg font-semibold text-foreground hover:text-africa-gold transition-colors list-none [&::-webkit-details-marker]:hidden">
+                    {faq.question}
+                    <ChevronDown className="h-5 w-5 text-muted-foreground group-open:rotate-180 transition-transform duration-200 flex-shrink-0 ml-4" />
+                  </summary>
+                  <div className="pb-4 text-muted-foreground leading-relaxed whitespace-pre-line">
+                    {faq.answer}
+                  </div>
+                </details>
+              ))}
+            </div>
           </div>
         </div>
       </section>
