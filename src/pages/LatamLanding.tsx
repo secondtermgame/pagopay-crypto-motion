@@ -184,7 +184,7 @@ const LatamLanding = () => {
                 <img src={heroCard} alt="PagoPay Card" className="w-full h-auto max-w-lg mx-auto drop-shadow-2xl" />
                 <div className="absolute top-4 left-4 md:top-8 md:left-0 bg-white/10 backdrop-blur-xl rounded-2xl p-4 border border-white/20 shadow-2xl">
                   <p className="text-white/60 text-xs font-medium mb-1">{t("latam.balance.title")}</p>
-                  <p className="text-white text-2xl font-bold">$2,200.50 USD</p>
+                  <p className="text-white text-2xl font-bold">$2,200.50</p>
                   <div className="flex items-center gap-2 mt-2">
                     <span className="text-latam-lime text-xs font-semibold">{t("latam.balance.topup")}</span>
                   </div>
