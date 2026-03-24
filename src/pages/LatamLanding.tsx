@@ -367,6 +367,8 @@ const LatamLanding = () => {
         </div>
       </section>
 
+      <CryptoTicker />
+
       {/* ==================== FOOTER ==================== */}
       <footer className="bg-latam-dark text-white">
         <div className="container mx-auto px-4 py-16">
