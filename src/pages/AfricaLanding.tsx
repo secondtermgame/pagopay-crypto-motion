@@ -9,7 +9,7 @@ import CryptoTicker from "@/components/CryptoTicker";
 import { PrivacyPolicyDialog, TermsOfServiceDialog, CookiePolicyDialog } from "@/components/LegalPolicies";
 import logoWhite from "@/assets/pagopay-white.png";
 import heroCard from "@/assets/hero-card.png";
-import appPreview from "@/assets/app-phone-mockup.png";
+import appPreviewEn from "@/assets/app-phone-mockup-en.png";
 
 const stepIcons = [Send, RefreshCw, CreditCard];
 const benefitIcons = [Globe2, Coins, Banknote, Zap, Eye, Shield];
