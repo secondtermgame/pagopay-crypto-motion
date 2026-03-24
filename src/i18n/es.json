@@ -130,5 +130,78 @@
     "africa": "África",
     "asia": "Asia",
     "selector": "Región"
+  },
+  "latam": {
+    "nav": {
+      "home": "Inicio",
+      "howItWorks": "Cómo funciona",
+      "benefits": "Beneficios",
+      "security": "Seguridad"
+    },
+    "cta": "Empieza ahora",
+    "downloadApp": "Descargar app",
+    "hero": {
+      "heading1": "Usa tu crypto",
+      "heading2": "como dinero real",
+      "subtitle": "Convierte tu crypto y paga en cualquier lugar del mundo al instante.",
+      "trust": "Seguro • Rápido • Sin complicaciones"
+    },
+    "balance": {
+      "title": "Saldo",
+      "topup": "+ Recargar"
+    },
+    "howItWorks": {
+      "heading": "Cómo funciona",
+      "step": "Paso",
+      "steps": [
+        { "title": "Envía tu crypto", "desc": "Deposita BTC, ETH o USDT" },
+        { "title": "Convierte al instante", "desc": "Cambia a moneda local en segundos" },
+        { "title": "Paga fácilmente", "desc": "Usa tu tarjeta en todo el mundo" }
+      ]
+    },
+    "benefits": {
+      "heading": "Todo lo que necesitas",
+      "items": [
+        { "title": "Sin fronteras", "desc": "Usa tu dinero en cualquier país" },
+        { "title": "Bajas comisiones", "desc": "Más control para ti" },
+        { "title": "Rápido y simple", "desc": "Todo desde tu celular" },
+        { "title": "Seguro", "desc": "Protección en cada transacción" }
+      ]
+    },
+    "showcase": {
+      "heading1": "Todo en un",
+      "heading2": " solo lugar",
+      "subtitle": "Controla tu dinero, convierte crypto y paga fácilmente desde la app PagoPay.",
+      "checks": [
+        "Convierte crypto a moneda local",
+        "Paga con tarjeta virtual o física",
+        "Consulta tus balances en tiempo real"
+      ],
+      "paymentSuccess": "Pago exitoso"
+    },
+    "trust": {
+      "heading": "Tu dinero está protegido",
+      "subtitle": "Trabajamos con partners globales para garantizar seguridad y transparencia.",
+      "items": [
+        { "title": "Tecnología segura", "desc": "Encriptación de nivel militar para cada transacción" },
+        { "title": "Cumplimiento global", "desc": "Regulados bajo estándares internacionales AML y KYC" },
+        { "title": "Infraestructura confiable", "desc": "Partners regulados y auditoría continua" }
+      ]
+    },
+    "finalCta": {
+      "heading": "Empieza hoy con PagoPay",
+      "subtitle": "Abre tu cuenta gratis en minutos",
+      "button": "Crear cuenta"
+    },
+    "footer": {
+      "tagline": "Tu crypto, tu dinero real.",
+      "product": "Producto",
+      "legal": "Legal",
+      "support": "Soporte",
+      "privacy": "Política de Privacidad",
+      "terms": "Términos de Servicio",
+      "cookies": "Política de Cookies",
+      "disclaimer": "Aviso Legal: PagoPay es una plataforma de tecnología financiera y no un banco. Ciertos servicios bancarios o de pago pueden ser proporcionados a través de instituciones financieras asociadas autorizadas. PagoPay Payment Services es operado por 9538-8310 Québec Inc., un Negocio de Servicios Monetarios registrado ante FINTRAC. Las transacciones con criptomonedas implican riesgo y el valor de los activos digitales puede fluctuar.",
+      "copyright": "© 2025 PagoPay. Todos los derechos reservados."
+    }
   }
-}
