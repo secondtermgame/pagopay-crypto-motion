@@ -89,9 +89,9 @@ export function SignupForm({ open, onOpenChange }: SignupFormProps) {
         aria-describedby="hubspot-form-description"
       >
         <DialogHeader>
-          <DialogTitle className="text-2xl font-bold">Get your PagoPay card</DialogTitle>
+          <DialogTitle className="text-2xl font-bold">{t("signup.title")}</DialogTitle>
           <DialogDescription id="hubspot-form-description">
-            Fill out the form below to start your application. We'll get back to you shortly.
+            {t("signup.description")}
           </DialogDescription>
         </DialogHeader>
 
