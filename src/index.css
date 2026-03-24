@@ -121,11 +121,11 @@ All colors MUST be HSL.
 
 /* LATAM Landing Page Theme */
 .latam-theme {
-  --latam-purple: 271 81% 56%;
-  --latam-dark: 260 30% 10%;
+  --latam-purple: 163 65% 22%;
+  --latam-dark: 163 40% 8%;
   --latam-teal: 174 72% 36%;
   --latam-lime: 84 81% 44%;
-  --latam-cyan: 187 85% 53%;
-  --latam-orange: 28 87% 55%;
-  --latam-pink: 340 82% 52%;
+  --latam-cyan: 163 50% 45%;
+  --latam-orange: 90 70% 50%;
+  --latam-pink: 163 65% 30%;
 }
