@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { X, Bitcoin, ArrowRight, CreditCard, DollarSign, BadgeCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import mascot from "@/assets/pagopay-mascot.png";
+
 
 const DISMISS_KEY = "pagopay_latam_popup_dismissed";
 
@@ -71,19 +71,6 @@ export function LatamPopup({ onSignup }: LatamPopupProps) {
             <X className="h-5 w-5" />
           </button>
 
-          {/* Mascot */}
-          <div className="flex justify-center mb-3">
-            <img
-              src={mascot}
-              alt="PagoPay mascot"
-              className="w-20 h-20 drop-shadow-lg"
-              loading="lazy"
-              width={80}
-              height={80}
-            />
-          </div>
-
-          {/* Headline */}
           <h2 className="text-2xl sm:text-[28px] font-bold text-primary-foreground text-center leading-tight">
             Usa tu crypto sin complicaciones
           </h2>
