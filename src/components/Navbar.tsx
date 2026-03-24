@@ -35,6 +35,7 @@ const Navbar = ({ currentRegion = "global" }: NavbarProps) => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [regionDropdownOpen, setRegionDropdownOpen] = useState(false);
+  const [langDropdownOpen, setLangDropdownOpen] = useState(false);
 
   const regionConfig = getRegionById(currentRegion);
   const availableLanguages = regionConfig.languages;
