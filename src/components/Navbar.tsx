@@ -35,6 +35,7 @@ const Navbar = ({ currentRegion = "global" }: NavbarProps) => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [regionDropdownOpen, setRegionDropdownOpen] = useState(false);
+  const [langDropdownOpen, setLangDropdownOpen] = useState(false);
 
   const regionConfig = getRegionById(currentRegion);
   const availableLanguages = regionConfig.languages;
@@ -45,13 +46,16 @@ const Navbar = ({ currentRegion = "global" }: NavbarProps) => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Close dropdown on outside click
+  // Close dropdowns on outside click
   useEffect(() => {
-    if (!regionDropdownOpen) return;
-    const close = () => setRegionDropdownOpen(false);
+    if (!regionDropdownOpen && !langDropdownOpen) return;
+    const close = () => {
+      setRegionDropdownOpen(false);
+      setLangDropdownOpen(false);
+    };
     document.addEventListener("click", close);
     return () => document.removeEventListener("click", close);
-  }, [regionDropdownOpen]);
+  }, [regionDropdownOpen, langDropdownOpen]);
 
   const switchLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
@@ -100,21 +104,40 @@ const Navbar = ({ currentRegion = "global" }: NavbarProps) => {
             </button>
           ))}
 
-          {/* Language switcher */}
-          <div className="flex items-center gap-1">
-            {availableLanguages.map((lang) => (
-              <button
-                key={lang}
-                onClick={() => switchLanguage(lang)}
-                className={`text-xs font-semibold px-2 py-1 rounded transition-colors ${
-                  i18n.language === lang
-                    ? "bg-primary-foreground/20 text-primary-foreground"
-                    : "text-primary-foreground/60 hover:text-primary-foreground"
-                }`}
-              >
-                {lang.toUpperCase()}
-              </button>
-            ))}
+          {/* Language dropdown */}
+          <div className="relative">
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                setLangDropdownOpen(!langDropdownOpen);
+              }}
+              className="flex items-center gap-1 text-primary-foreground/80 hover:text-primary-foreground text-sm font-medium transition-colors border border-primary-foreground/30 rounded px-2 py-1"
+            >
+              <Globe className="h-3.5 w-3.5" />
+              {langFlags[i18n.language]} {i18n.language.toUpperCase()}
+              <ChevronDown className="h-3 w-3" />
+            </button>
+
+            {langDropdownOpen && (
+              <div className="absolute right-0 top-full mt-2 bg-primary/95 backdrop-blur-md border border-primary-foreground/20 rounded-lg shadow-xl overflow-hidden min-w-[140px]">
+                {availableLanguages.map((lang) => (
+                  <button
+                    key={lang}
+                    onClick={() => {
+                      switchLanguage(lang);
+                      setLangDropdownOpen(false);
+                    }}
+                    className={`w-full text-left px-4 py-2.5 text-sm transition-colors ${
+                      i18n.language === lang
+                        ? "bg-primary-foreground/20 text-primary-foreground font-semibold"
+                        : "text-primary-foreground/80 hover:bg-primary-foreground/10 hover:text-primary-foreground"
+                    }`}
+                  >
+                    {langFlags[lang]} {langLabels[lang]}
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* Region selector */}
