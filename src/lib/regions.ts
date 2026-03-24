@@ -11,7 +11,7 @@ export const regions: RegionConfig[] = [
   { id: "global", path: "/", languages: ["en", "es", "fr"], defaultLang: "en" },
   { id: "latam", path: "/latam", languages: ["es", "en"], defaultLang: "es" },
   { id: "africa", path: "/africa", languages: ["fr", "en"], defaultLang: "fr" },
-  { id: "asia", path: "/asia", languages: ["en"], defaultLang: "en" },
+  
 ];
 
 export const getRegionByPath = (path: string): RegionConfig => {
