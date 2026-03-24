@@ -46,13 +46,16 @@ const Navbar = ({ currentRegion = "global" }: NavbarProps) => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Close dropdown on outside click
+  // Close dropdowns on outside click
   useEffect(() => {
-    if (!regionDropdownOpen) return;
-    const close = () => setRegionDropdownOpen(false);
+    if (!regionDropdownOpen && !langDropdownOpen) return;
+    const close = () => {
+      setRegionDropdownOpen(false);
+      setLangDropdownOpen(false);
+    };
     document.addEventListener("click", close);
     return () => document.removeEventListener("click", close);
-  }, [regionDropdownOpen]);
+  }, [regionDropdownOpen, langDropdownOpen]);
 
   const switchLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
