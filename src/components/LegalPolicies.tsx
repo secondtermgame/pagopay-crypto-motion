@@ -16,80 +16,242 @@ export const PrivacyPolicyDialog = ({ children }: { children: React.ReactNode })
       </DialogTrigger>
       <DialogContent className="max-w-3xl max-h-[80vh]">
         <DialogHeader>
-          <DialogTitle className="text-2xl">Privacy Policy</DialogTitle>
-          <DialogDescription>Effective Date: November 18, 2025</DialogDescription>
+          <DialogTitle className="text-2xl">PagoPay Privacy Policy</DialogTitle>
+          <DialogDescription>Effective Date: November 18, 2025 — Last Updated: March 2026</DialogDescription>
         </DialogHeader>
         <ScrollArea className="h-[60vh] pr-4">
           <div className="space-y-6 text-foreground">
             <section>
-              <h3 className="text-xl font-semibold mb-2">Who We Are</h3>
+              <h3 className="text-xl font-semibold mb-2">1. Introduction</h3>
               <p className="text-muted-foreground leading-relaxed">
-                PagoPay (9538-8310 Québec Inc.) is operated by 9090 Park Ave #355, Montreal, Quebec H2N 1Y8, Canada. 
-                This Privacy Policy outlines how we collect, use, and protect your personal information.
+                PagoPay is committed to protecting the privacy and security of personal information.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                This Privacy Policy describes how personal information is collected, used, stored, and disclosed when users access or use the PagoPay platform, mobile applications, and related services (the "Platform").
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                By accessing or using the Platform, users consent to the collection and use of personal information in accordance with this Privacy Policy.
               </p>
             </section>
 
             <section>
-              <h3 className="text-xl font-semibold mb-2">Information We Collect</h3>
+              <h3 className="text-xl font-semibold mb-2">2. Operator of the Platform</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                PagoPay Payment Services is operated by 9538-8310 Québec Inc., a company incorporated in Québec, Canada.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                Certain operational services may be conducted by 1001529768 Ontario Inc., acting as a registered MSB agent on behalf of the principal MSB.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                These entities are responsible for processing personal information collected through the Platform.
+              </p>
+            </section>
+
+            <section>
+              <h3 className="text-xl font-semibold mb-2">3. Information We Collect</h3>
               <p className="text-muted-foreground leading-relaxed mb-2">
-                We collect the following personal data directly from users:
+                PagoPay may collect various categories of personal information in order to provide services and comply with legal and regulatory requirements.
+              </p>
+
+              <h4 className="text-lg font-semibold mt-4 mb-2">Identity Information</h4>
+              <p className="text-muted-foreground leading-relaxed mb-2">
+                To verify user identity and comply with regulatory obligations, PagoPay may collect:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li>Full name</li>
+                <li>full name</li>
+                <li>date of birth</li>
+                <li>residential address</li>
+                <li>email address</li>
+                <li>phone number</li>
+                <li>government-issued identification documents</li>
+                <li>proof of address documentation.</li>
+              </ul>
+
+              <h4 className="text-lg font-semibold mt-4 mb-2">Biometric Verification Data</h4>
+              <p className="text-muted-foreground leading-relaxed mb-2">
+                Identity verification may require biometric verification procedures including:
+              </p>
+              <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
+                <li>live selfie verification</li>
+                <li>facial recognition comparisons between the user and identity documents.</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                Additionally, KYC-related data may be processed by third-party providers such as Didit and Sumsub, 
-                if you provide them with consent or a token to verify your identity for card issuance and financial 
-                compliance purposes.
+                Biometric data is used solely for identity verification and fraud prevention purposes.
               </p>
-            </section>
 
-            <section>
-              <h3 className="text-xl font-semibold mb-2">Purpose of Data Collection</h3>
-              <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li>To provide prepaid card and wallet services</li>
-                <li>To enable on-ramp and off-ramp cryptocurrency services</li>
-                <li>To ensure compliance with applicable anti-money laundering (AML) regulations</li>
-                <li>To send transactional, service-related, and marketing communications (with opt-out options)</li>
-              </ul>
-            </section>
-
-            <section>
-              <h3 className="text-xl font-semibold mb-2">Cookies & Analytics</h3>
+              <h4 className="text-lg font-semibold mt-4 mb-2">Financial and Transaction Information</h4>
               <p className="text-muted-foreground leading-relaxed mb-2">
-                We use session cookies and Google Analytics for:
+                PagoPay may collect financial and transactional information including:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li>Basic app functionality</li>
-                <li>Understanding site usage patterns</li>
-                <li>Improving user experience</li>
+                <li>wallet balances</li>
+                <li>cryptocurrency wallet addresses</li>
+                <li>transaction history</li>
+                <li>payment transfers</li>
+                <li>prepaid card transactions.</li>
+              </ul>
+
+              <h4 className="text-lg font-semibold mt-4 mb-2">Device and Technical Information</h4>
+              <p className="text-muted-foreground leading-relaxed mb-2">
+                When users access the Platform, PagoPay may collect technical data including:
+              </p>
+              <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
+                <li>IP address</li>
+                <li>device identifiers</li>
+                <li>browser type</li>
+                <li>operating system</li>
+                <li>login activity and session information.</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                You can control your cookie preferences in your browser or app settings.
+                This information helps maintain the security and performance of the Platform.
               </p>
             </section>
 
             <section>
-              <h3 className="text-xl font-semibold mb-2">Data Sharing & Storage</h3>
+              <h3 className="text-xl font-semibold mb-2">4. How We Use Personal Information</h3>
+              <p className="text-muted-foreground leading-relaxed mb-2">
+                Personal information may be used for the following purposes:
+              </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li>KYC data (if shared) is stored securely by third-party providers</li>
-                <li>Crypto custody is handled via API access to our licensed exchange partners</li>
-                <li>Firebase may be used for app authentication and data hosting</li>
+                <li>verifying user identity (KYC / KYB)</li>
+                <li>preventing fraud and financial crime</li>
+                <li>complying with anti-money laundering regulations</li>
+                <li>processing transactions and providing services</li>
+                <li>maintaining platform security</li>
+                <li>providing customer support.</li>
               </ul>
             </section>
 
             <section>
-              <h3 className="text-xl font-semibold mb-2">Your Rights</h3>
+              <h3 className="text-xl font-semibold mb-2">5. Identity Verification Providers</h3>
               <p className="text-muted-foreground leading-relaxed mb-2">
-                Depending on your location (e.g. Canada, EU, USA), you have rights to:
+                PagoPay uses trusted third-party verification providers to confirm user identity and prevent fraud.
               </p>
+              <p className="text-muted-foreground leading-relaxed mb-2">These providers may include:</p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li>Access your personal data</li>
-                <li>Request correction or deletion</li>
-                <li>Object to processing or withdraw consent</li>
+                <li>SumSub</li>
+                <li>Didit</li>
+                <li>Trulio</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                To exercise these rights, contact: <a href="mailto:info@mypagopay.com" className="text-primary hover:underline">info@mypagopay.com</a>
+                These providers may process identity documents and biometric verification data in order to verify user identity and comply with regulatory obligations.
+              </p>
+            </section>
+
+            <section>
+              <h3 className="text-xl font-semibold mb-2">6. Sharing of Information</h3>
+              <p className="text-muted-foreground leading-relaxed mb-2">
+                PagoPay may share personal information with trusted partners when necessary to provide services or comply with legal obligations.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-2">This may include sharing information with:</p>
+              <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
+                <li>identity verification providers</li>
+                <li>payment processors</li>
+                <li>card issuing institutions</li>
+                <li>cryptocurrency liquidity providers</li>
+                <li>banking partners</li>
+                <li>regulatory authorities when required by law.</li>
+              </ul>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                PagoPay does not sell personal information to third parties.
+              </p>
+            </section>
+
+            <section>
+              <h3 className="text-xl font-semibold mb-2">7. Data Security</h3>
+              <p className="text-muted-foreground leading-relaxed mb-2">
+                PagoPay uses industry-standard security measures designed to protect personal information from unauthorized access, misuse, or disclosure.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-2">Security controls may include:</p>
+              <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
+                <li>encrypted communications</li>
+                <li>secure data storage</li>
+                <li>restricted system access</li>
+                <li>monitoring for suspicious activity.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h3 className="text-xl font-semibold mb-2">8. Data Retention</h3>
+              <p className="text-muted-foreground leading-relaxed mb-2">
+                Personal information may be retained for as long as necessary to:
+              </p>
+              <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
+                <li>provide services</li>
+                <li>comply with legal and regulatory obligations</li>
+                <li>resolve disputes and enforce agreements.</li>
+              </ul>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                Certain financial records may be retained for longer periods where required by law.
+              </p>
+            </section>
+
+            <section>
+              <h3 className="text-xl font-semibold mb-2">9. User Rights</h3>
+              <p className="text-muted-foreground leading-relaxed mb-2">
+                Users may have rights regarding their personal information, including the right to:
+              </p>
+              <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
+                <li>request access to their personal information</li>
+                <li>request correction of inaccurate information</li>
+                <li>request deletion of personal data where permitted by law.</li>
+              </ul>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                Requests may be submitted by contacting PagoPay support.
+              </p>
+            </section>
+
+            <section>
+              <h3 className="text-xl font-semibold mb-2">10. Cookies and Tracking Technologies</h3>
+              <p className="text-muted-foreground leading-relaxed mb-2">
+                PagoPay may use cookies and similar technologies to enhance the functionality and security of the Platform.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-2">Cookies may be used to:</p>
+              <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
+                <li>maintain login sessions</li>
+                <li>improve user experience</li>
+                <li>analyze platform performance.</li>
+              </ul>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                Users may adjust cookie preferences through their browser settings.
+              </p>
+            </section>
+
+            <section>
+              <h3 className="text-xl font-semibold mb-2">11. International Data Transfers</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                PagoPay services may involve data processing by service providers located in multiple jurisdictions.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                Personal information may therefore be transferred to and processed in countries outside the user's jurisdiction when necessary to provide services.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                PagoPay takes reasonable steps to ensure that such transfers comply with applicable privacy laws.
+              </p>
+            </section>
+
+            <section>
+              <h3 className="text-xl font-semibold mb-2">12. Updates to This Policy</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                PagoPay may update this Privacy Policy from time to time.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                Updated versions will be published on the Platform with a revised effective date.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                Continued use of the Platform after updates constitutes acceptance of the revised policy.
+              </p>
+            </section>
+
+            <section>
+              <h3 className="text-xl font-semibold mb-2">13. Contact</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                For privacy-related questions or requests, please contact:
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                <a href="mailto:support@mypagopay.com" className="text-primary hover:underline">support@mypagopay.com</a>
+                <br />
+                <a href="mailto:privacy@mypagopay.com" className="text-primary hover:underline">privacy@mypagopay.com</a>
               </p>
             </section>
           </div>
