@@ -69,6 +69,7 @@ const LatamLanding = () => {
     { label: t("latam.nav.howItWorks"), href: "#como-funciona" },
     { label: t("latam.nav.benefits"), href: "#beneficios" },
     { label: t("latam.nav.security"), href: "#seguridad" },
+    { label: t("nav.faq"), href: "#faq" },
   ];
 
   const steps = t("latam.howItWorks.steps", { returnObjects: true }) as { title: string; desc: string }[];

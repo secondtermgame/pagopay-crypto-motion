@@ -67,6 +67,7 @@ const AfricaLanding = () => {
     { label: t("africa.nav.howItWorks"), href: "#how-it-works" },
     { label: t("africa.nav.benefits"), href: "#benefits" },
     { label: t("africa.nav.security"), href: "#security" },
+    { label: t("nav.faq"), href: "#faq" },
   ];
 
   const steps = t("africa.howItWorks.steps", { returnObjects: true }) as { title: string; desc: string }[];
