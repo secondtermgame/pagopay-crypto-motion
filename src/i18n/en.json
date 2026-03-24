@@ -130,5 +130,79 @@
     "africa": "Africa",
     "asia": "Asia",
     "selector": "Region"
+  },
+  "latam": {
+    "nav": {
+      "home": "Home",
+      "howItWorks": "How it works",
+      "benefits": "Benefits",
+      "security": "Security"
+    },
+    "cta": "Get started",
+    "downloadApp": "Download app",
+    "hero": {
+      "heading1": "Use your crypto",
+      "heading2": "like real money",
+      "subtitle": "Convert your crypto and pay anywhere in the world instantly.",
+      "trust": "Secure • Fast • No hassle"
+    },
+    "balance": {
+      "title": "Balance",
+      "topup": "+ Top up"
+    },
+    "howItWorks": {
+      "heading": "How it works",
+      "step": "Step",
+      "steps": [
+        { "title": "Send your crypto", "desc": "Deposit BTC, ETH or USDT" },
+        { "title": "Convert instantly", "desc": "Swap to local currency in seconds" },
+        { "title": "Pay easily", "desc": "Use your card worldwide" }
+      ]
+    },
+    "benefits": {
+      "heading": "Everything you need",
+      "items": [
+        { "title": "No borders", "desc": "Use your money in any country" },
+        { "title": "Low fees", "desc": "More control for you" },
+        { "title": "Fast and simple", "desc": "All from your phone" },
+        { "title": "Secure", "desc": "Protection on every transaction" }
+      ]
+    },
+    "showcase": {
+      "heading1": "All in one",
+      "heading2": " place",
+      "subtitle": "Control your money, convert crypto and pay easily from the PagoPay app.",
+      "checks": [
+        "Convert crypto to local currency",
+        "Pay with virtual or physical card",
+        "Check your balances in real time"
+      ],
+      "paymentSuccess": "Payment successful"
+    },
+    "trust": {
+      "heading": "Your money is protected",
+      "subtitle": "We work with global partners to guarantee security and transparency.",
+      "items": [
+        { "title": "Secure technology", "desc": "Military-grade encryption for every transaction" },
+        { "title": "Global compliance", "desc": "Regulated under international AML and KYC standards" },
+        { "title": "Reliable infrastructure", "desc": "Regulated partners and continuous auditing" }
+      ]
+    },
+    "finalCta": {
+      "heading": "Get started today with PagoPay",
+      "subtitle": "Open your free account in minutes",
+      "button": "Create account"
+    },
+    "footer": {
+      "tagline": "Your crypto, your real money.",
+      "product": "Product",
+      "legal": "Legal",
+      "support": "Support",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy",
+      "disclaimer": "Legal Disclaimer: PagoPay is a financial technology platform and not a bank. Certain banking or payment services may be provided through licensed financial institution partners. PagoPay Payment Services is operated by 9538-8310 Québec Inc., a registered Money Services Business with FINTRAC. Cryptocurrency transactions involve risk and the value of digital assets may fluctuate.",
+      "copyright": "© 2025 PagoPay. All rights reserved."
+    }
   }
 }
