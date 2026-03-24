@@ -143,9 +143,9 @@
     "cta": "Get your free account",
     "downloadApp": "Download app",
     "hero": {
-      "heading1": "Spend your crypto",
-      "heading2": "like dollars",
-      "subtitle": "Convert BTC, ETH, and USDT to USD instantly — and pay anywhere with your PagoPay card.",
+      "heading1": "Send your crypto.",
+      "heading2": "We convert it. You pay.",
+      "subtitle": "Deposit crypto into your PagoPay account. It converts automatically to USD. Use your card anywhere in the world.",
       "trust": "Secure • Instant • Zero hassle"
     },
     "balance": {
@@ -153,12 +153,13 @@
       "topup": "+ Top up"
     },
     "howItWorks": {
-      "heading": "3 steps to start spending",
+      "heading": "How it works",
       "step": "Step",
+      "note": "No extra steps. Everything happens automatically.",
       "steps": [
-        { "title": "Deposit your crypto", "desc": "Send BTC, ETH or USDT to your wallet" },
-        { "title": "Convert to dollars", "desc": "Instant swap to USD at real-time rates" },
-        { "title": "Pay anywhere", "desc": "Use your card worldwide, online or in-store" }
+        { "title": "Send your crypto", "desc": "Deposit BTC, ETH or USDT into your PagoPay account." },
+        { "title": "Automatic conversion", "desc": "Your crypto is automatically converted to USD." },
+        { "title": "Pay without limits", "desc": "Use your PagoPay card anywhere in the world." }
       ]
     },
     "benefits": {
