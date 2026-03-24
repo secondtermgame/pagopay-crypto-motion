@@ -80,6 +80,19 @@ const LatamLanding = () => {
               Empieza ahora
             </Button>
 
+            {/* Language switcher */}
+            <div className="flex items-center gap-1">
+              {["es", "en"].map((lang) => (
+                <button
+                  key={lang}
+                  onClick={() => i18n.changeLanguage(lang)}
+                  className={`text-xs font-semibold px-2 py-1 rounded transition-colors ${i18n.language === lang ? "bg-white/20 text-white" : "text-white/60 hover:text-white"}`}
+                >
+                  {lang.toUpperCase()}
+                </button>
+              ))}
+            </div>
+
             {/* Region selector */}
             <div className="relative">
               <button onClick={(e) => { e.stopPropagation(); setRegionDropdownOpen(!regionDropdownOpen); }} className="flex items-center gap-1 text-white/80 hover:text-white text-sm font-medium transition-colors border border-white/30 rounded px-2 py-1">
