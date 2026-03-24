@@ -231,7 +231,7 @@ const LatamLanding = () => {
               return (
                 <div key={i} className="group text-center p-8 rounded-3xl bg-gradient-to-br from-gray-50 to-white border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
                   <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${stepColors[i]} flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                    <Icon className={`h-8 w-8 ${i === 2 ? "text-latam-dark" : "text-white"}`} />
+                    <Icon className="h-8 w-8 text-primary-foreground" />
                   </div>
                   <span className="text-xs font-bold text-latam-purple/60 tracking-widest uppercase">{t("latam.howItWorks.step")} {stepNum}</span>
                   <h3 className="text-xl font-bold text-latam-dark mt-2 mb-2">{item.title}</h3>
