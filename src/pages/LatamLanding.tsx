@@ -350,6 +350,35 @@ const LatamLanding = () => {
         </div>
       </section>
 
+      {/* ==================== FAQ ==================== */}
+      <section id="faq" className="py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl md:text-5xl font-extrabold text-latam-dark mb-4">
+                {t("faq.heading")}
+              </h2>
+              <div className="w-20 h-1.5 bg-gradient-to-r from-latam-purple to-latam-teal rounded-full mx-auto mb-4" />
+              <p className="text-xl text-gray-500">{t("faq.subtitle")}</p>
+            </div>
+
+            <div className="space-y-4">
+              {(t("faq.items", { returnObjects: true }) as { question: string; answer: string }[]).map((faq, index) => (
+                <details key={index} className="group border border-gray-200 rounded-lg px-6 transition-colors open:border-latam-purple/50">
+                  <summary className="flex items-center justify-between py-4 cursor-pointer text-left text-lg font-semibold text-latam-dark hover:text-latam-purple transition-colors list-none [&::-webkit-details-marker]:hidden">
+                    {faq.question}
+                    <ChevronDown className="h-5 w-5 text-gray-400 group-open:rotate-180 transition-transform duration-200 flex-shrink-0 ml-4" />
+                  </summary>
+                  <div className="pb-4 text-gray-500 leading-relaxed whitespace-pre-line">
+                    {faq.answer}
+                  </div>
+                </details>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ==================== FINAL CTA ==================== */}
       <section className="py-24 bg-gradient-to-r from-latam-purple via-latam-teal to-latam-purple relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(163,230,53,0.15),transparent_70%)]" />
