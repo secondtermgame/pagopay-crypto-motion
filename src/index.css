@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 180 11% 96%;
+    --foreground: 257 23% 12%;
+
+    --card: 180 11% 96%;
+    --card-foreground: 257 23% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 257 23% 12%;
+
+    --primary: 163 65% 18%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 163 50% 35%;
+
+    --secondary: 195 42% 82%;
+    --secondary-foreground: 257 23% 12%;
+
+    --muted: 180 11% 90%;
+    --muted-foreground: 257 15% 40%;
+
+    --accent: 90 97% 86%;
+    --accent-foreground: 163 65% 18%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 180 11% 88%;
+    --input: 180 11% 88%;
+    --ring: 163 65% 18%;
+
+    --radius: 0.75rem;
+
+    --gradient-hero: linear-gradient(135deg, hsl(163, 65%, 18%), hsl(163, 50%, 35%));
+    --gradient-accent: linear-gradient(135deg, hsl(90, 97%, 86%), hsl(163, 50%, 35%));
+    --shadow-glow: 0 10px 40px hsl(163 65% 18% / 0.3);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 257 23% 12%;
+    --foreground: 180 11% 96%;
+
+    --card: 257 23% 12%;
+    --card-foreground: 180 11% 96%;
+
+    --popover: 257 23% 12%;
+    --popover-foreground: 180 11% 96%;
+
+    --primary: 163 65% 18%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 163 50% 35%;
+
+    --secondary: 195 42% 82%;
+    --secondary-foreground: 257 23% 12%;
+
+    --muted: 257 20% 25%;
+    --muted-foreground: 180 10% 70%;
+
+    --accent: 90 97% 86%;
+    --accent-foreground: 163 65% 18%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 180 11% 96%;
+
+    --border: 257 20% 25%;
+    --input: 257 20% 25%;
+    --ring: 163 65% 18%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(163, 65%, 18%), hsl(163, 50%, 35%));
+    --gradient-accent: linear-gradient(135deg, hsl(90, 97%, 86%), hsl(163, 50%, 35%));
+    --shadow-glow: 0 10px 40px hsl(163 65% 18% / 0.3);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* LATAM Landing Page Theme */
+.latam-theme {
+  --latam-purple: 163 65% 22%;
+  --latam-dark: 163 40% 8%;
+  --latam-teal: 174 72% 36%;
+  --latam-lime: 84 81% 44%;
+  --latam-cyan: 163 50% 45%;
+  --latam-orange: 90 70% 50%;
+  --latam-pink: 163 65% 30%;
+}
+
+/* Africa Landing Page Theme */
+.africa-theme {
+  --africa-gold: 38 92% 50%;
+  --africa-amber: 25 95% 53%;
+  --africa-earth: 20 30% 12%;
+  --africa-teal: 163 50% 30%;
+  --africa-dark: 20 20% 8%;
+  --africa-warm: 30 60% 45%;
+}

@@ -1,0 +1,290 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "pagopay": "PagoPay",
+    "security": "Security",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "heading1": "YOUR MONEY,",
+    "heading2": "IN MOTION",
+    "subtitle": "The crypto card that lets you spend Bitcoin, Ethereum, and stablecoins anywhere — instantly converted, zero hassle.",
+    "cta": "Get Your Free Account"
+  },
+  "balance": {
+    "title": "Balance",
+    "amount": "$2,200.50",
+    "topup": "Top up"
+  },
+  "features": {
+    "heading": "Your Money, In Motion",
+    "subtitle": "One app to store, send, swap, and spend crypto like cash. Instant transfers, real-time conversions, and a prepaid card that works worldwide.",
+    "walletHeading": "All-In-One Digital Wallet for Crypto and Fiat",
+    "items": [
+      {
+        "title": "Secure Non-Custodial Wallets",
+        "description": "Easily store and manage your crypto assets in a secure, non-custodial wallet — you hold the keys, connected to your prepaid card and accessible anywhere, anytime. Coming soon..."
+      },
+      {
+        "title": "Instant Wallet-to-Wallet Transfers",
+        "description": "Send crypto or fiat instantly to other PagoPay users — whether they're across the street or across the world. Transfers settle in seconds with zero hassle. Coming soon..."
+      },
+      {
+        "title": "Smart Currency Swaps",
+        "description": "Convert between crypto and fiat at real-time rates with a clear, low-margin spread. No hidden fees — just transparent, competitive pricing."
+      },
+      {
+        "title": "Enterprise-Grade Security",
+        "description": "Your funds are protected by industry-standard encryption, secure infrastructure, and verified KYC. All payments and exchanges are safeguarded via our regulated partners."
+      }
+    ]
+  },
+  "benefits": {
+    "heading": "Built for Every Asset You Own",
+    "subtitle": "Whether you hold Bitcoin, Ethereum, or stablecoins — spend them like cash with the PagoPay crypto card. No delays, no complexity.",
+    "slogan": "Freedom to Move. Power to Spend.",
+    "items": [
+      "Instant Crypto-to-USD Conversion",
+      "Spend Globally with Virtual or Physical Cards",
+      "Real-Time Exchange Rates, No Surprises",
+      "Zero FX Fees — Pay Internationally for Free",
+      "Zero Hidden Fees — What You See Is What You Pay",
+      "Low Conversion Fees — More Crypto in Your Pocket",
+      "Bank-Grade Security on Every Transaction",
+      "24/7 Human Support When You Need It",
+      "Spend Up to $100K Per Transaction"
+    ]
+  },
+  "security": {
+    "heading": "Security You Can Trust",
+    "subtitle": "At <strong>PagoPay</strong>, your security isn't an afterthought — it's our foundation. We use advanced technology and adhere to the highest industry standards to ensure your funds, data, and identity remain safe at all times.",
+    "items": [
+      {
+        "title": "Military-Grade Encryption",
+        "description": "All sensitive data is protected using <strong>AES-256 encryption</strong>, the same military-grade standard trusted by banks and governments across the globe."
+      },
+      {
+        "title": "Multi-Factor & Biometric Authentication",
+        "description": "Secure your account with <strong>two-factor authentication (2FA)</strong> and <strong>biometric login</strong>, giving you full control and added protection from unauthorized access."
+      },
+      {
+        "title": "Real-Time AI-Powered Monitoring",
+        "description": "Our systems are continuously monitored by <strong>AI-driven fraud detection engines</strong>, scanning for suspicious activity 24/7 and automatically blocking threats in real time."
+      },
+      {
+        "title": "Full Regulatory Compliance",
+        "description": "PagoPay is in process of registering with <strong>FINTRAC (Canada)</strong> and operates under strict adherence to <strong>international AML, KYC, and data privacy regulations</strong>, including GDPR and PCI DSS standards."
+      }
+    ]
+  },
+  "faq": {
+    "heading": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about PagoPay",
+    "items": [
+      {
+        "question": "1. What is PagoPay?",
+        "answer": "PagoPay is a crypto-to-fiat payment platform that bridges the gap between your digital assets and everyday spending. Deposit crypto into your account, and it's automatically converted to USD. Then use your PagoPay prepaid card to pay at millions of merchants worldwide or withdraw cash at any ATM — with zero foreign transaction fees."
+      },
+      {
+        "question": "2. How Do I Get Started with PagoPay?",
+        "answer": "Getting started is fast and easy. Create an account, complete your identity verification, and fund your wallet using crypto or a connected bank account. Once approved, you can request your virtual or physical PagoPay card and begin spending your funds worldwide.\n\nBe among the first to access PagoPay. Sign up now to reserve your spot and receive early access to our cards as we roll out across Canada, the Americas and Europe."
+      },
+      {
+        "question": "3. Which cryptocurrencies does PagoPay support?",
+        "answer": "PagoPay supports a wide range of major cryptocurrencies, including Bitcoin, Ethereum, USDT, USDC, and many others. Our platform is designed to evolve with user needs, so we continuously expand our list of supported assets to ensure maximum flexibility. Whether you're using crypto for everyday purchases or managing your portfolio, PagoPay gives you the freedom to convert and spend with ease."
+      },
+      {
+        "question": "4. Are there any fees for using PagoPay?",
+        "answer": "PagoPay follows a transparent, tiered pricing model designed to match your usage and volume. We apply competitive conversion fees when you exchange between crypto and fiat, and our tiers offer reduced rates for higher usage. Create your free account to see the full breakdown of fees across all tiers."
+      },
+      {
+        "question": "5. Is my money safe with PagoPay?",
+        "answer": "Yes. At PagoPay, security is fundamental. We use AES-256 encryption, multi-factor authentication, and partner with regulated custodians like ALT 5 Sigma to safeguard user funds and manage crypto operations. All fiat card balances are held with licensed issuing banks, and we comply fully with international financial and data protection regulations. Your money is handled with the same care and protection as traditional financial institutions."
+      },
+      {
+        "question": "6. Can I use PagoPay internationally?",
+        "answer": "Yes. PagoPay cards can be used worldwide anywhere major card networks are accepted. While all cards currently operate in USD, we do not charge any additional foreign exchange fees when you spend in other currencies. Your crypto is converted to USD at the point of load or transaction, giving you a seamless and cost-efficient global payment experience."
+      },
+      {
+        "question": "7. How long do crypto-to-fiat conversions take?",
+        "answer": "Crypto-to-fiat conversions on PagoPay are processed instantly at market rates. When you load your card or initiate a swap in the app, your crypto is immediately converted to USD and made available for spending. Your funds are usable as soon as the transaction is confirmed."
+      },
+      {
+        "question": "8. What should I do if my card is lost or stolen?",
+        "answer": "If your PagoPay card is lost or stolen, you can immediately freeze it within the app to prevent unauthorized use. Our support team is available 24/7 to assist you with securing your account and issuing a replacement card promptly."
+      }
+    ]
+  },
+  "footer": {
+    "disclaimer": "Legal Disclaimer: PagoPay is a financial technology platform and not a bank. Certain banking or payment services may be provided through licensed financial institution partners. PagoPay Payment Services is operated by 9538-8310 Québec Inc., a registered Money Services Business with the Financial Transactions and Reports Analysis Centre of Canada (FINTRAC). Certain operational services may be conducted by 1001529768 Ontario Inc., acting as a registered MSB agent on behalf of the principal MSB. Cryptocurrency transactions involve risk and the value of digital assets may fluctuate. Cryptocurrency transactions may be irreversible. PagoPay card services are subject to identity verification, approval, and applicable program terms. Fees may apply for certain services or transactions. Please refer to our Terms of Service and Privacy Policy for complete details. PagoPay operates in accordance with applicable financial services regulations and maintains compliance procedures designed to prevent fraud, money laundering, and other financial crimes. By using PagoPay services, you acknowledge that you have read and understood the applicable policies and terms governing the platform. PagoPay is operated from Canada. Services are provided cross-border and may not be regulated in your jurisdiction. Card services are issued by licensed partners outside your country.",
+    "copyright": "© 2025 PagoPay. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy"
+  },
+  "signup": {
+    "title": "Get your PagoPay account",
+    "description": "Fill out the form below to start your application. We'll get back to you shortly."
+  },
+  "region": {
+    "global": "Global",
+    "latam": "Latin America",
+    "africa": "Africa",
+    
+    "selector": "Region"
+  },
+  "latam": {
+    "nav": {
+      "home": "Home",
+      "howItWorks": "How it works",
+      "benefits": "Benefits",
+      "security": "Security"
+    },
+    "cta": "Get your free account",
+    "downloadApp": "Download app",
+    "hero": {
+      "heading1": "Send your crypto.",
+      "heading2": "We convert it. You pay.",
+      "subtitle": "Deposit crypto into your PagoPay account. It converts automatically to USD. Use your card anywhere in the world.",
+      "trust": "Secure • Instant • Zero hassle"
+    },
+    "balance": {
+      "title": "Balance",
+      "topup": "+ Top up"
+    },
+    "howItWorks": {
+      "heading": "How it works",
+      "step": "Step",
+      "note": "No extra steps. Everything happens automatically.",
+      "steps": [
+        { "title": "Send your crypto", "desc": "Deposit BTC, ETH or USDT into your PagoPay account." },
+        { "title": "Automatic conversion", "desc": "Your crypto is automatically converted to USD." },
+        { "title": "Pay without limits", "desc": "Use your PagoPay card anywhere in the world or withdraw at any ATM." }
+      ]
+    },
+    "benefits": {
+      "heading": "Spend in local currency anywhere — with no foreign transaction fees",
+      "items": [
+        { "title": "No borders", "desc": "Spend your dollars in any country" },
+        { "title": "Zero FX fees", "desc": "No foreign exchange fees, ever" },
+        { "title": "No hidden fees", "desc": "Transparent pricing — what you see is what you pay" },
+        { "title": "Low conversion fees", "desc": "Keep more of your crypto" },
+        { "title": "Ready in minutes", "desc": "Sign up and pay from your phone" },
+        { "title": "Always protected", "desc": "Military-grade encryption on every transaction" }
+      ]
+    },
+    "showcase": {
+      "heading1": "Everything",
+      "heading2": " in one app",
+      "subtitle": "Convert crypto, manage your balance, and pay — all from the PagoPay app.",
+      "checks": [
+        "Instant crypto to USD conversion",
+        "Physical prepaid card",
+        "Real-time balance and transaction tracking"
+      ],
+      "paymentSuccess": "Payment successful"
+    },
+    "trust": {
+      "heading": "Your dollars are protected",
+      "subtitle": "We partner with regulated financial institutions to keep your funds secure.",
+      "items": [
+        { "title": "Bank-level encryption", "desc": "The highest standard of data protection" },
+        { "title": "Fully regulated", "desc": "Compliant with international AML and KYC standards" },
+        { "title": "Audited infrastructure", "desc": "Continuous monitoring and third-party audits" }
+      ]
+    },
+    "finalCta": {
+      "heading": "Start spending your crypto today",
+      "subtitle": "Open your free account in under 3 minutes",
+      "button": "Create free account"
+    },
+    "footer": {
+      "tagline": "Your crypto. Your dollars. Your freedom.",
+      "product": "Product",
+      "legal": "Legal",
+      "support": "Support",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy",
+      "disclaimer": "Legal Disclaimer: PagoPay is a financial technology platform and not a bank. Certain banking or payment services may be provided through licensed financial institution partners. PagoPay Payment Services is operated by 9538-8310 Québec Inc., a registered Money Services Business with FINTRAC. Cryptocurrency transactions involve risk and the value of digital assets may fluctuate. PagoPay is operated from Canada. Services are provided cross-border and may not be regulated in your jurisdiction. Card services are issued by licensed partners outside your country.",
+      "copyright": "© 2025 PagoPay. All rights reserved."
+    }
+  },
+  "africa": {
+    "nav": {
+      "home": "Home",
+      "howItWorks": "How it works",
+      "benefits": "Benefits",
+      "security": "Security"
+    },
+    "cta": "Get your free account",
+    "hero": {
+      "heading1": "Send money home.",
+      "heading2": "Pay anywhere.",
+      "subtitle": "Convert your crypto to USD instantly. Spend with your PagoPay card across Africa and beyond — no bank account needed.",
+      "trust": "Secure • Instant • No hidden fees"
+    },
+    "balance": {
+      "title": "Balance",
+      "topup": "+ Top up"
+    },
+    "howItWorks": {
+      "heading": "How it works",
+      "step": "Step",
+      "note": "No extra steps. Everything happens automatically.",
+      "steps": [
+        { "title": "Deposit your crypto", "desc": "Send BTC, ETH or USDT to your PagoPay wallet." },
+        { "title": "Instant conversion", "desc": "Your crypto is automatically converted to USD." },
+        { "title": "Spend or withdraw", "desc": "Use your PagoPay card anywhere or withdraw at any ATM." }
+      ]
+    },
+    "benefits": {
+      "heading": "Built for you. Accepted everywhere.",
+      "items": [
+        { "title": "No borders", "desc": "Pay in any country, any currency" },
+        { "title": "Zero FX fees", "desc": "No foreign exchange fees when you spend" },
+        { "title": "No bank needed", "desc": "All you need is your phone and crypto" },
+        { "title": "Instant transfers", "desc": "Send money to family and friends in seconds" },
+        { "title": "ATM withdrawals", "desc": "Get cash from any ATM worldwide" },
+        { "title": "Always protected", "desc": "Bank-level security on every transaction" }
+      ]
+    },
+    "showcase": {
+      "heading1": "Your money,",
+      "heading2": " your way",
+      "subtitle": "Convert crypto, manage your balance, send money, and pay — all from the PagoPay app.",
+      "checks": [
+        "Instant crypto to USD conversion",
+        "Physical prepaid card",
+        "Real-time balance and transaction tracking"
+      ],
+      "paymentSuccess": "Payment successful"
+    },
+    "trust": {
+      "heading": "Your funds are protected",
+      "subtitle": "We partner with regulated financial institutions to keep your money safe.",
+      "items": [
+        { "title": "Bank-level encryption", "desc": "The highest standard of data protection" },
+        { "title": "Fully regulated", "desc": "Compliant with international AML and KYC standards" },
+        { "title": "Audited infrastructure", "desc": "Continuous monitoring and third-party audits" }
+      ]
+    },
+    "finalCta": {
+      "heading": "Start spending your crypto today",
+      "subtitle": "Open your free account in under 3 minutes",
+      "button": "Create free account"
+    },
+    "footer": {
+      "tagline": "Your crypto. Your money. Your freedom.",
+      "product": "Product",
+      "legal": "Legal",
+      "support": "Support",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy",
+      "disclaimer": "Legal Disclaimer: PagoPay is a financial technology platform and not a bank. Certain banking or payment services may be provided through licensed financial institution partners. PagoPay Payment Services is operated by 9538-8310 Québec Inc., a registered Money Services Business with FINTRAC. Cryptocurrency transactions involve risk and the value of digital assets may fluctuate. PagoPay is operated from Canada. Services are provided cross-border and may not be regulated in your jurisdiction. Card services are issued by licensed partners outside your country.",
+      "copyright": "© 2025 PagoPay. All rights reserved."
+    }
+  }
+}
