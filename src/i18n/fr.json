@@ -2,9 +2,13 @@
   "nav": {
     "home": "Accueil",
     "about": "À propos",
+    "aboutPage": "À propos de PagoPay",
+    "howItWorks": "Comment ça marche",
+    "pricing": "Tarifs",
     "pagopay": "PagoPay",
     "security": "Sécurité",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "blog": "Blog"
   },
   "hero": {
     "heading1": "VOTRE ARGENT,",
@@ -116,7 +120,7 @@
   },
   "footer": {
     "disclaimer": "Avis Juridique : PagoPay est une plateforme de technologie financière et non une banque. Certains services bancaires ou de paiement peuvent être fournis par des institutions financières partenaires autorisées. Les Services de Paiement PagoPay sont exploités par 9538-8310 Québec Inc., une Entreprise de Services Monétaires enregistrée auprès du Centre d'analyse des opérations et déclarations financières du Canada (CANAFE). Certains services opérationnels peuvent être effectués par 1001529768 Ontario Inc., agissant en tant qu'agent ESM enregistré au nom de l'ESM principal. Les transactions en crypto-monnaies comportent des risques et la valeur des actifs numériques peut fluctuer. Les transactions en crypto-monnaies peuvent être irréversibles. Les services de carte PagoPay sont soumis à la vérification d'identité, à l'approbation et aux conditions du programme applicables. Des frais peuvent s'appliquer pour certains services ou transactions. Veuillez consulter nos Conditions d'utilisation et notre Politique de confidentialité pour des détails complets. PagoPay opère conformément aux réglementations applicables en matière de services financiers et maintient des procédures de conformité conçues pour prévenir la fraude, le blanchiment d'argent et d'autres crimes financiers. En utilisant les services PagoPay, vous reconnaissez avoir lu et compris les politiques et conditions applicables régissant la plateforme. PagoPay est exploité depuis le Canada. Les services sont fournis de manière transfrontalière et peuvent ne pas être réglementés dans votre juridiction. Les services de carte sont émis par des partenaires agréés en dehors de votre pays.",
-    "copyright": "© 2025 PagoPay. Tous droits réservés.",
+    "copyright": "© 2026 PagoPay. Tous droits réservés.",
     "privacy": "Politique de Confidentialité",
     "terms": "Conditions d'Utilisation",
     "cookies": "Politique de Cookies"
@@ -205,7 +209,7 @@
       "terms": "Conditions d'utilisation",
       "cookies": "Politique de cookies",
       "disclaimer": "Avis juridique : PagoPay est une plateforme de technologie financière et non une banque. Certains services bancaires ou de paiement peuvent être fournis par des institutions financières partenaires autorisées. PagoPay est exploité depuis le Canada. Les services sont fournis de manière transfrontalière et peuvent ne pas être réglementés dans votre juridiction. Les services de carte sont émis par des partenaires agréés en dehors de votre pays.",
-      "copyright": "© 2025 PagoPay. Tous droits réservés."
+      "copyright": "© 2026 PagoPay. Tous droits réservés."
     }
   }
 }

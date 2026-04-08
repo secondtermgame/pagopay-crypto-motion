@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Menu, X, Globe, ChevronDown } from "lucide-react";
 import { Region, regions, getRegionById } from "@/lib/regions";
 import logoWhite from "@/assets/pagopay-white.png";
@@ -8,10 +8,14 @@ import logoWhite from "@/assets/pagopay-white.png";
 const navLinks = [
   { key: "home", href: "#home" },
   { key: "about", href: "#about" },
+  { key: "aboutPage", href: "/about" },
+  { key: "howItWorks", href: "/how-it-works" },
+  { key: "pricing", href: "/pricing" },
   { key: "pagopay", href: "#pagopay" },
-  { key: "security", href: "#security" },
-  { key: "faq", href: "#faq" },
-];
+  { key: "security", href: "/security" },
+  { key: "faq", href: "/faq" },
+  { key: "blog", href: "/blog" },
+] as const;
 
 const langLabels: Record<string, string> = {
   en: "English",
@@ -77,6 +81,15 @@ const Navbar = ({ currentRegion = "global" }: NavbarProps) => {
     el?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const goTo = (href: string) => {
+    setMobileOpen(false);
+    if (href.startsWith("/")) {
+      navigate(href);
+      return;
+    }
+    scrollTo(href);
+  };
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -86,16 +99,16 @@ const Navbar = ({ currentRegion = "global" }: NavbarProps) => {
       }`}
     >
       <div className="container mx-auto px-4 flex items-center justify-between h-16">
-        <a href="#home" onClick={() => scrollTo("#home")}>
+        <Link to="/" onClick={() => setMobileOpen(false)}>
           <img src={logoWhite} alt="PagoPay" className="h-8 w-auto" />
-        </a>
+        </Link>
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
             <button
               key={link.key}
-              onClick={() => scrollTo(link.href)}
+              onClick={() => goTo(link.href)}
               className="text-primary-foreground/80 hover:text-primary-foreground text-sm font-medium transition-colors"
             >
               {t(`nav.${link.key}`)}
@@ -189,7 +202,7 @@ const Navbar = ({ currentRegion = "global" }: NavbarProps) => {
             {navLinks.map((link) => (
               <button
                 key={link.key}
-                onClick={() => scrollTo(link.href)}
+                onClick={() => goTo(link.href)}
                 className="text-primary-foreground/80 hover:text-primary-foreground text-left text-sm font-medium transition-colors"
               >
                 {t(`nav.${link.key}`)}

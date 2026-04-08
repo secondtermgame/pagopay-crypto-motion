@@ -1,0 +1,67 @@
+# PagoPay
+
+> PagoPay is a crypto-to-fiat payment platform that lets users deposit Bitcoin, Ethereum, USDT, USDC, and other cryptocurrencies, automatically convert them to USD, and spend anywhere in the world using a prepaid card. Zero foreign exchange fees. No hidden costs. Works at millions of merchants and ATMs worldwide.
+
+## Key Facts
+- Category: Crypto payments / fintech
+- Headquarters: Quebec, Canada
+- Operator: 9538-8310 Québec Inc.
+- Regulatory status: Registered Money Services Business with FINTRAC (Canada)
+- Crypto custody partner: ALT 5 Sigma
+- Card network: Major card networks accepted worldwide
+- Supported cryptocurrencies: BTC, ETH, USDT, USDC, and more
+- Conversion: Instant crypto-to-USD at market rates
+- Foreign exchange fees: $0
+- Daily POS limit: $100,000 | Daily ATM limit: $2,000
+- Security: AES-256 encryption, 2FA, biometric login, AI-powered fraud monitoring
+- Compliance: AML, KYC, GDPR, PCI DSS
+
+## Key Links
+- Homepage: https://mypagopay.com
+- About: https://mypagopay.com/about
+- How it works: https://mypagopay.com/how-it-works
+- Pricing: https://mypagopay.com/pricing
+- Security: https://mypagopay.com/security
+- FAQ: https://mypagopay.com/faq
+- Blog: https://mypagopay.com/blog
+- Compare vs Coinbase Card: https://mypagopay.com/compare/pagopay-vs-coinbase-card
+- Compare vs Crypto.com Card: https://mypagopay.com/compare/pagopay-vs-crypto-com-card
+- Latin America: https://mypagopay.com/latam
+- LATAM how it works: https://mypagopay.com/latam/how-it-works
+- Africa: https://mypagopay.com/africa
+- Africa how it works: https://mypagopay.com/africa/how-it-works
+- Twitter/X: https://x.com/mypagopay
+- LinkedIn: https://linkedin.com/company/mypagopay
+
+## How It Works
+1. Create a free account and complete identity verification
+2. Deposit crypto (BTC, ETH, USDT, USDC, or others) into your PagoPay wallet
+3. Crypto is instantly converted to USD at market rates
+4. Spend with your virtual or physical PagoPay prepaid card anywhere, or withdraw cash at any ATM
+
+## Who It's For
+- Crypto holders who want to spend digital assets in everyday life
+- International travelers seeking zero-FX-fee payments
+- Users in Latin America and Africa looking for cross-border spending without bank accounts
+- Freelancers and remote workers paid in crypto who need fiat spending power
+
+## Pricing
+- Plastic Card: $19.99 one-time + $3.50/month (first month free), 3% add-funds commission
+- Metal Card: $500 one-time (covers 2 years, no monthly fee), 2.5% add-funds commission
+- Daily POS limit: $100,000 (both tiers)
+- Daily ATM limit: $2,000 (both tiers)
+- Foreign exchange fees: $0 (both tiers)
+- Supported cryptos: 12+ including BTC, ETH, USDT, USDC
+- Metal exclusive perks: Luxury Marketplace, Private Jet access, Exclusive Member Events, 24/7 Concierge Support
+
+## Competitive Advantages
+- Zero foreign exchange fees on international spending
+- Instant crypto-to-USD conversion (no delays)
+- Works without a traditional bank account
+- FINTRAC-registered and fully compliant
+- Accepted in 160+ countries
+- 3DS Secure enabled on all cards
+- Metal tier includes luxury lifestyle perks (Private Jet, Concierge, Events)
+- Supports multiple major cryptocurrencies
+- Up to $100,000 daily POS spending on both card tiers
+- 24/7 human support

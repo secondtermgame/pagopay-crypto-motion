@@ -1,0 +1,17 @@
+{
+  "name": "PagoPay",
+  "short_name": "PagoPay",
+  "description": "Spend crypto anywhere with zero FX fees — crypto to USD prepaid card.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#14532d",
+  "icons": [
+    {
+      "src": "/placeholder.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

@@ -2,20 +2,30 @@ import { Linkedin } from "lucide-react";
 import { PrivacyPolicyDialog, TermsOfServiceDialog, CookiePolicyDialog } from "./LegalPolicies";
 import { Button } from "./ui/button";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 import logoWhite from "@/assets/pagopay-white.png";
 
 const navLinks = [
   { key: "home", href: "#home" },
   { key: "about", href: "#about" },
+  { key: "aboutPage", href: "/about" },
+  { key: "howItWorks", href: "/how-it-works" },
+  { key: "pricing", href: "/pricing" },
   { key: "pagopay", href: "#pagopay" },
-  { key: "security", href: "#security" },
-  { key: "faq", href: "#faq" },
-];
+  { key: "security", href: "/security" },
+  { key: "faq", href: "/faq" },
+  { key: "blog", href: "/blog" },
+] as const;
 
 const Footer = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
-  const scrollTo = (href: string) => {
+  const goTo = (href: string) => {
+    if (href.startsWith("/")) {
+      navigate(href);
+      return;
+    }
     const el = document.querySelector(href);
     el?.scrollIntoView({ behavior: "smooth" });
   };
@@ -29,7 +39,7 @@ const Footer = () => {
             {navLinks.map((link) => (
               <button
                 key={link.key}
-                onClick={() => scrollTo(link.href)}
+                onClick={() => goTo(link.href)}
                 className="text-primary-foreground/70 hover:text-primary-foreground text-sm font-medium transition-colors"
               >
                 {t(`nav.${link.key}`)}
