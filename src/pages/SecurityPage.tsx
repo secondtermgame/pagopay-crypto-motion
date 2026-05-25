@@ -7,22 +7,22 @@ const features = [
   {
     icon: Lock,
     title: "Encryption & authentication",
-    body: "Sensitive data is protected with bank-level encryption. You can secure your account with two-factor authentication (2FA) and biometric login where supported by your device.",
+    body: "Sensitive data is protected with strong industry-standard encryption. You can secure your account with two-factor authentication (2FA) and biometric login where supported by your device.",
   },
   {
     icon: Eye,
     title: "Fraud monitoring",
-    body: "Transactions and account activity are monitored using AI-assisted fraud detection to surface suspicious patterns and help block unauthorized use. You can freeze your card instantly in the app if it is lost or stolen.",
+    body: "Transactions and account activity are monitored to surface suspicious patterns and help block unauthorized use. You can freeze your card instantly in the app if it is lost or stolen.",
   },
   {
     icon: FileCheck,
     title: "Regulatory posture",
-    body: "PagoPay Payment Services is operated by 9538-8310 Québec Inc., a registered Money Services Business with FINTRAC (Canada). We follow applicable AML, KYC, and data-protection requirements and work with regulated partners for custody and card issuance.",
+    body: "PagoPay Payment Services is operated by 9538-8310 Québec Inc., a registered Money Services Business with FINTRAC (Canada) under registration N300000116 and licensed by Revenu Québec under permit 0000000000022125. We follow applicable AML, KYC, and data-protection requirements and work with regulated partners for crypto custody, conversion, and card issuance.",
   },
   {
     icon: Shield,
     title: "Card security",
-    body: "Cards support 3-D Secure where the network and merchant require step-up authentication. Fiat balances backing card spend are held with licensed issuing partners per program rules.",
+    body: "Cards support 3D Secure where the network and merchant require step-up authentication. USD balances backing card spend are held with licensed issuing partners per program rules.",
   },
 ];
 
@@ -37,9 +37,9 @@ const SecurityPage = () => {
   return (
     <PageShell>
       <PageHero
-        eyebrow="Security"
-        title="Security & compliance"
-        subtitle="PagoPay is designed so security and regulatory compliance are built in — not bolted on. Below is how we protect your account, funds, and data."
+        eyebrow="Security & Compliance"
+        title="Security You Can Trust"
+        subtitle="At PagoPay, security and regulatory compliance are built in — not bolted on. Below is how we protect your account, funds, and data."
         align="left"
         variant="dark"
       />
@@ -83,11 +83,15 @@ const SecurityPage = () => {
       <section className="py-20 md:py-24">
         <div className="container mx-auto px-4 max-w-3xl text-center">
           <p className="text-sm text-muted-foreground">
-            This page summarizes common controls for marketing purposes. See our{" "}
-            <Link to="/" className="text-primary hover:underline font-medium">
-              homepage legal disclosures
-            </Link>{" "}
-            and in-app policies for binding terms.
+            This page summarizes common controls for informational purposes. See our{" "}
+            <Link to="/terms" className="text-primary hover:underline font-medium">
+              Terms of Service
+            </Link>
+            ,{" "}
+            <Link to="/privacy" className="text-primary hover:underline font-medium">
+              Privacy Policy
+            </Link>
+            , and in-app policies for binding terms.
           </p>
           <p className="mt-6">
             <Link to="/" className="text-primary font-semibold hover:underline">
