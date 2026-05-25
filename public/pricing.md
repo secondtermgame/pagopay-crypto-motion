@@ -1,36 +1,72 @@
-# Pricing — PagoPay
+# Simple, transparent pricing.
 
-## Plastic Card
-- Card price: $19.99 (one-time)
+No hidden fees. No surprises. Choose the card that fits how you spend.
+
+---
+
+## Plastic
+
+**Start spending fast.**
+
+**$19.99** (one-time setup)
+
 - Monthly fee: $3.50/month (first month free)
-- Add Funds Commission: 3%
+- Crypto conversion fee: 3%
+- FX markup on international spend: $0
+- ATM withdrawals: $3 flat (up to $2,000/day)
 - Daily POS limit: $100,000
-- Daily ATM limit: $2,000
-- Daily transaction limit: 25
-- Foreign exchange fees: $0
+- Daily transactions: 25
 - KYC required: Yes
-- Features: Spend in USD, accepted in 160+ countries, top up with 12+ cryptos, 3DS Secure enabled
+- Accepted anywhere Mastercard is accepted
+- 3D Secure enabled
+- Supports BTC, ETH, USDC, USDT, and more
 
-## Metal Card
-- Card price: $500 (covers 2 years, no monthly fee)
-- Monthly fee: $0
-- Add Funds Commission: 2.5%
+[Get Plastic]
+
+---
+
+## Metal
+
+**Best Value** — Premium. Lifetime value.
+
+**$500** (one-time — includes 2 years of zero monthly fees)
+
+- Monthly fee: $0 for first 2 years (saves $84)
+- Crypto conversion fee: 2.5% (lowest tier)
+- FX markup on international spend: $0
+- ATM withdrawals: $3 flat (up to $2,000/day)
 - Daily POS limit: $100,000
-- Daily ATM limit: $2,000
-- Daily transaction limit: 25
-- Foreign exchange fees: $0
+- Daily transactions: 25
 - KYC required: Yes
-- Features: Everything in Plastic, plus Luxury Marketplace access, Private Jet booking, Exclusive Member Events, 24/7 Concierge Support
+- Accepted anywhere Mastercard is accepted
+- 3D Secure enabled
+- Supports BTC, ETH, USDC, USDT, and more
+- Priority customer support
 
-## Common to All Tiers
-- Supported cryptos: 12+ including BTC, ETH, USDT, USDC
-- FX fees: $0 on all international spending
-- Security: AES-256 encryption, 2FA, biometric login, 3DS Secure
-- Regions: Available in 160+ countries
+[Get Metal]
 
-## How to Get Started
-1. Sign up free at https://mypagopay.com
-2. Complete identity verification (KYC)
-3. Choose your card tier (Plastic or Metal)
-4. Deposit crypto to your wallet
-5. Start spending anywhere
+---
+
+## Included with every card
+
+- Zero foreign exchange markup on international purchases
+- Zero load fees, decline fees, or per-swipe fees
+- Strong encryption and 2FA protection
+- Biometric login support
+- 3D Secure for online transactions
+- Major cryptocurrencies supported (BTC, ETH, USDC, USDT, and more)
+- Accepted anywhere Mastercard is accepted
+
+---
+
+## Start spending in three steps
+
+1. **Sign up** — Create your free account at mypagopay.com
+2. **Complete verification** — Verify your identity (KYC) to unlock card features
+3. **Deposit and spend** — Deposit crypto, auto-converted to USD, ready to spend on your card
+
+---
+
+## Pick your card. Start spending.
+
+[Get Account]
