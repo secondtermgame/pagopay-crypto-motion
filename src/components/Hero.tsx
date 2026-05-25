@@ -1,6 +1,5 @@
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Plus } from "lucide-react";
+import { useState, useEffect, useRef } from "react";
+import { ArrowRight } from "lucide-react";
 import heroCard from "@/assets/hero-card.png";
 import { SignupForm } from "@/components/SignupForm";
 import { useTranslation } from "react-i18next";
@@ -8,60 +7,107 @@ import { useTranslation } from "react-i18next";
 const Hero = () => {
   const [isSignupOpen, setIsSignupOpen] = useState(false);
   const { t } = useTranslation();
+  const sectionRef = useRef<HTMLElement>(null);
+  const spotlightRef = useRef<HTMLDivElement>(null);
+
+  // Cursor spotlight
+  useEffect(() => {
+    const section = sectionRef.current;
+    const spot = spotlightRef.current;
+    if (!section || !spot) return;
+    const onMove = (e: MouseEvent) => {
+      const rect = section.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      spot.style.background = `radial-gradient(600px circle at ${x}px ${y}px, hsl(90 97% 86% / 0.10), transparent 50%)`;
+    };
+    section.addEventListener("mousemove", onMove);
+    return () => section.removeEventListener("mousemove", onMove);
+  }, []);
 
   return (
-    <>
-      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero pt-16">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0djItaDJWMzRoLTJ6bTAtNGgydjJoLTJ2LTJ6bS0yIDJoLTJ2Mmgydi0yem0wLTJoMnYyaC0ydi0yem0wIDRoMnYyaC0ydi0yem0tMi0yaDJ2Mmgtdi0yem0wIDRoMnYyaC0ydi0yem0tMiAyaDJ2Mmgtdi0yeiIvPjwvZz48L2c+PC9zdmc+')] opacity-30"></div>
+    <section
+      ref={sectionRef}
+      id="home"
+      className="relative min-h-screen flex items-center overflow-hidden bg-gradient-hero grain pt-32 pb-20"
+    >
+      {/* Spotlight */}
+      <div ref={spotlightRef} className="pointer-events-none absolute inset-0 z-0" />
 
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="text-center lg:text-left animate-fade-in">
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 text-primary-foreground leading-tight">
-                {t("hero.heading1")}
-                <br />
-                <span className="bg-gradient-accent bg-clip-text text-transparent">
-                  {t("hero.heading2")}
-                </span>
-              </h1>
-              <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto lg:mx-0">
-                {t("hero.subtitle")}
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button
-                  size="lg"
-                  className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-[var(--shadow-glow)] transition-all duration-300 hover:scale-105 font-semibold"
-                  onClick={() => setIsSignupOpen(true)}
-                >
-                  {t("hero.cta")}
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </div>
+      {/* Floating orbs */}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div className="absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full bg-accent/20 blur-3xl animate-orb" />
+        <div className="absolute top-1/3 -right-40 w-[600px] h-[600px] rounded-full bg-primary-glow/30 blur-3xl animate-orb" style={{ animationDelay: "-3s" }} />
+        <div className="absolute bottom-0 left-1/3 w-[400px] h-[400px] rounded-full bg-accent/10 blur-3xl animate-orb" style={{ animationDelay: "-6s" }} />
+      </div>
+
+      {/* Subtle grid */}
+      <div
+        className="pointer-events-none absolute inset-0 opacity-[0.06]"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)",
+          backgroundSize: "60px 60px",
+          maskImage: "radial-gradient(ellipse at center, black 30%, transparent 80%)",
+          WebkitMaskImage: "radial-gradient(ellipse at center, black 30%, transparent 80%)",
+        }}
+      />
+
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="grid lg:grid-cols-[1.1fr_1fr] gap-12 lg:gap-20 items-center">
+          <div className="text-center lg:text-left animate-fade-in">
+            <div className="eyebrow text-accent mb-6 justify-center lg:justify-start">
+              <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+              Crypto · Card · USD
+            </div>
+            <h1 className="text-[15vw] sm:text-7xl md:text-8xl lg:text-[6rem] font-bold leading-[0.95] tracking-[-0.035em] text-white text-balance">
+              {t("hero.heading1")}
+              <br />
+              <span className="font-serif-accent text-accent">
+                {t("hero.heading2")}
+              </span>
+            </h1>
+            <p className="text-lg md:text-xl text-white/70 mt-8 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+              {t("hero.subtitle")}
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <button onClick={() => setIsSignupOpen(true)} className="btn-lime px-8 py-4 text-base">
+                {t("hero.cta")}
+                <ArrowRight className="h-5 w-5" />
+              </button>
+              <a href="#about" className="btn-ghost-light px-8 py-4 text-base">
+                Learn more
+              </a>
+            </div>
+          </div>
+
+          <div className="relative animate-scale-in [perspective:1200px]">
+            {/* lime glow behind */}
+            <div className="absolute inset-0 -z-10 flex items-center justify-center">
+              <div className="w-[80%] h-[80%] rounded-full bg-accent/30 blur-3xl" />
             </div>
 
-            <div className="relative animate-scale-in">
-              <div className="relative animate-float">
-                <img
-                  src={heroCard}
-                  alt="PagoPay Card"
-                  className="w-full h-auto max-w-lg mx-auto"
-                />
-                {/* Balance widget overlay */}
-                <div className="absolute top-4 left-4 md:top-8 md:left-0 bg-primary-foreground/10 backdrop-blur-md rounded-2xl p-4 border border-primary-foreground/20 shadow-lg">
-                  <p className="text-primary-foreground/70 text-xs font-medium mb-1">{t("balance.title")}</p>
-                  <p className="text-primary-foreground text-2xl font-bold">{t("balance.amount")}</p>
-                  <button className="mt-2 flex items-center gap-1 text-accent text-xs font-semibold">
-                    <Plus className="h-3 w-3" /> {t("balance.topup")}
-                  </button>
-                </div>
-              </div>
+            <div className="relative mx-auto max-w-md">
+              <img
+                src={heroCard}
+                alt="PagoPay metal card"
+                className="w-full h-auto drop-shadow-2xl animate-float-slow [transform-style:preserve-3d]"
+                style={{ transform: "rotateY(-12deg) rotateX(6deg)" }}
+              />
+              <img
+                src={heroCard}
+                alt=""
+                aria-hidden="true"
+                className="absolute top-8 -left-6 w-[88%] h-auto opacity-90 animate-float-slower"
+                style={{ transform: "rotateY(8deg) rotateX(-4deg)", filter: "hue-rotate(10deg) brightness(0.95)" }}
+              />
             </div>
           </div>
         </div>
+      </div>
 
-        <SignupForm open={isSignupOpen} onOpenChange={setIsSignupOpen} />
-      </section>
-    </>
+      <SignupForm open={isSignupOpen} onOpenChange={setIsSignupOpen} />
+    </section>
   );
 };
 
