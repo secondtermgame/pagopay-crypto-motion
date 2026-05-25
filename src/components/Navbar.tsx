@@ -131,38 +131,6 @@ const Navbar = () => {
             )}
           </div>
 
-          {/* Region selector */}
-          <div className="relative">
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                setRegionDropdownOpen(!regionDropdownOpen);
-              }}
-              className="flex items-center gap-1 text-primary-foreground/80 hover:text-primary-foreground text-sm font-medium transition-colors border border-primary-foreground/30 rounded px-2 py-1"
-            >
-              <Globe className="h-3.5 w-3.5" />
-              {t(`region.${currentRegion}`)}
-              <ChevronDown className="h-3 w-3" />
-            </button>
-
-            {regionDropdownOpen && (
-              <div className="absolute right-0 top-full mt-2 bg-primary/95 backdrop-blur-md border border-primary-foreground/20 rounded-lg shadow-xl overflow-hidden min-w-[160px]">
-                {regions.map((r) => (
-                  <button
-                    key={r.id}
-                    onClick={() => switchRegion(r.id)}
-                    className={`w-full text-left px-4 py-2.5 text-sm transition-colors ${
-                      currentRegion === r.id
-                        ? "bg-primary-foreground/20 text-primary-foreground font-semibold"
-                        : "text-primary-foreground/80 hover:bg-primary-foreground/10 hover:text-primary-foreground"
-                    }`}
-                  >
-                    {t(`region.${r.id}`)}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
         </div>
 
         {/* Mobile hamburger */}
@@ -209,25 +177,6 @@ const Navbar = () => {
               </div>
             </div>
 
-            {/* Mobile region switcher */}
-            <div className="border-t border-primary-foreground/10 pt-3">
-              <p className="text-primary-foreground/50 text-xs uppercase tracking-wider mb-2">{t("region.selector")}</p>
-              <div className="flex flex-col gap-1">
-                {regions.map((r) => (
-                  <button
-                    key={r.id}
-                    onClick={() => switchRegion(r.id)}
-                    className={`text-left text-sm px-3 py-1.5 rounded transition-colors ${
-                      currentRegion === r.id
-                        ? "bg-primary-foreground/20 text-primary-foreground font-semibold"
-                        : "text-primary-foreground/60 hover:text-primary-foreground"
-                    }`}
-                  >
-                    {t(`region.${r.id}`)}
-                  </button>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       )}
