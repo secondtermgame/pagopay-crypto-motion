@@ -19,15 +19,8 @@ const Features = () => {
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
             What you get
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 text-foreground text-balance leading-[1.05]">
-            {t("features.heading").split(",")[0]}
-            {t("features.heading").includes(",") && (
-              <>
-                , <span className="font-serif-accent text-primary">
-                  {t("features.heading").split(",").slice(1).join(",").trim()}
-                </span>
-              </>
-            )}
+          <h2 className="text-4xl md:text-6xl font-bold mb-6 text-foreground text-balance leading-[1.05] tracking-tight">
+            {t("features.heading")}
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
             {t("features.subtitle")}
