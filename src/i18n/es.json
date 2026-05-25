@@ -135,8 +135,19 @@
     "global": "Mundial",
     "latam": "América Latina",
     "africa": "África",
-    
     "selector": "Región"
+  },
+  "popup": {
+    "heading": "Usa tu crypto sin complicaciones",
+    "crypto": "Crypto",
+    "usd": "USD",
+    "card": "Tarjeta",
+    "body": "Envía tu crypto.<br />Se convierte automáticamente a USD.<br />Y paga en cualquier lugar.",
+    "badge": "Sin comisiones FX — Gasta en cualquier moneda local",
+    "cta": "Crear cuenta gratis",
+    "secondary": "Ver cómo funciona",
+    "trust": "Seguro • Rápido • Sin complicaciones",
+    "closeAria": "Cerrar"
   },
   "latam": {
     "nav": {
@@ -162,20 +173,47 @@
       "step": "Paso",
       "note": "Sin pasos extra. Todo ocurre automáticamente.",
       "steps": [
-        { "title": "Envía tu crypto", "desc": "Deposita BTC, ETH o USDT en tu cuenta PagoPay." },
-        { "title": "Conversión automática", "desc": "Tu crypto se convierte automáticamente a USD." },
-        { "title": "Paga sin límites", "desc": "Usa tu tarjeta PagoPay en cualquier lugar del mundo o retira en cualquier cajero automático." }
+        {
+          "title": "Envía tu crypto",
+          "desc": "Deposita BTC, ETH o USDT en tu cuenta PagoPay."
+        },
+        {
+          "title": "Conversión automática",
+          "desc": "Tu crypto se convierte automáticamente a USD."
+        },
+        {
+          "title": "Paga sin límites",
+          "desc": "Usa tu tarjeta PagoPay en cualquier lugar del mundo o retira en cualquier cajero automático."
+        }
       ]
     },
     "benefits": {
       "heading": "Gasta en moneda local en cualquier lugar — sin comisiones por transacciones en el extranjero",
       "items": [
-        { "title": "Sin fronteras", "desc": "Gasta tus dólares en cualquier país" },
-        { "title": "Cero comisiones FX", "desc": "Sin comisiones de cambio de divisas, nunca" },
-        { "title": "Sin comisiones ocultas", "desc": "Precios transparentes — lo que ves es lo que pagas" },
-        { "title": "Comisiones bajas", "desc": "Quédate con más de tu crypto" },
-        { "title": "Listo en minutos", "desc": "Regístrate y paga desde tu celular" },
-        { "title": "Siempre protegido", "desc": "Encriptación militar en cada transacción" }
+        {
+          "title": "Sin fronteras",
+          "desc": "Gasta tus dólares en cualquier país"
+        },
+        {
+          "title": "Cero comisiones FX",
+          "desc": "Sin comisiones de cambio de divisas, nunca"
+        },
+        {
+          "title": "Sin comisiones ocultas",
+          "desc": "Precios transparentes — lo que ves es lo que pagas"
+        },
+        {
+          "title": "Comisiones bajas",
+          "desc": "Quédate con más de tu crypto"
+        },
+        {
+          "title": "Listo en minutos",
+          "desc": "Regístrate y paga desde tu celular"
+        },
+        {
+          "title": "Siempre protegido",
+          "desc": "Encriptación militar en cada transacción"
+        }
       ]
     },
     "showcase": {
@@ -193,27 +231,24 @@
       "heading": "Tus dólares están protegidos",
       "subtitle": "Trabajamos con instituciones financieras reguladas para mantener tus fondos seguros.",
       "items": [
-        { "title": "Encriptación de nivel bancario", "desc": "El más alto estándar de protección de datos" },
-        { "title": "Totalmente regulado", "desc": "Cumplimiento con estándares internacionales AML y KYC" },
-        { "title": "Infraestructura auditada", "desc": "Monitoreo continuo y auditorías de terceros" }
+        {
+          "title": "Encriptación de nivel bancario",
+          "desc": "El más alto estándar de protección de datos"
+        },
+        {
+          "title": "Totalmente regulado",
+          "desc": "Cumplimiento con estándares internacionales AML y KYC"
+        },
+        {
+          "title": "Infraestructura auditada",
+          "desc": "Monitoreo continuo y auditorías de terceros"
+        }
       ]
     },
     "finalCta": {
       "heading": "Empieza a gastar tu crypto hoy",
       "subtitle": "Abre tu cuenta gratis en menos de 3 minutos",
       "button": "Crear cuenta gratis"
-    },
-    "popup": {
-      "heading": "Usa tu crypto sin complicaciones",
-      "crypto": "Crypto",
-      "usd": "USD",
-      "card": "Tarjeta",
-      "body": "Envía tu crypto.<br />Se convierte automáticamente a USD.<br />Y paga en cualquier lugar.",
-      "badge": "Sin comisiones FX — Gasta en cualquier moneda local",
-      "cta": "Crear cuenta gratis",
-      "secondary": "Ver cómo funciona",
-      "trust": "Seguro • Rápido • Sin complicaciones",
-      "closeAria": "Cerrar"
     },
     "footer": {
       "tagline": "Tu crypto. Tus dólares. Tu libertad.",

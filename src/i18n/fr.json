@@ -133,8 +133,19 @@
     "global": "Mondial",
     "latam": "Amérique Latine",
     "africa": "Afrique",
-    
     "selector": "Région"
+  },
+  "popup": {
+    "heading": "Utilisez Votre Crypto Sans Tracas",
+    "crypto": "Crypto",
+    "usd": "USD",
+    "card": "Carte",
+    "body": "Envoyez votre crypto.<br />Elle se convertit automatiquement en USD.<br />Et payez n'importe où.",
+    "badge": "Pas de Frais FX — Dépensez en Toute Devise Locale",
+    "cta": "Créer un Compte Gratuit",
+    "secondary": "Voir Comment Ça Marche",
+    "trust": "Sécurisé • Rapide • Sans Tracas",
+    "closeAria": "Fermer"
   },
   "africa": {
     "nav": {
@@ -159,20 +170,47 @@
       "step": "Étape",
       "note": "Aucune étape supplémentaire. Tout est automatique.",
       "steps": [
-        { "title": "Déposez vos crypto", "desc": "Envoyez du BTC, ETH ou USDT vers votre compte PagoPay." },
-        { "title": "Conversion instantanée", "desc": "Vos crypto sont automatiquement convertis en USD." },
-        { "title": "Dépensez ou retirez", "desc": "Utilisez votre carte PagoPay partout ou retirez à n'importe quel guichet." }
+        {
+          "title": "Déposez vos crypto",
+          "desc": "Envoyez du BTC, ETH ou USDT vers votre compte PagoPay."
+        },
+        {
+          "title": "Conversion instantanée",
+          "desc": "Vos crypto sont automatiquement convertis en USD."
+        },
+        {
+          "title": "Dépensez ou retirez",
+          "desc": "Utilisez votre carte PagoPay partout ou retirez à n'importe quel guichet."
+        }
       ]
     },
     "benefits": {
       "heading": "Conçu pour vous. Accepté partout.",
       "items": [
-        { "title": "Sans frontières", "desc": "Payez dans n'importe quel pays, n'importe quelle devise" },
-        { "title": "Zéro frais FX", "desc": "Pas de frais de change lorsque vous dépensez" },
-        { "title": "Pas de banque nécessaire", "desc": "Tout ce qu'il vous faut, c'est votre téléphone et vos crypto" },
-        { "title": "Transferts instantanés", "desc": "Envoyez de l'argent à votre famille en quelques secondes" },
-        { "title": "Retraits aux guichets", "desc": "Obtenez du cash à n'importe quel guichet dans le monde" },
-        { "title": "Toujours protégé", "desc": "Sécurité bancaire sur chaque transaction" }
+        {
+          "title": "Sans frontières",
+          "desc": "Payez dans n'importe quel pays, n'importe quelle devise"
+        },
+        {
+          "title": "Zéro frais FX",
+          "desc": "Pas de frais de change lorsque vous dépensez"
+        },
+        {
+          "title": "Pas de banque nécessaire",
+          "desc": "Tout ce qu'il vous faut, c'est votre téléphone et vos crypto"
+        },
+        {
+          "title": "Transferts instantanés",
+          "desc": "Envoyez de l'argent à votre famille en quelques secondes"
+        },
+        {
+          "title": "Retraits aux guichets",
+          "desc": "Obtenez du cash à n'importe quel guichet dans le monde"
+        },
+        {
+          "title": "Toujours protégé",
+          "desc": "Sécurité bancaire sur chaque transaction"
+        }
       ]
     },
     "showcase": {
@@ -190,27 +228,24 @@
       "heading": "Vos fonds sont protégés",
       "subtitle": "Nous collaborons avec des institutions financières réglementées pour garder votre argent en sécurité.",
       "items": [
-        { "title": "Chiffrement bancaire", "desc": "Le plus haut standard de protection des données" },
-        { "title": "Entièrement réglementé", "desc": "Conforme aux normes internationales AML et KYC" },
-        { "title": "Infrastructure auditée", "desc": "Surveillance continue et audits par des tiers" }
+        {
+          "title": "Chiffrement bancaire",
+          "desc": "Le plus haut standard de protection des données"
+        },
+        {
+          "title": "Entièrement réglementé",
+          "desc": "Conforme aux normes internationales AML et KYC"
+        },
+        {
+          "title": "Infrastructure auditée",
+          "desc": "Surveillance continue et audits par des tiers"
+        }
       ]
     },
     "finalCta": {
       "heading": "Commencez à dépenser vos crypto aujourd'hui",
       "subtitle": "Ouvrez votre compte gratuit en moins de 3 minutes",
       "button": "Créer un compte gratuit"
-    },
-    "popup": {
-      "heading": "Utilisez Votre Crypto Sans Tracas",
-      "crypto": "Crypto",
-      "usd": "USD",
-      "card": "Carte",
-      "body": "Envoyez votre crypto.<br />Elle se convertit automatiquement en USD.<br />Et payez n'importe où.",
-      "badge": "Pas de Frais FX — Dépensez en Toute Devise Locale",
-      "cta": "Créer un Compte Gratuit",
-      "secondary": "Voir Comment Ça Marche",
-      "trust": "Sécurisé • Rapide • Sans Tracas",
-      "closeAria": "Fermer"
     },
     "footer": {
       "tagline": "Vos crypto. Votre argent. Votre liberté.",
