@@ -5,13 +5,15 @@ import Features from "@/components/Features";
 import Benefits from "@/components/Benefits";
 import Security from "@/components/Security";
 import FAQ from "@/components/FAQ";
-import CryptoTicker from "@/components/CryptoTicker";
 import Footer from "@/components/Footer";
 import { LatamPopup } from "@/components/LatamPopup";
 import { SignupForm } from "@/components/SignupForm";
+import FloatingCTA from "@/components/FloatingCTA";
+import { useTranslation } from "react-i18next";
 
 const Index = () => {
   const [isSignupOpen, setIsSignupOpen] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <div className="min-h-screen scroll-smooth">
@@ -21,8 +23,8 @@ const Index = () => {
       <Benefits />
       <Security />
       <FAQ />
-      <CryptoTicker />
       <Footer />
+      <FloatingCTA onClick={() => setIsSignupOpen(true)} label={t("hero.cta")} />
       <LatamPopup onSignup={() => setIsSignupOpen(true)} />
       <SignupForm open={isSignupOpen} onOpenChange={setIsSignupOpen} />
     </div>
