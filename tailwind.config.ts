@@ -134,6 +134,22 @@ export default {
           "0%": { transform: "translateX(0%)" },
           "100%": { transform: "translateX(-50%)" },
         },
+        "float-slow": {
+          "0%, 100%": { transform: "translateY(0px) rotate(-2deg)" },
+          "50%": { transform: "translateY(-14px) rotate(-2deg)" },
+        },
+        "float-slower": {
+          "0%, 100%": { transform: "translateY(0px) rotate(3deg)" },
+          "50%": { transform: "translateY(-18px) rotate(3deg)" },
+        },
+        "orb": {
+          "0%, 100%": { transform: "translate(0,0) scale(1)" },
+          "50%": { transform: "translate(30px,-20px) scale(1.1)" },
+        },
+        "spin-slow": {
+          "0%": { transform: "rotateY(0deg)" },
+          "100%": { transform: "rotateY(360deg)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -141,11 +157,16 @@ export default {
         "fade-in": "fade-in 0.6s ease-out",
         "scale-in": "scale-in 0.4s ease-out",
         "float": "float 6s ease-in-out infinite",
+        "float-slow": "float-slow 7s ease-in-out infinite",
+        "float-slower": "float-slower 9s ease-in-out infinite",
+        "orb": "orb 12s ease-in-out infinite",
+        "spin-slow": "spin-slow 20s linear infinite",
         "marquee": "marquee 30s linear infinite",
       },
       backgroundImage: {
         "gradient-hero": "var(--gradient-hero)",
         "gradient-accent": "var(--gradient-accent)",
+        "gradient-lime": "var(--gradient-lime)",
       },
     },
   },
