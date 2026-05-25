@@ -91,13 +91,8 @@
   h1, h2, h3, h4 {
     letter-spacing: -0.025em;
   }
-  .font-serif-accent {
-    font-family: 'Instrument Serif', 'Georgia', serif;
-    font-style: italic;
-    font-weight: 400;
-    letter-spacing: -0.02em;
-  }
 }
+
 
 @layer components {
   .eyebrow {

@@ -34,7 +34,7 @@ const Benefits = () => {
               {t("benefits.slogan")}
             </div>
             <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-[1.05] tracking-tight text-balance">
-              Built for <span className="font-serif-accent text-accent">every asset</span> you own
+              {t("benefits.heading")}
             </h2>
             <p className="text-lg md:text-xl text-white/70 mb-10 leading-relaxed max-w-xl">
               {t("benefits.subtitle")}
