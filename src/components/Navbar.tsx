@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
 import { Menu, X, Globe, ChevronDown } from "lucide-react";
-import { Region, regions, getRegionById } from "@/lib/regions";
 import logoWhite from "@/assets/pagopay-white.png";
 
 const navLinks = [
@@ -29,20 +28,14 @@ const langFlags: Record<string, string> = {
   fr: "🇫🇷",
 };
 
-interface NavbarProps {
-  currentRegion?: Region;
-}
+const availableLanguages = ["en", "es", "fr"];
 
-const Navbar = ({ currentRegion = "global" }: NavbarProps) => {
+const Navbar = () => {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [regionDropdownOpen, setRegionDropdownOpen] = useState(false);
   const [langDropdownOpen, setLangDropdownOpen] = useState(false);
-
-  const regionConfig = getRegionById(currentRegion);
-  const availableLanguages = regionConfig.languages;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -50,29 +43,15 @@ const Navbar = ({ currentRegion = "global" }: NavbarProps) => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Close dropdowns on outside click
   useEffect(() => {
-    if (!regionDropdownOpen && !langDropdownOpen) return;
-    const close = () => {
-      setRegionDropdownOpen(false);
-      setLangDropdownOpen(false);
-    };
+    if (!langDropdownOpen) return;
+    const close = () => setLangDropdownOpen(false);
     document.addEventListener("click", close);
     return () => document.removeEventListener("click", close);
-  }, [regionDropdownOpen, langDropdownOpen]);
+  }, [langDropdownOpen]);
 
   const switchLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
-  };
-
-  const switchRegion = (regionId: Region) => {
-    const config = getRegionById(regionId);
-    localStorage.setItem("pagopay_region_chosen", "true");
-    if (regionId === "latam") i18n.changeLanguage("es");
-    else i18n.changeLanguage(config.defaultLang);
-    navigate(config.path);
-    setRegionDropdownOpen(false);
-    setMobileOpen(false);
   };
 
   const scrollTo = (href: string) => {
@@ -89,6 +68,7 @@ const Navbar = ({ currentRegion = "global" }: NavbarProps) => {
     }
     scrollTo(href);
   };
+
 
   return (
     <nav
