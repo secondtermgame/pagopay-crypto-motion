@@ -171,7 +171,7 @@ const Navbar = () => {
                         : "text-primary-foreground/60 hover:text-primary-foreground"
                     }`}
                   >
-                    {langFlags[lang]} {langLabels[lang]}
+                    {langLabels[lang]}
                   </button>
                 ))}
               </div>
