@@ -74,5 +74,3 @@ No hidden fees. No surprises. Choose the card that fits how you spend.
 ---
 
 ## Pick your card. Start spending.
-
-​
