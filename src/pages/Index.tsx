@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useGeoDetection } from "@/hooks/useGeoDetection";
 import { getRegionById } from "@/lib/regions";
@@ -10,6 +10,8 @@ import Security from "@/components/Security";
 import FAQ from "@/components/FAQ";
 import CryptoTicker from "@/components/CryptoTicker";
 import Footer from "@/components/Footer";
+import { LatamPopup } from "@/components/LatamPopup";
+import { SignupForm } from "@/components/SignupForm";
 
 const Index = () => {
   const navigate = useNavigate();
