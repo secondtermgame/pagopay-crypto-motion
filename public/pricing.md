@@ -38,10 +38,16 @@ No hidden fees. No surprises. Choose the card that fits how you spend.
 - Daily POS limit: $100,000
 - Daily transactions: 25
 - KYC required: Yes
+- Premium metal Mastercard
 - Accepted anywhere Mastercard is accepted
 - 3D Secure enabled
 - Supports BTC, ETH, USDC, USDT, and more
-- Priority customer support
+
+**Exclusive Metal benefits:**
+- Luxury Marketplace access
+- Private Jet booking
+- Exclusive Member Events
+- 24/7 Concierge Support
 
 [Get Metal]
 
