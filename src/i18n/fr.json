@@ -200,6 +200,18 @@
       "subtitle": "Ouvrez votre compte gratuit en moins de 3 minutes",
       "button": "Créer un compte gratuit"
     },
+    "popup": {
+      "heading": "Utilisez Votre Crypto Sans Tracas",
+      "crypto": "Crypto",
+      "usd": "USD",
+      "card": "Carte",
+      "body": "Envoyez votre crypto.<br />Elle se convertit automatiquement en USD.<br />Et payez n'importe où.",
+      "badge": "Pas de Frais FX — Dépensez en Toute Devise Locale",
+      "cta": "Créer un Compte Gratuit",
+      "secondary": "Voir Comment Ça Marche",
+      "trust": "Sécurisé • Rapide • Sans Tracas",
+      "closeAria": "Fermer"
+    },
     "footer": {
       "tagline": "Vos crypto. Votre argent. Votre liberté.",
       "product": "Produit",
