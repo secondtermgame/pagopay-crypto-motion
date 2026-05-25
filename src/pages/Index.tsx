@@ -1,7 +1,4 @@
-import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { useGeoDetection } from "@/hooks/useGeoDetection";
-import { getRegionById } from "@/lib/regions";
+import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
@@ -14,27 +11,11 @@ import { LatamPopup } from "@/components/LatamPopup";
 import { SignupForm } from "@/components/SignupForm";
 
 const Index = () => {
-  const navigate = useNavigate();
-  const { detectedRegion, loading } = useGeoDetection();
   const [isSignupOpen, setIsSignupOpen] = useState(false);
-
-  useEffect(() => {
-    if (loading || !detectedRegion) return;
-
-    // Only auto-redirect if user hasn't explicitly chosen to stay on global
-    const hasChosen = localStorage.getItem("pagopay_region_chosen");
-    if (hasChosen) return;
-
-    if (detectedRegion !== "global") {
-      const regionConfig = getRegionById(detectedRegion);
-      localStorage.setItem("pagopay_region_chosen", "true");
-      navigate(regionConfig.path, { replace: true });
-    }
-  }, [detectedRegion, loading, navigate]);
 
   return (
     <div className="min-h-screen scroll-smooth">
-      <Navbar currentRegion="global" />
+      <Navbar />
       <Hero />
       <Features />
       <Benefits />

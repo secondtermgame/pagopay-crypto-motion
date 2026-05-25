@@ -27,15 +27,7 @@ const AboutPage = () => {
 
         <h2 className="text-2xl font-bold text-foreground">Where is PagoPay available?</h2>
         <p>
-          PagoPay targets a <strong>global</strong> audience plus dedicated experiences for{" "}
-          <Link to="/latam" className="text-primary font-medium hover:underline">
-            Latin America
-          </Link>{" "}
-          and{" "}
-          <Link to="/africa" className="text-primary font-medium hover:underline">
-            Africa
-          </Link>
-          . Cards work where major card networks are accepted.
+          PagoPay targets a <strong>global</strong> audience. Cards work where major card networks are accepted.
         </p>
 
         <h2 className="text-2xl font-bold text-foreground">What makes PagoPay different?</h2>
