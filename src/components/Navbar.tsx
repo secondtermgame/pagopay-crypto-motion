@@ -105,7 +105,7 @@ const Navbar = () => {
               className="flex items-center gap-1 text-primary-foreground/80 hover:text-primary-foreground text-sm font-medium transition-colors border border-primary-foreground/30 rounded px-2 py-1"
             >
               <Globe className="h-3.5 w-3.5" />
-              {langFlags[i18n.language.split('-')[0]]} {langLabels[i18n.language.split('-')[0]] ?? i18n.language.split('-')[0].toUpperCase()}
+              {langLabels[i18n.language.split('-')[0]] ?? i18n.language.split('-')[0].toUpperCase()}
               <ChevronDown className="h-3 w-3" />
             </button>
 
