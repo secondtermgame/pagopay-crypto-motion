@@ -279,6 +279,18 @@
       "subtitle": "Open your free account in under 3 minutes",
       "button": "Create free account"
     },
+    "popup": {
+      "heading": "Use Your Crypto Without Hassle",
+      "crypto": "Crypto",
+      "usd": "USD",
+      "card": "Card",
+      "body": "Send your crypto.<br />It automatically converts to USD.<br />And pay anywhere.",
+      "badge": "No FX Fees — Spend in Any Local Currency",
+      "cta": "Create Free Account",
+      "secondary": "See How It Works",
+      "trust": "Secure • Fast • No Hassle",
+      "closeAria": "Close"
+    },
     "footer": {
       "tagline": "Your crypto. Your money. Your freedom.",
       "product": "Product",
