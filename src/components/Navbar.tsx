@@ -22,11 +22,6 @@ const langLabels: Record<string, string> = {
   fr: "Français",
 };
 
-const langFlags: Record<string, string> = {
-  en: "🇬🇧",
-  es: "🇪🇸",
-  fr: "🇫🇷",
-};
 
 const availableLanguages = ["en", "es", "fr"];
 
