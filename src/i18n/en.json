@@ -135,8 +135,19 @@
     "global": "Global",
     "latam": "Latin America",
     "africa": "Africa",
-    
     "selector": "Region"
+  },
+  "popup": {
+    "heading": "Use Your Crypto Without Hassle",
+    "crypto": "Crypto",
+    "usd": "USD",
+    "card": "Card",
+    "body": "Send your crypto.<br />It automatically converts to USD.<br />And pay anywhere.",
+    "badge": "No FX Fees — Spend in Any Local Currency",
+    "cta": "Create Free Account",
+    "secondary": "See How It Works",
+    "trust": "Secure • Fast • No Hassle",
+    "closeAria": "Close"
   },
   "latam": {
     "nav": {
@@ -162,20 +173,47 @@
       "step": "Step",
       "note": "No extra steps. Everything happens automatically.",
       "steps": [
-        { "title": "Send your crypto", "desc": "Deposit BTC, ETH or USDT into your PagoPay account." },
-        { "title": "Automatic conversion", "desc": "Your crypto is automatically converted to USD." },
-        { "title": "Pay without limits", "desc": "Use your PagoPay card anywhere in the world or withdraw at any ATM." }
+        {
+          "title": "Send your crypto",
+          "desc": "Deposit BTC, ETH or USDT into your PagoPay account."
+        },
+        {
+          "title": "Automatic conversion",
+          "desc": "Your crypto is automatically converted to USD."
+        },
+        {
+          "title": "Pay without limits",
+          "desc": "Use your PagoPay card anywhere in the world or withdraw at any ATM."
+        }
       ]
     },
     "benefits": {
       "heading": "Spend in local currency anywhere — with no foreign transaction fees",
       "items": [
-        { "title": "No borders", "desc": "Spend your dollars in any country" },
-        { "title": "Zero FX fees", "desc": "No foreign exchange fees, ever" },
-        { "title": "No hidden fees", "desc": "Transparent pricing — what you see is what you pay" },
-        { "title": "Low conversion fees", "desc": "Keep more of your crypto" },
-        { "title": "Ready in minutes", "desc": "Sign up and pay from your phone" },
-        { "title": "Always protected", "desc": "Military-grade encryption on every transaction" }
+        {
+          "title": "No borders",
+          "desc": "Spend your dollars in any country"
+        },
+        {
+          "title": "Zero FX fees",
+          "desc": "No foreign exchange fees, ever"
+        },
+        {
+          "title": "No hidden fees",
+          "desc": "Transparent pricing — what you see is what you pay"
+        },
+        {
+          "title": "Low conversion fees",
+          "desc": "Keep more of your crypto"
+        },
+        {
+          "title": "Ready in minutes",
+          "desc": "Sign up and pay from your phone"
+        },
+        {
+          "title": "Always protected",
+          "desc": "Military-grade encryption on every transaction"
+        }
       ]
     },
     "showcase": {
@@ -193,9 +231,18 @@
       "heading": "Your dollars are protected",
       "subtitle": "We partner with regulated financial institutions to keep your funds secure.",
       "items": [
-        { "title": "Bank-level encryption", "desc": "The highest standard of data protection" },
-        { "title": "Fully regulated", "desc": "Compliant with international AML and KYC standards" },
-        { "title": "Audited infrastructure", "desc": "Continuous monitoring and third-party audits" }
+        {
+          "title": "Bank-level encryption",
+          "desc": "The highest standard of data protection"
+        },
+        {
+          "title": "Fully regulated",
+          "desc": "Compliant with international AML and KYC standards"
+        },
+        {
+          "title": "Audited infrastructure",
+          "desc": "Continuous monitoring and third-party audits"
+        }
       ]
     },
     "finalCta": {
@@ -238,20 +285,47 @@
       "step": "Step",
       "note": "No extra steps. Everything happens automatically.",
       "steps": [
-        { "title": "Deposit your crypto", "desc": "Send BTC, ETH or USDT to your PagoPay wallet." },
-        { "title": "Instant conversion", "desc": "Your crypto is automatically converted to USD." },
-        { "title": "Spend or withdraw", "desc": "Use your PagoPay card anywhere or withdraw at any ATM." }
+        {
+          "title": "Deposit your crypto",
+          "desc": "Send BTC, ETH or USDT to your PagoPay wallet."
+        },
+        {
+          "title": "Instant conversion",
+          "desc": "Your crypto is automatically converted to USD."
+        },
+        {
+          "title": "Spend or withdraw",
+          "desc": "Use your PagoPay card anywhere or withdraw at any ATM."
+        }
       ]
     },
     "benefits": {
       "heading": "Built for you. Accepted everywhere.",
       "items": [
-        { "title": "No borders", "desc": "Pay in any country, any currency" },
-        { "title": "Zero FX fees", "desc": "No foreign exchange fees when you spend" },
-        { "title": "No bank needed", "desc": "All you need is your phone and crypto" },
-        { "title": "Instant transfers", "desc": "Send money to family and friends in seconds" },
-        { "title": "ATM withdrawals", "desc": "Get cash from any ATM worldwide" },
-        { "title": "Always protected", "desc": "Bank-level security on every transaction" }
+        {
+          "title": "No borders",
+          "desc": "Pay in any country, any currency"
+        },
+        {
+          "title": "Zero FX fees",
+          "desc": "No foreign exchange fees when you spend"
+        },
+        {
+          "title": "No bank needed",
+          "desc": "All you need is your phone and crypto"
+        },
+        {
+          "title": "Instant transfers",
+          "desc": "Send money to family and friends in seconds"
+        },
+        {
+          "title": "ATM withdrawals",
+          "desc": "Get cash from any ATM worldwide"
+        },
+        {
+          "title": "Always protected",
+          "desc": "Bank-level security on every transaction"
+        }
       ]
     },
     "showcase": {
@@ -269,27 +343,24 @@
       "heading": "Your funds are protected",
       "subtitle": "We partner with regulated financial institutions to keep your money safe.",
       "items": [
-        { "title": "Bank-level encryption", "desc": "The highest standard of data protection" },
-        { "title": "Fully regulated", "desc": "Compliant with international AML and KYC standards" },
-        { "title": "Audited infrastructure", "desc": "Continuous monitoring and third-party audits" }
+        {
+          "title": "Bank-level encryption",
+          "desc": "The highest standard of data protection"
+        },
+        {
+          "title": "Fully regulated",
+          "desc": "Compliant with international AML and KYC standards"
+        },
+        {
+          "title": "Audited infrastructure",
+          "desc": "Continuous monitoring and third-party audits"
+        }
       ]
     },
     "finalCta": {
       "heading": "Start spending your crypto today",
       "subtitle": "Open your free account in under 3 minutes",
       "button": "Create free account"
-    },
-    "popup": {
-      "heading": "Use Your Crypto Without Hassle",
-      "crypto": "Crypto",
-      "usd": "USD",
-      "card": "Card",
-      "body": "Send your crypto.<br />It automatically converts to USD.<br />And pay anywhere.",
-      "badge": "No FX Fees — Spend in Any Local Currency",
-      "cta": "Create Free Account",
-      "secondary": "See How It Works",
-      "trust": "Secure • Fast • No Hassle",
-      "closeAria": "Close"
     },
     "footer": {
       "tagline": "Your crypto. Your money. Your freedom.",
