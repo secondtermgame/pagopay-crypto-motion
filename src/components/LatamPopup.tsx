@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { X, Bitcoin, ArrowRight, CreditCard, DollarSign, BadgeCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -10,6 +11,7 @@ interface LatamPopupProps {
 }
 
 export function LatamPopup({ onSignup }: LatamPopupProps) {
+  const { t } = useTranslation();
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -66,13 +68,13 @@ export function LatamPopup({ onSignup }: LatamPopupProps) {
           <button
             onClick={dismiss}
             className="absolute top-4 right-4 text-primary-foreground/70 hover:text-primary-foreground transition-colors"
-            aria-label="Cerrar"
+            aria-label={t("popup.closeAria")}
           >
             <X className="h-5 w-5" />
           </button>
 
           <h2 className="text-2xl sm:text-[28px] font-bold text-primary-foreground text-center leading-tight">
-            Usa tu crypto sin complicaciones
+            {t("popup.heading")}
           </h2>
         </div>
 
@@ -84,7 +86,7 @@ export function LatamPopup({ onSignup }: LatamPopupProps) {
               <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[hsl(163,65%,18%)] to-[hsl(174,72%,36%)] flex items-center justify-center shadow-md">
                 <Bitcoin className="h-5 w-5 text-primary-foreground" />
               </div>
-              <span className="text-[10px] font-semibold text-muted-foreground">Crypto</span>
+              <span className="text-[10px] font-semibold text-muted-foreground">{t("popup.crypto")}</span>
             </div>
 
             <ArrowRight className="h-4 w-4 text-muted-foreground shrink-0 mt-[-12px]" />
@@ -93,7 +95,7 @@ export function LatamPopup({ onSignup }: LatamPopupProps) {
               <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[hsl(84,81%,44%)] to-[hsl(163,50%,45%)] flex items-center justify-center shadow-md">
                 <DollarSign className="h-5 w-5 text-primary-foreground" />
               </div>
-              <span className="text-[10px] font-semibold text-muted-foreground">USD</span>
+              <span className="text-[10px] font-semibold text-muted-foreground">{t("popup.usd")}</span>
             </div>
 
             <ArrowRight className="h-4 w-4 text-muted-foreground shrink-0 mt-[-12px]" />
@@ -102,22 +104,21 @@ export function LatamPopup({ onSignup }: LatamPopupProps) {
               <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[hsl(163,65%,18%)] to-[hsl(163,50%,35%)] flex items-center justify-center shadow-md">
                 <CreditCard className="h-5 w-5 text-primary-foreground" />
               </div>
-              <span className="text-[10px] font-semibold text-muted-foreground">Tarjeta</span>
+              <span className="text-[10px] font-semibold text-muted-foreground">{t("popup.card")}</span>
             </div>
           </div>
 
           {/* Body */}
-          <p className="text-center text-muted-foreground text-sm leading-relaxed mb-2">
-            Envía tu crypto.<br />
-            Se convierte automáticamente a USD.<br />
-            Y paga en cualquier lugar.
-          </p>
+          <p
+            className="text-center text-muted-foreground text-sm leading-relaxed mb-2"
+            dangerouslySetInnerHTML={{ __html: t("popup.body") }}
+          />
 
           {/* No FX badge */}
           <div className="flex items-center justify-center gap-1.5 mb-5">
             <BadgeCheck className="h-4 w-4 text-[hsl(84,81%,44%)]" />
             <span className="text-xs font-bold text-foreground">
-              Sin comisiones FX — Gasta en cualquier moneda local
+              {t("popup.badge")}
             </span>
           </div>
 
@@ -127,7 +128,7 @@ export function LatamPopup({ onSignup }: LatamPopupProps) {
             size="lg"
             className="w-full bg-gradient-to-r from-[hsl(163,65%,18%)] to-[hsl(174,72%,36%)] text-primary-foreground hover:opacity-90 shadow-[var(--shadow-glow)] font-semibold text-base h-12 rounded-xl transition-all duration-300 hover:scale-[1.02]"
           >
-            Crear cuenta gratis
+            {t("popup.cta")}
           </Button>
 
           {/* Secondary CTA */}
@@ -135,12 +136,12 @@ export function LatamPopup({ onSignup }: LatamPopupProps) {
             onClick={scrollToHow}
             className="w-full text-center mt-3 text-sm text-primary font-medium hover:underline transition-colors"
           >
-            Ver cómo funciona
+            {t("popup.secondary")}
           </button>
 
           {/* Trust line */}
           <p className="text-center text-[11px] text-muted-foreground mt-4">
-            Seguro • Rápido • Sin complicaciones
+            {t("popup.trust")}
           </p>
         </div>
       </div>
