@@ -34,19 +34,6 @@ const HowItWorksPage = () => {
           </li>
         </ol>
 
-        <h2 className="text-2xl font-bold text-foreground mb-3">Regional guides</h2>
-        <ul className="list-disc pl-5 space-y-2 text-foreground/90 mb-10">
-          <li>
-            <Link to="/latam/how-it-works" className="text-primary font-medium hover:underline">
-              How it works — Latin America (ES)
-            </Link>
-          </li>
-          <li>
-            <Link to="/africa/how-it-works" className="text-primary font-medium hover:underline">
-              How it works — Africa (FR)
-            </Link>
-          </li>
-        </ul>
 
         <p className="text-sm text-muted-foreground">
           <strong>Author:</strong> PagoPay Editorial · <strong>Last updated:</strong> April 2026
