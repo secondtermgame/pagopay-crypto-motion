@@ -1,17 +1,18 @@
-import { Linkedin } from "lucide-react";
+import { useState } from "react";
+import { Linkedin, ArrowRight } from "lucide-react";
 import { PrivacyPolicyDialog, TermsOfServiceDialog, CookiePolicyDialog } from "./LegalPolicies";
 import { Button } from "./ui/button";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import logoWhite from "@/assets/pagopay-white.png";
 
-const navLinks = [
-  { key: "home", href: "#home" },
-  { key: "about", href: "#about" },
+const productLinks = [
   { key: "aboutPage", href: "/about" },
   { key: "pricing", href: "/pricing" },
-  { key: "pagopay", href: "#pagopay" },
   { key: "security", href: "/security" },
+] as const;
+
+const companyLinks = [
   { key: "faq", href: "/faq" },
   { key: "blog", href: "/blog" },
 ] as const;
@@ -19,68 +20,112 @@ const navLinks = [
 const Footer = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const [email, setEmail] = useState("");
 
   const goTo = (href: string) => {
-    if (href.startsWith("/")) {
-      navigate(href);
-      return;
-    }
-    const el = document.querySelector(href);
-    el?.scrollIntoView({ behavior: "smooth" });
+    if (href.startsWith("/")) navigate(href);
+    else document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <footer className="bg-primary text-primary-foreground">
-      <div className="container mx-auto px-4 py-12">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-8">
-          <img src={logoWhite} alt="PagoPay" className="h-8 w-auto" />
-          <div className="flex flex-wrap justify-center gap-6">
-            {navLinks.map((link) => (
-              <button
-                key={link.key}
-                onClick={() => goTo(link.href)}
-                className="text-primary-foreground/70 hover:text-primary-foreground text-sm font-medium transition-colors"
-              >
-                {t(`nav.${link.key}`)}
-              </button>
-            ))}
+    <footer className="bg-[#1B1725] text-white relative overflow-hidden">
+      <div className="pointer-events-none absolute -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[400px] rounded-full bg-primary/30 blur-3xl" />
+
+      <div className="container mx-auto px-4 pt-20 pb-10 relative">
+        <div className="grid lg:grid-cols-[1.4fr_1fr_1fr_1fr_1fr] gap-10 mb-16">
+          <div>
+            <img src={logoWhite} alt="PagoPay" className="h-10 w-auto mb-6" />
+            <p className="text-sm text-white/60 leading-relaxed max-w-xs">
+              Freedom to move. Power to spend. Crypto meets everyday banking.
+            </p>
           </div>
-          <div className="flex gap-4">
-            <a href="https://www.x.com/mypagopay" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-              <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-              </svg>
-            </a>
-            <a href="https://www.linkedin.com/company/mypagopay" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-              <Linkedin className="h-5 w-5" />
-            </a>
+
+          <div>
+            <h4 className="text-xs font-semibold uppercase tracking-[0.18em] text-white/50 mb-5">Product</h4>
+            <ul className="space-y-3">
+              {productLinks.map((l) => (
+                <li key={l.key}>
+                  <button onClick={() => goTo(l.href)} className="text-sm text-white/80 hover:text-accent transition-colors">
+                    {t(`nav.${l.key}`)}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-xs font-semibold uppercase tracking-[0.18em] text-white/50 mb-5">Company</h4>
+            <ul className="space-y-3">
+              {companyLinks.map((l) => (
+                <li key={l.key}>
+                  <button onClick={() => goTo(l.href)} className="text-sm text-white/80 hover:text-accent transition-colors">
+                    {t(`nav.${l.key}`)}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-xs font-semibold uppercase tracking-[0.18em] text-white/50 mb-5">Legal</h4>
+            <ul className="space-y-3">
+              <li>
+                <PrivacyPolicyDialog>
+                  <Button variant="link" className="text-sm text-white/80 hover:text-accent p-0 h-auto font-normal">
+                    {t("footer.privacy")}
+                  </Button>
+                </PrivacyPolicyDialog>
+              </li>
+              <li>
+                <TermsOfServiceDialog>
+                  <Button variant="link" className="text-sm text-white/80 hover:text-accent p-0 h-auto font-normal">
+                    {t("footer.terms")}
+                  </Button>
+                </TermsOfServiceDialog>
+              </li>
+              <li>
+                <CookiePolicyDialog>
+                  <Button variant="link" className="text-sm text-white/80 hover:text-accent p-0 h-auto font-normal">
+                    {t("footer.cookies")}
+                  </Button>
+                </CookiePolicyDialog>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-xs font-semibold uppercase tracking-[0.18em] text-white/50 mb-5">Stay in the loop</h4>
+            <form onSubmit={(e) => { e.preventDefault(); setEmail(""); }} className="flex items-center gap-2 rounded-full bg-white/5 border border-white/10 p-1 pl-4 focus-within:border-accent/50 transition-colors">
+              <input
+                type="email"
+                required
+                placeholder="you@email.com"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="bg-transparent flex-1 text-sm text-white placeholder:text-white/40 outline-none min-w-0"
+              />
+              <button type="submit" className="shrink-0 rounded-full bg-accent text-accent-foreground p-2 hover:scale-105 transition-transform" aria-label="Subscribe">
+                <ArrowRight className="h-4 w-4" />
+              </button>
+            </form>
+            <div className="flex gap-3 mt-6">
+              <a href="https://www.x.com/mypagopay" target="_blank" rel="noopener noreferrer" aria-label="X" className="h-10 w-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/70 hover:text-accent hover:border-accent/50 hover:shadow-[0_0_20px_rgba(218,254,183,0.3)] transition-all">
+                <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/company/mypagopay" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="h-10 w-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/70 hover:text-accent hover:border-accent/50 hover:shadow-[0_0_20px_rgba(218,254,183,0.3)] transition-all">
+                <Linkedin className="h-4 w-4" />
+              </a>
+            </div>
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/20 pt-6">
-          <p className="text-xs text-primary-foreground/50 leading-relaxed mb-4">
+        <div className="border-t border-white/10 pt-8">
+          <p className="text-xs text-white/40 leading-relaxed mb-4 max-w-5xl">
             {t("footer.disclaimer")}
           </p>
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-primary-foreground/60">{t("footer.copyright")}</p>
-            <div className="flex gap-6">
-              <PrivacyPolicyDialog>
-                <Button variant="link" className="text-primary-foreground/60 hover:text-primary-foreground p-0 h-auto text-sm">
-                  {t("footer.privacy")}
-                </Button>
-              </PrivacyPolicyDialog>
-              <TermsOfServiceDialog>
-                <Button variant="link" className="text-primary-foreground/60 hover:text-primary-foreground p-0 h-auto text-sm">
-                  {t("footer.terms")}
-                </Button>
-              </TermsOfServiceDialog>
-              <CookiePolicyDialog>
-                <Button variant="link" className="text-primary-foreground/60 hover:text-primary-foreground p-0 h-auto text-sm">
-                  {t("footer.cookies")}
-                </Button>
-              </CookiePolicyDialog>
-            </div>
-          </div>
+          <p className="text-xs text-white/50">{t("footer.copyright")}</p>
         </div>
       </div>
     </footer>
