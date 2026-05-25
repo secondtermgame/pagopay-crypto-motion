@@ -21,7 +21,7 @@ No hidden fees. No surprises. Choose the card that fits how you spend.
 - 3D Secure enabled
 - Supports BTC, ETH, USDC, USDT, and more
 
-[Get Plastic]
+​
 
 ---
 
