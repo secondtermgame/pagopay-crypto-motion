@@ -17,9 +17,6 @@ const SiteHeader = () => {
           <Link to="/" className={linkClass}>
             {t("nav.home")}
           </Link>
-          <Link to="/about" className={linkClass}>
-            {t("nav.aboutPage")}
-          </Link>
           <Link to="/pricing" className={linkClass}>
             {t("nav.pricing")}
           </Link>
