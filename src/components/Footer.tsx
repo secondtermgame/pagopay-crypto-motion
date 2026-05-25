@@ -8,7 +8,6 @@ import logoWhite from "@/assets/pagopay-white.png";
 const navLinks = [
   { key: "home", href: "#home" },
   { key: "about", href: "#about" },
-  { key: "aboutPage", href: "/about" },
   { key: "pricing", href: "/pricing" },
   { key: "pagopay", href: "#pagopay" },
   { key: "security", href: "/security" },
