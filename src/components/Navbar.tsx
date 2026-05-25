@@ -8,7 +8,6 @@ const navLinks = [
   { key: "home", href: "#home" },
   { key: "about", href: "#about" },
   { key: "aboutPage", href: "/about" },
-  { key: "howItWorks", href: "/how-it-works" },
   { key: "pricing", href: "/pricing" },
   { key: "pagopay", href: "#pagopay" },
   { key: "security", href: "/security" },

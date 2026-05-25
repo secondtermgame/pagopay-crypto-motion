@@ -7,7 +7,7 @@ import Index from "./pages/Index";
 import BlogIndex from "./pages/BlogIndex";
 import BlogPost from "./pages/BlogPost";
 import AboutPage from "./pages/AboutPage";
-import HowItWorksPage from "./pages/HowItWorksPage";
+
 import PricingPage from "./pages/PricingPage";
 import SecurityPage from "./pages/SecurityPage";
 import FaqPage from "./pages/FaqPage";
@@ -27,10 +27,10 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/latam" element={<Navigate to="/" replace />} />
           <Route path="/africa" element={<Navigate to="/" replace />} />
-          <Route path="/latam/how-it-works" element={<Navigate to="/how-it-works" replace />} />
-          <Route path="/africa/how-it-works" element={<Navigate to="/how-it-works" replace />} />
+          <Route path="/latam/how-it-works" element={<Navigate to="/about" replace />} />
+          <Route path="/africa/how-it-works" element={<Navigate to="/about" replace />} />
+          <Route path="/how-it-works" element={<Navigate to="/about" replace />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/how-it-works" element={<HowItWorksPage />} />
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/security" element={<SecurityPage />} />
           <Route path="/faq" element={<FaqPage />} />
