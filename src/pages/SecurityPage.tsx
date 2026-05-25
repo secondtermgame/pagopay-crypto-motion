@@ -37,9 +37,9 @@ const SecurityPage = () => {
   return (
     <PageShell>
       <PageHero
-        eyebrow="Security"
-        title="Security & compliance"
-        subtitle="PagoPay is designed so security and regulatory compliance are built in — not bolted on. Below is how we protect your account, funds, and data."
+        eyebrow="Security & Compliance"
+        title="Security You Can Trust"
+        subtitle="At PagoPay, security and regulatory compliance are built in — not bolted on. Below is how we protect your account, funds, and data."
         align="left"
         variant="dark"
       />
@@ -83,11 +83,15 @@ const SecurityPage = () => {
       <section className="py-20 md:py-24">
         <div className="container mx-auto px-4 max-w-3xl text-center">
           <p className="text-sm text-muted-foreground">
-            This page summarizes common controls for marketing purposes. See our{" "}
-            <Link to="/" className="text-primary hover:underline font-medium">
-              homepage legal disclosures
-            </Link>{" "}
-            and in-app policies for binding terms.
+            This page summarizes common controls for informational purposes. See our{" "}
+            <Link to="/terms" className="text-primary hover:underline font-medium">
+              Terms of Service
+            </Link>
+            ,{" "}
+            <Link to="/privacy" className="text-primary hover:underline font-medium">
+              Privacy Policy
+            </Link>
+            , and in-app policies for binding terms.
           </p>
           <p className="mt-6">
             <Link to="/" className="text-primary font-semibold hover:underline">
