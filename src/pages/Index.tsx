@@ -16,6 +16,7 @@ import { SignupForm } from "@/components/SignupForm";
 const Index = () => {
   const navigate = useNavigate();
   const { detectedRegion, loading } = useGeoDetection();
+  const [isSignupOpen, setIsSignupOpen] = useState(false);
 
   useEffect(() => {
     if (loading || !detectedRegion) return;
@@ -41,6 +42,8 @@ const Index = () => {
       <FAQ />
       <CryptoTicker />
       <Footer />
+      <LatamPopup onSignup={() => setIsSignupOpen(true)} />
+      <SignupForm open={isSignupOpen} onOpenChange={setIsSignupOpen} />
     </div>
   );
 };
