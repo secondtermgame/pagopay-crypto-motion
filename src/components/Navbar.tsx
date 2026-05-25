@@ -5,6 +5,7 @@ import { Menu, X, Globe, ChevronDown } from "lucide-react";
 import logoWhite from "@/assets/pagopay-white.png";
 
 const navLinks = [
+  { key: "aboutPage", href: "/about" },
   { key: "pricing", href: "/pricing" },
   { key: "security", href: "/security" },
   { key: "faq", href: "/faq" },
