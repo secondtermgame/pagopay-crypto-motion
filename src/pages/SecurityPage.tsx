@@ -27,7 +27,6 @@ const features = [
 ];
 
 const badges = [
-  "Mastercard Network",
   "Bank-level encryption",
 ];
 
