@@ -64,10 +64,3 @@ If you have any questions about your data or the deletion process, contact us at
 
 Last updated: April 2026
 
-- [Home](https://mypagopay.com/account-deletion/#Home)
-- [About](https://mypagopay.com/account-deletion/#about)
-- [PagoPay](https://mypagopay.com/account-deletion/#pagopay)
-- [Security](https://mypagopay.com/account-deletion/#security)
-- [FAQ](https://mypagopay.com/account-deletion/#faq)
-
-[Tweeter](http://www.x.com/mypagopay)[LinkedIn](http://www.linkedin.com/company/mypagopay)

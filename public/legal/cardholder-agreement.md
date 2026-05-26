@@ -345,10 +345,3 @@ Your acceptance of this Cardholder Agreement is recorded electronically when you
 
 Effective Date: April 27, 2026
 
-- [Home](https://mypagopay.com/cardholder-agreement/#Home)
-- [About](https://mypagopay.com/cardholder-agreement/#about)
-- [PagoPay](https://mypagopay.com/cardholder-agreement/#pagopay)
-- [Security](https://mypagopay.com/cardholder-agreement/#security)
-- [FAQ](https://mypagopay.com/cardholder-agreement/#faq)
-
-[Tweeter](http://www.x.com/mypagopay)[LinkedIn](http://www.linkedin.com/company/mypagopay)
