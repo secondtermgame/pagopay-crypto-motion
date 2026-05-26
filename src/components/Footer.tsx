@@ -90,6 +90,16 @@ const Footer = () => {
                   </Button>
                 </CookiePolicyDialog>
               </li>
+              <li>
+                <a
+                  href="https://mypagopay.com/cardholder-agreement/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-white/80 hover:text-accent transition-colors"
+                >
+                  Cardholder Agreement
+                </a>
+              </li>
             </ul>
           </div>
 
