@@ -23,8 +23,14 @@ const CardsSection = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
-          <div className="scroll-fade glass-card rounded-3xl p-10 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_30px_80px_-20px_rgba(16,75,54,0.25)]">
-            <div className="h-32 rounded-2xl bg-gradient-to-br from-muted to-muted-foreground/20 mb-8" />
+          <div className="scroll-fade group glass-card rounded-3xl p-10 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_30px_80px_-20px_rgba(16,75,54,0.25)] [perspective:1000px]">
+            <div className="h-40 md:h-48 mb-8 flex items-center justify-center overflow-visible">
+              <img
+                src={plasticCard}
+                alt="PagoPay plastic card"
+                className="w-[85%] rounded-xl animate-float drop-shadow-[0_20px_30px_rgba(16,75,54,0.35)] transition-transform duration-300 ease-out group-hover:scale-105 group-hover:[transform:rotateY(5deg)]"
+              />
+            </div>
             <h3 className="text-2xl font-semibold mb-3 text-foreground tracking-tight">{t("cards.plastic.title")}</h3>
             <p className="text-muted-foreground leading-relaxed">{t("cards.plastic.description")}</p>
           </div>
