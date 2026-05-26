@@ -100,6 +100,16 @@ const Footer = () => {
                   Cardholder Agreement
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://mypagopay.com/account-deletion/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-white/80 hover:text-accent transition-colors"
+                >
+                  Account Deletion
+                </a>
+              </li>
             </ul>
           </div>
 
