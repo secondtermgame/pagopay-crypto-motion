@@ -6,19 +6,19 @@ import PageHero from "@/components/PageHero";
 const AboutPage = () => {
   const steps = [
     {
+      icon: CreditCard,
+      title: "Choose your card and sign up.",
+      body: "Create your account and pick the card that fits how you spend — Plastic or Metal. Pay your one-time setup fee to lock in your card and start the process.",
+    },
+    {
       icon: UserCheck,
-      title: "Create your account and complete verification.",
-      body: "Sign up with your email, then complete identity verification (KYC). This unlocks your wallet and card features, and keeps the program compliant with anti-money-laundering rules.",
+      title: "Complete verification.",
+      body: "Submit your identity documents for verification. Once approved, your card is prepared and shipped directly to you.",
     },
     {
       icon: Wallet,
-      title: "Deposit crypto.",
-      body: "Send BTC, ETH, USDT, USDC, or other supported assets to your PagoPay wallet. Conversion to USD happens at market rates the moment your deposit confirms — your balance is always ready to spend.",
-    },
-    {
-      icon: CreditCard,
-      title: "Spend or withdraw.",
-      body: "Use your physical prepaid card at merchants and ATMs anywhere Mastercard is accepted. Daily limits and per-transaction fees depend on your card tier.",
+      title: "Activate and start spending.",
+      body: "When your card arrives, deposit crypto to load your balance. Your funds convert to USD instantly, ready to spend anywhere Mastercard is accepted — in stores, online, or at ATMs worldwide.",
     },
   ];
 
@@ -112,7 +112,7 @@ const AboutPage = () => {
               How PagoPay works
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Link crypto to a prepaid card in three moves: verify your identity, deposit supported assets, and spend or withdraw as USD anywhere Mastercard is accepted.
+              Getting started with PagoPay takes three steps: choose your card, complete verification, and start spending the moment your card arrives.
             </p>
           </div>
 
