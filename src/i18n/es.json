@@ -117,6 +117,10 @@
       {
         "question": "8. ¿Qué debo hacer si mi tarjeta se pierde o es robada?",
         "answer": "Si tu tarjeta PagoPay se pierde o es robada, puedes congelarla inmediatamente dentro de la app para prevenir uso no autorizado. Nuestro equipo de soporte está disponible 24/7 para ayudarte a asegurar tu cuenta y emitir una tarjeta de reemplazo rápidamente."
+      },
+      {
+        "question": "9. ¿Puedo usar PagoPay si me pagan en crypto?",
+        "answer": "Sí. Si recibes tu ingreso en criptomonedas, puedes depositarlo directamente en tu cuenta PagoPay. Una vez depositado, tu crypto se convierte automáticamente a USD y queda disponible en tu tarjeta prepagada para gastar en cualquier parte del mundo. Es una forma sencilla de convertir tus ganancias en crypto en poder de compra diario."
       }
     ]
   },
