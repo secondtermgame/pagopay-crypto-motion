@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import plasticCard from "@/assets/plastic-card.png";
+import metalCard from "@/assets/metal-card.png";
 
 const CardsSection = () => {
   const { t } = useTranslation();
@@ -35,8 +36,14 @@ const CardsSection = () => {
             <p className="text-muted-foreground leading-relaxed">{t("cards.plastic.description")}</p>
           </div>
 
-          <div className="scroll-fade glass-card rounded-3xl p-10 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_30px_80px_-20px_rgba(16,75,54,0.25)]" style={{ transitionDelay: "80ms" }}>
-            <div className="h-32 rounded-2xl bg-gradient-to-br from-primary to-primary-glow mb-8" />
+          <div className="scroll-fade group glass-card rounded-3xl p-10 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_30px_80px_-20px_rgba(16,75,54,0.25)]" style={{ transitionDelay: "80ms" }}>
+            <div className="h-40 md:h-48 mb-8 flex items-center justify-center overflow-visible">
+              <img
+                src={metalCard}
+                alt="PagoPay metal card"
+                className="w-[85%] rounded-xl drop-shadow-[0_20px_30px_rgba(0,0,0,0.45)] transition-transform duration-300 ease-out group-hover:scale-[1.02]"
+              />
+            </div>
             <h3 className="text-2xl font-semibold mb-3 text-foreground tracking-tight">{t("cards.metal.title")}</h3>
             <p className="text-muted-foreground leading-relaxed">{t("cards.metal.description")}</p>
           </div>
