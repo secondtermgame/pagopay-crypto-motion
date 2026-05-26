@@ -121,7 +121,7 @@ const BlogPost = () => {
         </div>
       </section>
 
-      <section className="-mt-20 md:-mt-28 pb-20 md:pb-28">
+      <section className="-mt-20 md:-mt-28 pb-20 md:pb-28 relative z-10">
         <div className="container mx-auto px-4">
           <article className="max-w-3xl mx-auto bg-card border border-border rounded-3xl p-8 md:p-12 shadow-[var(--shadow-soft)]">
             {markdown === null ? (
