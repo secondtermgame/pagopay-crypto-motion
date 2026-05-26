@@ -1,25 +1,5 @@
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import { ScrollArea } from "@/components/ui/scroll-area";
-
-export const PrivacyPolicyDialog = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <Dialog>
-      <DialogTrigger asChild>
-        {children}
-      </DialogTrigger>
-      <DialogContent className="max-w-3xl max-h-[80vh]">
-        <DialogHeader>
-          <DialogTitle className="text-2xl">PagoPay Privacy Policy</DialogTitle>
-          <DialogDescription>Effective Date: May 26, 2026 — Last Updated: May 26, 2026</DialogDescription>
-        </DialogHeader>
-        <ScrollArea className="h-[60vh] pr-4">
+export const PrivacyPolicyContent = () => (
+  <div className="space-y-6 text-foreground">
           <div className="space-y-6 text-foreground">
             <section>
               <h3 className="text-xl font-semibold mb-2">1. Introduction</h3>
@@ -253,24 +233,11 @@ export const PrivacyPolicyDialog = ({ children }: { children: React.ReactNode })
               </p>
             </section>
           </div>
-        </ScrollArea>
-      </DialogContent>
-    </Dialog>
-  );
-};
+  </div>
+);
 
-export const TermsOfServiceDialog = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <Dialog>
-      <DialogTrigger asChild>
-        {children}
-      </DialogTrigger>
-      <DialogContent className="max-w-3xl max-h-[80vh]">
-        <DialogHeader>
-          <DialogTitle className="text-2xl">PagoPay Terms of Service</DialogTitle>
-          <DialogDescription>Effective Date: May 26, 2026 — Last Updated: May 26, 2026</DialogDescription>
-        </DialogHeader>
-        <ScrollArea className="h-[60vh] pr-4">
+export const TermsOfServiceContent = () => (
+  <div className="space-y-6 text-foreground">
           <div className="space-y-6 text-foreground">
             <section>
               <h3 className="text-xl font-semibold mb-2">1. Introduction</h3>
@@ -743,24 +710,11 @@ export const TermsOfServiceDialog = ({ children }: { children: React.ReactNode }
               </p>
             </section>
           </div>
-        </ScrollArea>
-      </DialogContent>
-    </Dialog>
-  );
-};
+  </div>
+);
 
-export const CookiePolicyDialog = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <Dialog>
-      <DialogTrigger asChild>
-        {children}
-      </DialogTrigger>
-      <DialogContent className="max-w-3xl max-h-[80vh]">
-        <DialogHeader>
-          <DialogTitle className="text-2xl">Cookie Policy</DialogTitle>
-          <DialogDescription>Effective Date: November 18, 2025</DialogDescription>
-        </DialogHeader>
-        <ScrollArea className="h-[60vh] pr-4">
+export const CookiePolicyContent = () => (
+  <div className="space-y-6 text-foreground">
           <div className="space-y-6 text-foreground">
             <section>
               <h3 className="text-xl font-semibold mb-2">What Are Cookies?</h3>
@@ -805,8 +759,5 @@ export const CookiePolicyDialog = ({ children }: { children: React.ReactNode }) 
               </p>
             </section>
           </div>
-        </ScrollArea>
-      </DialogContent>
-    </Dialog>
-  );
-};
+  </div>
+);
