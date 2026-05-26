@@ -4,7 +4,6 @@ import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import Benefits from "@/components/Benefits";
 import CardsSection from "@/components/CardsSection";
-import Security from "@/components/Security";
 import FAQ from "@/components/FAQ";
 import FinalCta from "@/components/FinalCta";
 import Footer from "@/components/Footer";
@@ -24,7 +23,6 @@ const Index = () => {
       <Features />
       <Benefits />
       <CardsSection />
-      <Security />
       <FAQ />
       <FinalCta onSignup={() => setIsSignupOpen(true)} />
       <Footer />
