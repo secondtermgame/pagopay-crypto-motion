@@ -11,6 +11,11 @@ import AboutPage from "./pages/AboutPage";
 import PricingPage from "./pages/PricingPage";
 import SecurityPage from "./pages/SecurityPage";
 import FaqPage from "./pages/FaqPage";
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
+import TermsOfServicePage from "./pages/TermsOfServicePage";
+import CookiePolicyPage from "./pages/CookiePolicyPage";
+import CardholderAgreementPage from "./pages/CardholderAgreementPage";
+import AccountDeletionPage from "./pages/AccountDeletionPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +37,11 @@ const App = () => (
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/security" element={<SecurityPage />} />
           <Route path="/faq" element={<FaqPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/terms-of-service" element={<TermsOfServicePage />} />
+          <Route path="/cookie-policy" element={<CookiePolicyPage />} />
+          <Route path="/cardholder-agreement" element={<CardholderAgreementPage />} />
+          <Route path="/account-deletion" element={<AccountDeletionPage />} />
           <Route path="/blog" element={<BlogIndex />} />
           <Route path="/blog/best-crypto-cards" element={<Navigate to="/blog/what-is-a-crypto-card" replace />} />
           <Route path="/blog/best-crypto-debit-cards-2026" element={<Navigate to="/blog/what-is-a-crypto-card" replace />} />
