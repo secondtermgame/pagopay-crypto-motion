@@ -23,7 +23,6 @@ const Index = () => {
       <Features />
       <Benefits />
       <CardsSection />
-      <Security />
       <FAQ />
       <FinalCta onSignup={() => setIsSignupOpen(true)} />
       <Footer />
