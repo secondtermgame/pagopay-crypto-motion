@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import plasticCard from "@/assets/plastic-card.png";
 
 const CardsSection = () => {
   const { t } = useTranslation();
