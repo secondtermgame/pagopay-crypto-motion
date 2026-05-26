@@ -54,7 +54,7 @@ const Hero = () => {
           <div className="text-center lg:text-left animate-fade-in">
             <div className="eyebrow text-accent mb-6 justify-center lg:justify-start">
               <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-              Crypto · Card · USD
+              Crypto · Card
             </div>
             <h1 className="text-[14vw] sm:text-7xl md:text-8xl lg:text-[6rem] font-bold leading-[1.02] tracking-[-0.025em] text-white text-balance">
               {t("hero.heading1")}
