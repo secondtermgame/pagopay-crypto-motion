@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Shield, Lock, Eye, FileCheck, Check } from "lucide-react";
+import { Shield, Lock, Eye, FileCheck } from "lucide-react";
 import PageShell from "@/components/PageShell";
 import PageHero from "@/components/PageHero";
 
@@ -26,9 +26,6 @@ const features = [
   },
 ];
 
-const badges = [
-  "Bank-level encryption",
-];
 
 const SecurityPage = () => {
   return (
@@ -44,16 +41,6 @@ const SecurityPage = () => {
       <section className="bg-primary text-primary-foreground -mt-1 pb-20 md:pb-28 relative overflow-hidden grain">
         <div className="pointer-events-none absolute -bottom-40 -left-20 w-[500px] h-[500px] rounded-full bg-accent/10 blur-3xl" />
         <div className="container mx-auto px-4 relative">
-          <div className="flex flex-wrap gap-3 mb-16">
-            {badges.map((b) => (
-              <span
-                key={b}
-                className="inline-flex items-center gap-2 rounded-full bg-white/5 border border-white/10 px-4 py-2 text-xs font-medium text-white/85 backdrop-blur-md"
-              >
-                <Check className="h-3.5 w-3.5 text-accent" strokeWidth={2.5} /> {b}
-              </span>
-            ))}
-          </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {features.map((f, i) => {
