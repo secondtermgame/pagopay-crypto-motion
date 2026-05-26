@@ -89,9 +89,12 @@ const AboutPage = () => {
                 Where do PagoPay cards work?
               </h2>
             </div>
-            <div className="text-foreground/90 text-lg leading-relaxed">
+            <div className="text-foreground/90 text-lg leading-relaxed space-y-6">
               <p>
                 PagoPay cards are accepted anywhere Mastercard is accepted — at millions of merchants and ATMs across the globe, online and in person.
+              </p>
+              <p>
+                Use it for groceries, restaurants, hotels, flights, online shopping, subscriptions, ride-shares, fuel, or ATM withdrawals. Anywhere you'd normally pay with a debit or credit card, your PagoPay card works the same way — fast, secure, and ready when you are.
               </p>
             </div>
           </div>
