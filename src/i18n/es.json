@@ -103,23 +103,19 @@
         "answer": "PagoPay sigue un modelo de precios transparente y escalonado diseñado para adaptarse a tu uso y volumen. Aplicamos tarifas de conversión competitivas cuando intercambias entre cripto y fiat, y nuestros niveles ofrecen tarifas reducidas para mayor uso. Crea tu cuenta para ver el desglose completo de tarifas."
       },
       {
-        "question": "5. ¿Mi dinero está seguro con PagoPay?",
-        "answer": "Sí. En PagoPay, la seguridad es fundamental. Utilizamos encriptación AES-256, autenticación multifactor y nos asociamos con custodios regulados como ALT 5 Sigma para proteger los fondos de los usuarios y gestionar las operaciones cripto. Todos los saldos de tarjetas fiat se mantienen con bancos emisores autorizados y cumplimos plenamente con las regulaciones financieras y de protección de datos internacionales."
-      },
-      {
-        "question": "6. ¿Puedo usar PagoPay internacionalmente?",
+        "question": "5. ¿Puedo usar PagoPay internacionalmente?",
         "answer": "Sí. Las tarjetas PagoPay se pueden usar en todo el mundo donde se acepten las principales redes de tarjetas. Aunque todas las tarjetas actualmente operan en USD, no cobramos tarifas adicionales de cambio de divisas cuando gastas en otras monedas."
       },
       {
-        "question": "7. ¿Cuánto tardan las conversiones de cripto a fiat?",
+        "question": "6. ¿Cuánto tardan las conversiones de cripto a fiat?",
         "answer": "Las conversiones de cripto a fiat en PagoPay se procesan instantáneamente a tasas de mercado. Cuando cargas tu tarjeta o inicias un intercambio en la app, tu cripto se convierte inmediatamente a USD y queda disponible para gastar. No hay demoras y tus fondos están disponibles tan pronto como se confirma la transacción."
       },
       {
-        "question": "8. ¿Qué debo hacer si mi tarjeta se pierde o es robada?",
+        "question": "7. ¿Qué debo hacer si mi tarjeta se pierde o es robada?",
         "answer": "Si tu tarjeta PagoPay se pierde o es robada, puedes congelarla inmediatamente dentro de la app para prevenir uso no autorizado. Nuestro equipo de soporte está disponible 24/7 para ayudarte a asegurar tu cuenta y emitir una tarjeta de reemplazo rápidamente."
       },
       {
-        "question": "9. ¿Puedo usar PagoPay si me pagan en crypto?",
+        "question": "8. ¿Puedo usar PagoPay si me pagan en crypto?",
         "answer": "Sí. Si recibes tu ingreso en criptomonedas, puedes depositarlo directamente en tu cuenta PagoPay. Una vez depositado, tu crypto se convierte automáticamente a USD y queda disponible en tu tarjeta prepagada para gastar en cualquier parte del mundo. Es una forma sencilla de convertir tus ganancias en crypto en poder de compra diario."
       }
     ]

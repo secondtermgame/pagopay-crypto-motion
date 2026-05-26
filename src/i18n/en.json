@@ -85,23 +85,19 @@
         "answer": "PagoPay follows a transparent, tiered pricing model designed to match your usage and volume. We apply competitive conversion fees when you exchange between crypto and fiat, and our tiers offer reduced rates for higher usage. Create your account to see the full breakdown of fees across all tiers."
       },
       {
-        "question": "5. Is my money safe with PagoPay?",
-        "answer": "Yes — PagoPay is built for it. Whether you're a freelancer, \nremote worker, or contractor paid in Bitcoin, Ethereum, or stablecoins, \nyou can deposit your earnings and have them ready to spend on your card \nin moments. No bank account required, no manual conversions, no waiting \ndays for transfers to clear."
-      },
-      {
-        "question": "6. Can I use PagoPay internationally?",
+        "question": "5. Can I use PagoPay internationally?",
         "answer": "Yes. PagoPay cards can be used worldwide anywhere major card networks are accepted. While all cards currently operate in USD, we do not charge any additional foreign exchange fees when you spend in other currencies. Your crypto is converted to USD at the point of load or transaction, giving you a seamless and cost-efficient global payment experience."
       },
       {
-        "question": "7. How long do crypto-to-fiat conversions take?",
+        "question": "6. How long do crypto-to-fiat conversions take?",
         "answer": "Crypto-to-fiat conversions on PagoPay are processed instantly at market rates. When you load your card or initiate a swap in the app, your crypto is immediately converted to USD and made available for spending. Your funds are usable as soon as the transaction is confirmed."
       },
       {
-        "question": "8. What should I do if my card is lost or stolen?",
+        "question": "7. What should I do if my card is lost or stolen?",
         "answer": "If your PagoPay card is lost or stolen, you can immediately freeze it within the app to prevent unauthorized use. Our support team is available 24/7 to assist you with securing your account and issuing a replacement card promptly."
       },
       {
-        "question": "9. Can I use PagoPay if I get paid in crypto?",
+        "question": "8. Can I use PagoPay if I get paid in crypto?",
         "answer": "Yes. If you receive your income in cryptocurrency, you can deposit it directly into your PagoPay account. Once deposited, your crypto is automatically converted to USD and becomes available on your prepaid card for spending anywhere in the world. It's a simple way to turn your crypto earnings into everyday purchasing power."
       }
     ]

@@ -101,23 +101,19 @@
         "answer": "PagoPay suit un modèle de tarification transparent et échelonné conçu pour s'adapter à votre utilisation et volume. Nous appliquons des frais de conversion compétitifs lors de l'échange entre crypto et fiat, et nos niveaux offrent des tarifs réduits pour une utilisation plus importante. Créez votre compte pour voir le détail complet des frais."
       },
       {
-        "question": "5. Mon argent est-il en sécurité avec PagoPay ?",
-        "answer": "Oui. Chez PagoPay, la sécurité est fondamentale. Nous utilisons le chiffrement AES-256, l'authentification multifacteur et nous associons avec des dépositaires réglementés comme ALT 5 Sigma pour protéger les fonds des utilisateurs et gérer les opérations crypto. Tous les soldes de cartes fiat sont détenus auprès de banques émettrices autorisées, et nous respectons pleinement les réglementations financières et de protection des données internationales."
-      },
-      {
-        "question": "6. Puis-je utiliser PagoPay à l'international ?",
+        "question": "5. Puis-je utiliser PagoPay à l'international ?",
         "answer": "Oui. Les cartes PagoPay peuvent être utilisées dans le monde entier partout où les principaux réseaux de cartes sont acceptés. Bien que toutes les cartes fonctionnent actuellement en USD, nous ne facturons aucun frais de change supplémentaire lorsque vous dépensez dans d'autres devises."
       },
       {
-        "question": "7. Combien de temps prennent les conversions crypto vers fiat ?",
+        "question": "6. Combien de temps prennent les conversions crypto vers fiat ?",
         "answer": "Les conversions crypto vers fiat sur PagoPay sont traitées instantanément aux taux du marché. Lorsque vous chargez votre carte ou initiez un échange dans l'application, votre crypto est immédiatement converti en USD et rendu disponible pour les dépenses. Il n'y a aucun délai et vos fonds sont utilisables dès que la transaction est confirmée."
       },
       {
-        "question": "8. Que dois-je faire si ma carte est perdue ou volée ?",
+        "question": "7. Que dois-je faire si ma carte est perdue ou volée ?",
         "answer": "Si votre carte PagoPay est perdue ou volée, vous pouvez la geler immédiatement dans l'application pour empêcher toute utilisation non autorisée. Notre équipe de support est disponible 24/7 pour vous aider à sécuriser votre compte et émettre rapidement une carte de remplacement."
       },
       {
-        "question": "9. Puis-je utiliser PagoPay si je suis payé en crypto ?",
+        "question": "8. Puis-je utiliser PagoPay si je suis payé en crypto ?",
         "answer": "Oui. Si vous recevez votre revenu en crypto-monnaie, vous pouvez le déposer directement sur votre compte PagoPay. Une fois déposé, votre crypto est automatiquement converti en USD et devient disponible sur votre carte prépayée pour dépenser partout dans le monde. C'est un moyen simple de transformer vos gains en crypto en pouvoir d'achat quotidien."
       }
     ]
