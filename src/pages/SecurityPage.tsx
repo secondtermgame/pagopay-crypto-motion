@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Shield, Lock, Eye, FileCheck } from "lucide-react";
+import { Shield, Lock, Eye, SlidersHorizontal } from "lucide-react";
 import PageShell from "@/components/PageShell";
 import PageHero from "@/components/PageHero";
 
@@ -15,9 +15,9 @@ const features = [
     body: "Transactions and account activity are monitored to surface suspicious patterns and help block unauthorized use. You can freeze your card instantly in the app if it is lost or stolen.",
   },
   {
-    icon: FileCheck,
-    title: "Regulatory posture",
-    body: "PagoPay Payment Services is operated by 9538-8310 Québec Inc., a registered Money Services Business with FINTRAC (Canada) under registration N300000116 and licensed by Revenu Québec under permit 0000000000022125. We follow applicable AML, KYC, and data-protection requirements and work with regulated partners for crypto custody, conversion, and card issuance.",
+    icon: SlidersHorizontal,
+    title: "You're in control",
+    body: "Freeze your card instantly in the app. Set spending limits. Review every transaction in real time. PagoPay gives you full visibility and control over your account — so you decide when, where, and how your funds are used.",
   },
   {
     icon: Shield,
