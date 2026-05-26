@@ -54,9 +54,9 @@ const Hero = () => {
           <div className="text-center lg:text-left animate-fade-in">
             <div className="eyebrow text-accent mb-6 justify-center lg:justify-start">
               <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-              Crypto · Card
+              {t("hero.pill")}
             </div>
-            <h1 className="text-[14vw] sm:text-7xl md:text-8xl lg:text-[6rem] font-bold leading-[1.02] tracking-[-0.025em] text-white text-balance">
+            <h1 className="text-[12vw] sm:text-6xl md:text-7xl lg:text-[5rem] font-bold leading-[1.02] tracking-[-0.025em] text-white text-balance">
               {t("hero.heading1")}
               <br />
               <span className="text-accent">{t("hero.heading2")}</span>
@@ -70,7 +70,7 @@ const Hero = () => {
                 <ArrowRight className="h-5 w-5" />
               </button>
               <a href="#about" className="btn-ghost-light px-8 py-4 text-base">
-                Learn more
+                {t("hero.secondary")}
               </a>
             </div>
           </div>
