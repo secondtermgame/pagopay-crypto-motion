@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Linkedin, ArrowRight } from "lucide-react";
-import { Button } from "./ui/button";
+
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import logoWhite from "@/assets/pagopay-white.png";
