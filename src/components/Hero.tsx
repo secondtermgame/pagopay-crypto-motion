@@ -52,10 +52,6 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-[1.1fr_1fr] gap-12 lg:gap-20 items-center">
           <div className="text-center lg:text-left animate-fade-in">
-            <div className="eyebrow text-accent mb-6 justify-center lg:justify-start">
-              <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-              {t("hero.pill")}
-            </div>
             <h1 className="text-[12vw] sm:text-6xl md:text-7xl lg:text-[5rem] font-bold leading-[1.02] tracking-[-0.025em] text-white text-balance">
               {t("hero.heading1")}
               <br />
