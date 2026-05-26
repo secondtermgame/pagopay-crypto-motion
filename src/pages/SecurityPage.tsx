@@ -26,7 +26,6 @@ const features = [
   },
 ];
 
-const badges: string[] = [];
 
 const SecurityPage = () => {
   return (
