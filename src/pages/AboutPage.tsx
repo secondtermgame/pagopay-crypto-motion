@@ -63,19 +63,15 @@ const AboutPage = () => {
           <div className="grid lg:grid-cols-[1fr_2fr] gap-12 lg:gap-20 max-w-6xl">
             <div className="lg:sticky lg:top-28 self-start">
               <div className="eyebrow text-accent mb-4">
-                <span className="h-1.5 w-1.5 rounded-full bg-accent" /> Operator
+                <span className="h-1.5 w-1.5 rounded-full bg-accent" /> Our story
               </div>
               <h2 className="text-3xl md:text-4xl font-semibold tracking-tight leading-tight">
-                Who operates PagoPay?
+                Made for how money moves now.
               </h2>
             </div>
             <div className="space-y-6 text-white/85 text-lg leading-relaxed">
               <p>
-                PagoPay services are operated by <strong className="text-white">9538-8310 Québec Inc.</strong>, a registered Money Services Business with{" "}
-                <strong className="text-white">FINTRAC (Canada)</strong> under registration N300000116 and licensed by Revenu Québec under permit 0000000000022125.
-              </p>
-              <p>
-                Crypto custody, conversion, and card-issuing functions are provided through regulated partners. Card programs are subject to partner issuer terms, identity verification, and applicable limits.
+                PagoPay was born from a simple idea — that the way people hold and spend money is changing, and the tools around it should change too. We're a team obsessed with making digital assets feel as easy to use as cash. Every part of the experience is designed around clarity, simplicity, and people. Whether you're a freelancer, a traveler, or just someone who believes the future of money belongs to you — we built this for you.
               </p>
             </div>
           </div>
