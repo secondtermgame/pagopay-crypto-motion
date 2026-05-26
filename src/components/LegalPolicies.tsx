@@ -268,7 +268,7 @@ export const TermsOfServiceDialog = ({ children }: { children: React.ReactNode }
       <DialogContent className="max-w-3xl max-h-[80vh]">
         <DialogHeader>
           <DialogTitle className="text-2xl">PagoPay Terms of Service</DialogTitle>
-          <DialogDescription>Effective Date: November 18, 2025 — Last Updated: March 2026</DialogDescription>
+          <DialogDescription>Effective Date: May 26, 2026 — Last Updated: May 26, 2026</DialogDescription>
         </DialogHeader>
         <ScrollArea className="h-[60vh] pr-4">
           <div className="space-y-6 text-foreground">
@@ -280,28 +280,26 @@ export const TermsOfServiceDialog = ({ children }: { children: React.ReactNode }
               <p className="text-muted-foreground leading-relaxed mt-2">
                 By accessing or using the Platform, you agree to be bound by these Terms. If you do not agree with these Terms, you must not use the Platform.
               </p>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                These Terms form a binding legal agreement between you and the operator of PagoPay. Please read them carefully.
+              </p>
             </section>
 
             <section>
               <h3 className="text-xl font-semibold mb-2">2. Operator of the Platform</h3>
               <p className="text-muted-foreground leading-relaxed">
-                PagoPay Payment Services is operated by 9538-8310 Québec Inc., a company incorporated in Québec, Canada and registered as a Money Services Business (MSB) with the Financial Transactions and Reports Analysis Centre of Canada (FINTRAC).
+                PagoPay Payment Services is operated by 9538-8310 Québec Inc., a company incorporated in Québec, Canada and registered as a Money Services Business (MSB) with the Financial Transactions and Reports Analysis Centre of Canada (FINTRAC) under registration N300000116, and licensed by Revenu Québec under permit 0000000000022125.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2">
                 Certain operational services may be conducted by 1001529768 Ontario Inc., acting as a registered MSB agent on behalf of the principal MSB.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2">PagoPay provides financial technology services including:</p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li>digital wallet services</li>
-                <li>payment transfers and balance transfers</li>
-                <li>cryptocurrency conversion services</li>
-                <li>prepaid card funding and spending services</li>
+                <li>Cryptocurrency-to-fiat conversion services</li>
+                <li>Prepaid card funding and spending services</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                PagoPay is a financial technology platform and not a bank.
-              </p>
-              <p className="text-muted-foreground leading-relaxed mt-2">
-                Funds held within the Platform are not deposits and are not insured by the Canada Deposit Insurance Corporation (CDIC).
+                PagoPay is a financial technology platform and not a bank. Funds held within the Platform are not deposits and are not insured by the Canada Deposit Insurance Corporation (CDIC) or any equivalent deposit insurance scheme.
               </p>
             </section>
 
@@ -309,74 +307,75 @@ export const TermsOfServiceDialog = ({ children }: { children: React.ReactNode }
               <h3 className="text-xl font-semibold mb-2">3. Eligibility</h3>
               <p className="text-muted-foreground leading-relaxed mb-2">To use the Platform, users must:</p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li>be at least 18 years old</li>
-                <li>complete required identity verification procedures</li>
-                <li>comply with applicable laws and regulations</li>
-                <li>not be subject to applicable sanctions restrictions.</li>
+                <li>Be at least 18 years of age</li>
+                <li>Have the legal capacity to enter into binding contracts</li>
+                <li>Complete required identity verification procedures</li>
+                <li>Comply with all applicable laws and regulations</li>
+                <li>Not be located in, resident in, or a national of a jurisdiction subject to comprehensive sanctions</li>
+                <li>Not be listed on any applicable sanctions or watchlists</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                PagoPay reserves the right to refuse, restrict, or terminate accounts that do not meet eligibility requirements.
+                PagoPay reserves the right to refuse, restrict, suspend, or terminate accounts that do not meet eligibility requirements, at its sole discretion.
               </p>
             </section>
 
             <section>
               <h3 className="text-xl font-semibold mb-2">4. Identity Verification</h3>
               <p className="text-muted-foreground leading-relaxed">
-                PagoPay is required to verify the identity of users in accordance with anti-money laundering and financial crime regulations.
+                PagoPay is required to verify the identity of users in accordance with anti-money laundering, counter-terrorist financing, and other financial crime regulations.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2 mb-2">Users may be required to submit:</p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li>government-issued identification</li>
-                <li>proof of residential address</li>
-                <li>biometric verification such as live selfie verification.</li>
+                <li>Government-issued identification</li>
+                <li>Proof of residential address</li>
+                <li>Biometric verification such as live selfie verification</li>
+                <li>Source of funds documentation</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                PagoPay may request additional documentation or information to comply with regulatory obligations.
+                PagoPay may request additional documentation or information at any time to comply with regulatory obligations. Failure to provide requested information may result in delayed transactions, account restrictions, or account termination.
               </p>
             </section>
 
             <section>
               <h3 className="text-xl font-semibold mb-2">5. Services Offered</h3>
-              <p className="text-muted-foreground leading-relaxed mb-2">The Platform may provide access to the following services:</p>
+              <p className="text-muted-foreground leading-relaxed mb-2">The Platform currently provides access to the following services:</p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li>digital wallet services</li>
-                <li>cryptocurrency on-ramping and off-ramping</li>
-                <li>peer-to-peer transfers</li>
-                <li>foreign exchange conversion services</li>
-                <li>prepaid card funding and spending</li>
+                <li>Cryptocurrency deposits and conversion to USD</li>
+                <li>Prepaid card issuance, funding, and spending</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                Availability of services may vary depending on regulatory requirements and geographic restrictions.
+                Additional services may be introduced from time to time. Availability of services may vary depending on regulatory requirements, geographic restrictions, partner availability, and user verification status. PagoPay makes no guarantee that any particular service will remain available indefinitely.
               </p>
             </section>
 
             <section>
               <h3 className="text-xl font-semibold mb-2">6. Fees</h3>
-              <p className="text-muted-foreground leading-relaxed mb-2">Certain services may involve fees, including but not limited to:</p>
+              <p className="text-muted-foreground leading-relaxed mb-2">Certain services involve fees, including but not limited to:</p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li>card issuance fees</li>
-                <li>monthly card or account subscription fees</li>
-                <li>cryptocurrency conversion spreads or fees</li>
-                <li>foreign exchange conversion fees.</li>
+                <li>Card issuance and setup fees</li>
+                <li>Monthly card subscription fees</li>
+                <li>Cryptocurrency conversion fees</li>
+                <li>ATM withdrawal fees</li>
+                <li>Account inactivity fees (where applicable)</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                Applicable fees will be disclosed within the Platform prior to completing transactions.
+                Applicable fees are disclosed within the Platform and on the PagoPay website prior to completing transactions. By using the Platform, you agree to pay all applicable fees.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                PagoPay reserves the right to modify fees from time to time. Material fee changes will be communicated to users with reasonable advance notice where practicable.
               </p>
             </section>
 
             <section>
               <h3 className="text-xl font-semibold mb-2">7. Card Subscription and Renewal Fees</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Certain prepaid card products offered through the Platform may require a recurring subscription or maintenance fee.
+                Certain prepaid card products offered through the Platform require a recurring subscription or maintenance fee. By activating and using a PagoPay card, the cardholder authorizes PagoPay and its issuing partners to charge applicable card subscription or renewal fees.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                By activating and using a PagoPay card, the cardholder authorizes PagoPay and its issuing partners to charge applicable card subscription or renewal fees.
+                Card subscription fees may be automatically deducted from the cardholder's available balance at the time of renewal. If sufficient funds are not available at the time of renewal, card functionality may be suspended until the applicable subscription fee is paid.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                Where applicable, card subscription fees may be automatically deducted from the cardholder's available balance at the time of renewal.
-              </p>
-              <p className="text-muted-foreground leading-relaxed mt-2">
-                If sufficient funds are not available at the time of renewal, card functionality may be suspended until the applicable subscription fee is paid.
+                Cardholders may cancel their card subscription at any time through their account settings. Cancellation will take effect at the end of the current billing period, and no refunds will be issued for any unused portion of the subscription period unless required by applicable law.
               </p>
             </section>
 
@@ -387,9 +386,11 @@ export const TermsOfServiceDialog = ({ children }: { children: React.ReactNode }
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2 mb-2">Users must:</p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li>protect login information and authentication credentials</li>
-                <li>immediately report unauthorized access or suspicious activity</li>
-                <li>ensure all information provided to PagoPay is accurate and current.</li>
+                <li>Protect login information and authentication credentials</li>
+                <li>Enable available security features such as two-factor authentication</li>
+                <li>Immediately report unauthorized access or suspicious activity</li>
+                <li>Ensure all information provided to PagoPay is accurate and current</li>
+                <li>Notify PagoPay promptly of any changes to contact information</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-2">
                 PagoPay is not responsible for losses resulting from unauthorized access caused by failure to safeguard account credentials.
@@ -399,42 +400,45 @@ export const TermsOfServiceDialog = ({ children }: { children: React.ReactNode }
             <section>
               <h3 className="text-xl font-semibold mb-2">9. Transaction Responsibility</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Users are responsible for ensuring the accuracy of all transaction details submitted through the Platform.
+                Users are solely responsible for ensuring the accuracy of all transaction details submitted through the Platform.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2 mb-2">This includes verifying:</p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li>recipient wallet addresses</li>
-                <li>recipient account information</li>
-                <li>transaction amounts</li>
-                <li>selected blockchain networks where applicable.</li>
+                <li>Recipient cryptocurrency addresses</li>
+                <li>Transaction amounts</li>
+                <li>Selected blockchain networks</li>
+                <li>Card transaction details</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                Cryptocurrency transactions are generally irreversible once submitted to the blockchain network.
+                Cryptocurrency transactions are generally irreversible once submitted to the blockchain network. PagoPay cannot cancel, reverse, or recover transactions once confirmed on the blockchain.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                PagoPay cannot cancel, reverse, or recover transactions once confirmed on the blockchain.
-              </p>
-              <p className="text-muted-foreground leading-relaxed mt-2">
-                PagoPay is not responsible for losses resulting from transactions sent to incorrect wallet addresses, incorrect recipients, or incorrect network selections.
+                PagoPay is not responsible for losses resulting from transactions sent to incorrect addresses, incorrect recipients, incorrect network selections, or user error.
               </p>
             </section>
 
             <section>
-              <h3 className="text-xl font-semibold mb-2">10. Blockchain Network Risk</h3>
+              <h3 className="text-xl font-semibold mb-2">10. Cryptocurrency and Blockchain Network Risk</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Cryptocurrency transactions are processed through decentralized blockchain networks that are not controlled by PagoPay.
+                Users acknowledge that cryptocurrencies and digital assets involve significant risks, including but not limited to:
               </p>
-              <p className="text-muted-foreground leading-relaxed mt-2">
-                Transaction processing times, network fees, and confirmation speeds are determined by the underlying blockchain networks.
-              </p>
-              <p className="text-muted-foreground leading-relaxed mt-2 mb-2">Users acknowledge that:</p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li>blockchain networks may experience congestion or delays</li>
-                <li>transaction fees may fluctuate</li>
-                <li>confirmation times may vary depending on network activity.</li>
+                <li>Substantial price volatility</li>
+                <li>Potential total loss of value</li>
+                <li>Regulatory uncertainty</li>
+                <li>Technical and security vulnerabilities</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                PagoPay is not responsible for delays, increased transaction fees, or failed transactions resulting from blockchain network conditions outside its control.
+                Cryptocurrency transactions are processed through decentralized blockchain networks that are not controlled by PagoPay. Transaction processing times, network fees, and confirmation speeds are determined by the underlying blockchain networks.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-2">Users acknowledge that:</p>
+              <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
+                <li>Blockchain networks may experience congestion or delays</li>
+                <li>Transaction fees may fluctuate</li>
+                <li>Confirmation times may vary depending on network activity</li>
+              </ul>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                PagoPay is not responsible for delays, increased transaction fees, failed transactions, or losses resulting from blockchain network conditions or cryptocurrency market conditions outside its control.
               </p>
             </section>
 
@@ -442,45 +446,53 @@ export const TermsOfServiceDialog = ({ children }: { children: React.ReactNode }
               <h3 className="text-xl font-semibold mb-2">11. Prohibited Activities</h3>
               <p className="text-muted-foreground leading-relaxed mb-2">Users may not use the Platform to:</p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li>engage in illegal or fraudulent activities</li>
-                <li>conduct transactions involving sanctioned individuals or jurisdictions</li>
-                <li>attempt to bypass identity verification procedures</li>
-                <li>process transactions on behalf of third parties without authorization</li>
-                <li>violate applicable financial regulations.</li>
+                <li>Engage in illegal, fraudulent, or unauthorized activities</li>
+                <li>Conduct transactions involving sanctioned individuals, entities, or jurisdictions</li>
+                <li>Engage in money laundering, terrorist financing, or other financial crimes</li>
+                <li>Attempt to bypass or circumvent identity verification procedures</li>
+                <li>Process transactions on behalf of third parties without proper authorization</li>
+                <li>Trade, transfer, or hold privacy-focused cryptocurrencies or tokens flagged as high-risk by regulatory authorities</li>
+                <li>Use bots, scrapers, automated tools, or other unauthorized means to access the Platform</li>
+                <li>Resell, sublicense, or commercially exploit the Platform without authorization</li>
+                <li>Attempt to reverse engineer, decompile, or otherwise interfere with the Platform's technical infrastructure</li>
+                <li>Violate applicable financial regulations, consumer protection laws, or intellectual property rights</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                PagoPay reserves the right to restrict or terminate accounts involved in prohibited activities.
+                PagoPay reserves the right to immediately restrict, suspend, or terminate accounts involved in prohibited activities and to report such activities to relevant authorities.
               </p>
             </section>
 
             <section>
               <h3 className="text-xl font-semibold mb-2">12. Regulatory Compliance and Anti-Money Laundering</h3>
               <p className="text-muted-foreground leading-relaxed">
-                PagoPay operates in accordance with applicable anti-money laundering and counter-terrorist financing regulations.
+                PagoPay operates in accordance with applicable anti-money laundering, counter-terrorist financing, and financial crime regulations.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                PagoPay may monitor transactions and account activity to ensure compliance with applicable laws.
+                PagoPay monitors transactions and account activity to ensure compliance with applicable laws. Users acknowledge that PagoPay may:
               </p>
-              <p className="text-muted-foreground leading-relaxed mt-2 mb-2">Users acknowledge that PagoPay may:</p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li>conduct transaction monitoring</li>
-                <li>request additional identity verification</li>
-                <li>delay or block transactions</li>
-                <li>restrict or suspend accounts.</li>
+                <li>Conduct ongoing transaction monitoring</li>
+                <li>Request additional identity verification at any time</li>
+                <li>Delay, hold, or block transactions</li>
+                <li>Restrict, suspend, or close accounts</li>
+                <li>Report transactions or account activity to regulatory authorities, including FINTRAC, as required by law</li>
               </ul>
-              <p className="text-muted-foreground leading-relaxed mt-2">
-                PagoPay may report certain transactions or account activity to regulatory authorities as required by law.
-              </p>
             </section>
 
             <section>
               <h3 className="text-xl font-semibold mb-2">13. Source of Funds Verification</h3>
               <p className="text-muted-foreground leading-relaxed">
-                PagoPay may request documentation regarding the source of funds associated with transactions conducted through the Platform.
+                PagoPay may request documentation regarding the source of funds associated with deposits or transactions conducted through the Platform.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                Failure to provide requested information may result in transaction delays, account restrictions, or account termination.
+                Failure to provide requested information within reasonable timeframes may result in:
               </p>
+              <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
+                <li>Transaction delays or reversals</li>
+                <li>Account restrictions or suspension</li>
+                <li>Account termination</li>
+                <li>Reporting to regulatory authorities</li>
+              </ul>
             </section>
 
             <section>
@@ -489,56 +501,40 @@ export const TermsOfServiceDialog = ({ children }: { children: React.ReactNode }
                 PagoPay services may not be available in certain jurisdictions due to regulatory requirements or international sanctions.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                Users may not access or use the Platform if they are located in, resident in, or conducting transactions from jurisdictions subject to comprehensive sanctions.
+                Users may not access or use the Platform if they are located in, resident in, or conducting transactions from jurisdictions subject to comprehensive sanctions administered by:
               </p>
-              <p className="text-muted-foreground leading-relaxed mt-2 mb-2">These sanctions may include those administered by:</p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li>the Government of Canada</li>
-                <li>the United States Office of Foreign Assets Control (OFAC)</li>
-                <li>the United Nations Security Council</li>
-                <li>other applicable governmental authorities.</li>
-              </ul>
-              <p className="text-muted-foreground leading-relaxed mt-2 mb-2">Examples of sanctioned jurisdictions may include:</p>
-              <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li>North Korea</li>
-                <li>Iran</li>
-                <li>Syria</li>
-                <li>Cuba</li>
-                <li>Crimea Region of Ukraine</li>
-                <li>Donetsk Region of Ukraine</li>
-                <li>Luhansk Region of Ukraine.</li>
+                <li>The Government of Canada (including the Special Economic Measures Act and Justice for Victims of Corrupt Foreign Officials Act)</li>
+                <li>The United States Office of Foreign Assets Control (OFAC)</li>
+                <li>The United Nations Security Council</li>
+                <li>The European Union</li>
+                <li>Other applicable governmental authorities</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                PagoPay reserves the right to restrict services in any jurisdiction where providing services would violate applicable laws or regulations.
+                Users represent and warrant that they are not subject to any applicable sanctions, watchlists, or restricted-party lists. PagoPay reserves the right to restrict services in any jurisdiction where providing services would violate applicable laws or regulations.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                The list of sanctioned jurisdictions changes from time to time. Users are responsible for ensuring they are not located in a sanctioned jurisdiction at the time of using the Platform.
               </p>
             </section>
 
             <section>
               <h3 className="text-xl font-semibold mb-2">15. Third-Party Crypto Payments</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Individual users may receive cryptocurrency transfers from external blockchain wallets, including transfers originating from third parties.
+                Users may receive cryptocurrency transfers from external blockchain wallets, including transfers originating from third parties. All incoming transactions remain subject to compliance review, transaction monitoring, and source-of-funds verification.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                Business Accounts may also receive cryptocurrency payments from customers or other counterparties as part of legitimate commercial activity.
-              </p>
-              <p className="text-muted-foreground leading-relaxed mt-2">
-                However, transfers made to PagoPay for the purpose of funding corporate wallets or corporate prepaid card programs must originate from the verified Business Account associated with the onboarded corporate entity.
-              </p>
-              <p className="text-muted-foreground leading-relaxed mt-2">
-                PagoPay does not accept direct third-party transfers intended to fund corporate card programs from individuals or entities that have not been verified through the Business Account.
-              </p>
-              <p className="text-muted-foreground leading-relaxed mt-2">
-                All incoming transactions remain subject to compliance review and monitoring.
+                PagoPay reserves the right to reject, freeze, or return incoming transactions that cannot be verified or that present compliance risks.
               </p>
             </section>
 
             <section>
               <h3 className="text-xl font-semibold mb-2">16. Third-Party Services</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Certain services provided through the Platform may rely on third-party service providers including payment processors, card issuing institutions, and cryptocurrency liquidity providers.
+                Certain services provided through the Platform rely on third-party service providers, including payment processors, card-issuing institutions, banking partners, and cryptocurrency liquidity providers.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                PagoPay is not responsible for delays, outages, or service disruptions caused by third-party providers.
+                PagoPay is not responsible for delays, outages, errors, or service disruptions caused by third-party providers. Users acknowledge that the availability of certain services depends on the continued operation of these third parties.
               </p>
             </section>
 
@@ -548,23 +544,17 @@ export const TermsOfServiceDialog = ({ children }: { children: React.ReactNode }
                 Prepaid card services offered through the Platform are issued and managed by licensed third-party issuing institutions.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                These issuing institutions are responsible for the custody of card balances and administration of card program funds.
+                These issuing institutions are responsible for the custody of card balances and administration of card program funds. PagoPay does not hold or control card program funds directly.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                PagoPay does not hold or control card program funds.
-              </p>
-              <p className="text-muted-foreground leading-relaxed mt-2">
-                If a card program is suspended or terminated by the issuing institution or card network, PagoPay will use reasonable efforts to notify users and facilitate communication with the issuing institution.
-              </p>
-              <p className="text-muted-foreground leading-relaxed mt-2">
-                Users may be required to contact the issuing institution directly to recover funds held by the issuer.
+                If a card program is suspended, modified, or terminated by the issuing institution or card network, PagoPay will use reasonable efforts to notify affected users and facilitate communication with the issuing institution. Users may be required to contact the issuing institution directly to recover funds held by the issuer.
               </p>
             </section>
 
             <section>
               <h3 className="text-xl font-semibold mb-2">18. Program Changes</h3>
               <p className="text-muted-foreground leading-relaxed">
-                PagoPay may modify, suspend, replace, or discontinue certain services or programs where required by regulatory requirements, banking partners, card issuers, or service providers.
+                PagoPay may modify, suspend, replace, or discontinue certain services or programs at any time, including where required by regulatory requirements, banking partners, card issuers, or service providers.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2">
                 PagoPay will use reasonable efforts to notify users of material changes where practicable.
@@ -574,82 +564,182 @@ export const TermsOfServiceDialog = ({ children }: { children: React.ReactNode }
             <section>
               <h3 className="text-xl font-semibold mb-2">19. Inactive or Dormant Accounts</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Accounts that remain inactive for twelve (12) consecutive months may be classified as dormant.
+                Accounts that remain inactive for twelve (12) consecutive months may be classified as dormant. PagoPay may apply a monthly inactivity maintenance fee to dormant accounts, as disclosed on the PagoPay pricing page and within the Platform.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                PagoPay may apply a monthly inactivity maintenance fee to dormant accounts where permitted by applicable regulations.
-              </p>
-              <p className="text-muted-foreground leading-relaxed mt-2">
-                Users may avoid inactivity fees by logging into their account or conducting a transaction.
+                Users will be notified by email at least thirty (30) days before any inactivity fee is applied. Users may avoid inactivity fees by logging into their account or conducting a transaction.
               </p>
             </section>
 
             <section>
-              <h3 className="text-xl font-semibold mb-2">20. Disclaimers and Limitation of Liability</h3>
-              <p className="text-muted-foreground leading-relaxed mb-2">PagoPay disclaims liability for:</p>
+              <h3 className="text-xl font-semibold mb-2">20. Account Closure and Termination</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Users may close their account at any time by contacting PagoPay support. Before closing an account, users must:
+              </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li>losses resulting from cryptocurrency price volatility</li>
-                <li>unauthorized account access caused by user negligence</li>
-                <li>service interruptions caused by third-party infrastructure providers.</li>
+                <li>Withdraw or spend all remaining balances</li>
+                <li>Settle any outstanding fees or obligations</li>
+                <li>Complete any pending transactions</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                To the maximum extent permitted by law, PagoPay shall not be liable for indirect or consequential damages arising from the use of the Platform.
+                PagoPay may suspend, restrict, or terminate user accounts at any time for any reason, including but not limited to:
+              </p>
+              <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
+                <li>Violation of these Terms</li>
+                <li>Suspicious or fraudulent activity</li>
+                <li>Regulatory or legal requirements</li>
+                <li>Inability to verify user identity</li>
+                <li>Extended inactivity</li>
+              </ul>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                Following account closure, PagoPay will retain records as required by applicable law. Termination of an account does not relieve users of obligations incurred prior to termination.
               </p>
             </section>
 
             <section>
-              <h3 className="text-xl font-semibold mb-2">21. Force Majeure</h3>
+              <h3 className="text-xl font-semibold mb-2">21. Refund Policy</h3>
               <p className="text-muted-foreground leading-relaxed">
-                PagoPay shall not be liable for delays or failure to perform obligations due to events beyond its control, including natural disasters, government actions, banking disruptions, blockchain network outages, or telecommunications failures.
-              </p>
-            </section>
-
-            <section>
-              <h3 className="text-xl font-semibold mb-2">22. Modifications to Terms</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                PagoPay may update these Terms from time to time.
+                Card setup fees, subscription fees, and conversion fees are generally non-refundable except as required by applicable law.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                Updated versions will be published on the Platform with a revised effective date.
+                In cases of duplicate charges, processing errors, or unauthorized transactions, users may submit a refund request through PagoPay support within thirty (30) days of the transaction. Refund decisions are made at PagoPay's reasonable discretion based on the specific circumstances.
+              </p>
+            </section>
+
+            <section>
+              <h3 className="text-xl font-semibold mb-2">22. Complaint Resolution</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                PagoPay is committed to resolving user complaints fairly and efficiently.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                Continued use of the Platform constitutes acceptance of the revised Terms.
-              </p>
-            </section>
-
-            <section>
-              <h3 className="text-xl font-semibold mb-2">23. Privacy Policy</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                The collection and use of personal information is governed by the PagoPay Privacy Policy, which forms part of these Terms.
-              </p>
-            </section>
-
-            <section>
-              <h3 className="text-xl font-semibold mb-2">24. Entire Agreement</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                These Terms of Service, together with the Privacy Policy and any policies referenced herein, constitute the entire agreement between the user and PagoPay regarding use of the Platform.
+                Users may submit complaints by contacting <a href="mailto:compliance@mypagopay.com" className="text-primary hover:underline">compliance@mypagopay.com</a>. PagoPay will acknowledge receipt of complaints within five (5) business days and provide a substantive response within thirty (30) days where possible.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                If any provision of these Terms is determined to be invalid or unenforceable, the remaining provisions shall remain in full force and effect.
+                If a complaint is not resolved to the user's satisfaction, users in Canada may escalate to the relevant regulatory authority, including FINTRAC or the appropriate provincial consumer protection office.
               </p>
             </section>
 
             <section>
-              <h3 className="text-xl font-semibold mb-2">25. Governing Law</h3>
+              <h3 className="text-xl font-semibold mb-2">23. Disclaimers and Limitation of Liability</h3>
               <p className="text-muted-foreground leading-relaxed">
-                These Terms are governed by the laws of the Province of Québec and the applicable laws of Canada.
+                The Platform is provided "as is" and "as available" without warranties of any kind, whether express or implied. PagoPay disclaims all implied warranties, including warranties of merchantability, fitness for a particular purpose, and non-infringement, to the maximum extent permitted by law.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-2">PagoPay disclaims liability for:</p>
+              <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
+                <li>Losses resulting from cryptocurrency price volatility</li>
+                <li>Unauthorized account access caused by user negligence</li>
+                <li>Service interruptions caused by third-party infrastructure providers</li>
+                <li>Errors in user-submitted transaction details</li>
+                <li>Losses arising from blockchain network conditions</li>
+              </ul>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                To the maximum extent permitted by law, PagoPay's total liability under these Terms shall not exceed the greater of (a) the total fees paid by the user to PagoPay in the twelve (12) months preceding the event giving rise to the claim, or (b) one hundred Canadian dollars (CAD $100).
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                In no event shall PagoPay be liable for indirect, incidental, consequential, special, or punitive damages, including loss of profits, data, or business opportunities.
               </p>
             </section>
 
             <section>
-              <h3 className="text-xl font-semibold mb-2">26. Contact Information</h3>
+              <h3 className="text-xl font-semibold mb-2">24. Indemnification</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Users agree to indemnify, defend, and hold harmless PagoPay, its operators, affiliates, officers, directors, employees, and agents from any claims, damages, losses, liabilities, costs, or expenses (including reasonable legal fees) arising from:
+              </p>
+              <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
+                <li>User's violation of these Terms</li>
+                <li>User's violation of applicable laws or regulations</li>
+                <li>User's misuse of the Platform</li>
+                <li>User's transactions or activities conducted through the Platform</li>
+                <li>User's violation of third-party rights</li>
+              </ul>
+            </section>
+
+            <section>
+              <h3 className="text-xl font-semibold mb-2">25. Force Majeure</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                PagoPay shall not be liable for delays or failure to perform obligations due to events beyond its reasonable control, including natural disasters, pandemics, government actions, banking disruptions, blockchain network outages, cyber attacks, telecommunications failures, or labor disputes.
+              </p>
+            </section>
+
+            <section>
+              <h3 className="text-xl font-semibold mb-2">26. Dispute Resolution and Arbitration</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Any dispute, claim, or controversy arising out of or relating to these Terms or the Platform shall first be addressed through good-faith negotiations between the user and PagoPay.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                If a dispute cannot be resolved through negotiation within sixty (60) days, it shall be finally resolved by binding arbitration administered in accordance with the laws of Québec, Canada. Arbitration shall take place in Montréal, Québec, in English or French at the user's choice, and the decision of the arbitrator shall be final and binding.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                <strong>CLASS ACTION WAIVER:</strong> Users agree that any dispute resolution proceedings will be conducted only on an individual basis and not as a plaintiff or class member in any purported class or representative action. The arbitrator may not consolidate more than one person's claims.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                This arbitration clause does not prevent users from pursuing claims in small claims court where applicable, or from seeking injunctive relief for intellectual property violations.
+              </p>
+            </section>
+
+            <section>
+              <h3 className="text-xl font-semibold mb-2">27. Modifications to Terms</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                PagoPay may update these Terms from time to time. Updated versions will be published on the Platform with a revised effective date.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                Material changes will be communicated to users with reasonable advance notice where practicable. Continued use of the Platform after such notice constitutes acceptance of the revised Terms.
+              </p>
+            </section>
+
+            <section>
+              <h3 className="text-xl font-semibold mb-2">28. Privacy Policy</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                The collection and use of personal information is governed by the PagoPay Privacy Policy, which forms part of these Terms and is incorporated by reference.
+              </p>
+            </section>
+
+            <section>
+              <h3 className="text-xl font-semibold mb-2">29. General Provisions</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                <strong>Severability:</strong> If any provision of these Terms is determined to be invalid, illegal, or unenforceable, the remaining provisions shall remain in full force and effect.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                <strong>No Waiver:</strong> PagoPay's failure to enforce any right or provision of these Terms shall not be deemed a waiver of such right or provision.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                <strong>Assignment:</strong> Users may not assign or transfer these Terms or their account without the prior written consent of PagoPay. PagoPay may assign these Terms in connection with a merger, acquisition, or sale of assets.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                <strong>Entire Agreement:</strong> These Terms, together with the Privacy Policy and any policies referenced herein, constitute the entire agreement between the user and PagoPay regarding the Platform and supersede all prior agreements and understandings.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                <strong>Language:</strong> These Terms are provided in English. A French version may be made available for users in Québec in accordance with applicable language laws. In the event of a conflict between the English and French versions, the version in the user's preferred language shall prevail to the extent permitted by law.
+              </p>
+            </section>
+
+            <section>
+              <h3 className="text-xl font-semibold mb-2">30. Governing Law</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                These Terms are governed by and construed in accordance with the laws of the Province of Québec and the applicable federal laws of Canada, without regard to conflict-of-law principles.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                Subject to the arbitration provisions in Section 26, the courts of Québec shall have exclusive jurisdiction over any disputes arising from these Terms.
+              </p>
+            </section>
+
+            <section>
+              <h3 className="text-xl font-semibold mb-2">31. Contact Information</h3>
               <p className="text-muted-foreground leading-relaxed">
                 For questions regarding these Terms or PagoPay services:
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                <a href="mailto:support@mypagopay.com" className="text-primary hover:underline">support@mypagopay.com</a>
+                General support: <a href="mailto:support@mypagopay.com" className="text-primary hover:underline">support@mypagopay.com</a>
                 <br />
-                <a href="mailto:compliance@mypagopay.com" className="text-primary hover:underline">compliance@mypagopay.com</a>
+                Compliance and complaints: <a href="mailto:compliance@mypagopay.com" className="text-primary hover:underline">compliance@mypagopay.com</a>
+                <br />
+                Privacy inquiries: <a href="mailto:privacy@mypagopay.com" className="text-primary hover:underline">privacy@mypagopay.com</a>
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-4">
+                PagoPay Payment Services<br />
+                Operated by 9538-8310 Québec Inc.<br />
+                FINTRAC Registration: N300000116<br />
+                Revenu Québec Permit: 0000000000022125
               </p>
             </section>
           </div>
