@@ -114,13 +114,6 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-            <button
-              onClick={() => setSignupOpen(true)}
-              className="btn-lime px-4 py-2 text-sm"
-            >
-              {t("hero.cta")}
-              <ArrowRight className="h-3.5 w-3.5" />
-            </button>
           </div>
 
           <button
