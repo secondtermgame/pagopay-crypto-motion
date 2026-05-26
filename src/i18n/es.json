@@ -14,7 +14,7 @@
     "heading1": "TU DINERO,",
     "heading2": "EN MOVIMIENTO",
     "subtitle": "La tarjeta crypto que te permite gastar Bitcoin, Ethereum y stablecoins en cualquier lugar — conversión instantánea, cero complicaciones.",
-    "cta": "Obtén tu Cuenta Gratis"
+    "cta": "Crea tu cuenta"
   },
   "balance": {
     "title": "Saldo",
@@ -100,7 +100,7 @@
       },
       {
         "question": "4. ¿Hay alguna tarifa por usar PagoPay?",
-        "answer": "PagoPay sigue un modelo de precios transparente y escalonado diseñado para adaptarse a tu uso y volumen. Aplicamos tarifas de conversión competitivas cuando intercambias entre cripto y fiat, y nuestros niveles ofrecen tarifas reducidas para mayor uso. Crea tu cuenta gratuita para ver el desglose completo de tarifas."
+        "answer": "PagoPay sigue un modelo de precios transparente y escalonado diseñado para adaptarse a tu uso y volumen. Aplicamos tarifas de conversión competitivas cuando intercambias entre cripto y fiat, y nuestros niveles ofrecen tarifas reducidas para mayor uso. Crea tu cuenta para ver el desglose completo de tarifas."
       },
       {
         "question": "5. ¿Mi dinero está seguro con PagoPay?",
@@ -156,7 +156,7 @@
       "benefits": "Beneficios",
       "security": "Seguridad"
     },
-    "cta": "Obtén tu cuenta gratis",
+    "cta": "Crea tu cuenta",
     "downloadApp": "Descargar app",
     "hero": {
       "heading1": "Envía tu crypto.",
@@ -247,8 +247,8 @@
     },
     "finalCta": {
       "heading": "Empieza a gastar tu crypto hoy",
-      "subtitle": "Abre tu cuenta gratis en menos de 3 minutos",
-      "button": "Crear cuenta gratis"
+      "subtitle": "Abre tu cuenta en menos de 3 minutos",
+      "button": "Crear tu cuenta"
     },
     "footer": {
       "tagline": "Tu crypto. Tus dólares. Tu libertad.",

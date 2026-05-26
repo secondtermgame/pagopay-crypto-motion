@@ -14,7 +14,7 @@
     "heading1": "VOTRE ARGENT,",
     "heading2": "EN MOUVEMENT",
     "subtitle": "PagoPay simplifie vos finances, que ce soit en crypto ou en monnaie fiduciaire",
-    "cta": "Obtenez votre compte gratuit"
+    "cta": "Créez votre compte"
   },
   "balance": {
     "title": "Solde",
@@ -98,7 +98,7 @@
       },
       {
         "question": "4. Y a-t-il des frais pour utiliser PagoPay ?",
-        "answer": "PagoPay suit un modèle de tarification transparent et échelonné conçu pour s'adapter à votre utilisation et volume. Nous appliquons des frais de conversion compétitifs lors de l'échange entre crypto et fiat, et nos niveaux offrent des tarifs réduits pour une utilisation plus importante. Créez votre compte gratuit pour voir le détail complet des frais."
+        "answer": "PagoPay suit un modèle de tarification transparent et échelonné conçu pour s'adapter à votre utilisation et volume. Nous appliquons des frais de conversion compétitifs lors de l'échange entre crypto et fiat, et nos niveaux offrent des tarifs réduits pour une utilisation plus importante. Créez votre compte pour voir le détail complet des frais."
       },
       {
         "question": "5. Mon argent est-il en sécurité avec PagoPay ?",
@@ -154,7 +154,7 @@
       "benefits": "Avantages",
       "security": "Sécurité"
     },
-    "cta": "Créer un compte gratuit",
+    "cta": "Créer un compte",
     "hero": {
       "heading1": "Envoyez de l'argent.",
       "heading2": "Payez partout.",
@@ -244,8 +244,8 @@
     },
     "finalCta": {
       "heading": "Commencez à dépenser vos crypto aujourd'hui",
-      "subtitle": "Ouvrez votre compte gratuit en moins de 3 minutes",
-      "button": "Créer un compte gratuit"
+      "subtitle": "Ouvrez votre compte en moins de 3 minutes",
+      "button": "Créer un compte"
     },
     "footer": {
       "tagline": "Vos crypto. Votre argent. Votre liberté.",
