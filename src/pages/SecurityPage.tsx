@@ -27,7 +27,6 @@ const features = [
 ];
 
 const badges = [
-  "Licensed by Revenu Québec",
   "Mastercard Network",
   "Bank-level encryption",
 ];
