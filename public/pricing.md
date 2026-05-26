@@ -55,6 +55,7 @@ No hidden fees. No surprises. Choose the card that fits how you spend.
 
 ## Included with every card
 
+- No card top-up fees
 - Zero foreign exchange markup on international purchases
 - Zero load fees, decline fees, or per-swipe fees
 - Strong encryption and 2FA protection
