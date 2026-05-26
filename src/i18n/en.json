@@ -99,6 +99,10 @@
       {
         "question": "8. What should I do if my card is lost or stolen?",
         "answer": "If your PagoPay card is lost or stolen, you can immediately freeze it within the app to prevent unauthorized use. Our support team is available 24/7 to assist you with securing your account and issuing a replacement card promptly."
+      },
+      {
+        "question": "9. Can I use PagoPay if I get paid in crypto?",
+        "answer": "Yes. If you receive your income in cryptocurrency, you can deposit it directly into your PagoPay account. Once deposited, your crypto is automatically converted to USD and becomes available on your prepaid card for spending anywhere in the world. It's a simple way to turn your crypto earnings into everyday purchasing power."
       }
     ]
   },
