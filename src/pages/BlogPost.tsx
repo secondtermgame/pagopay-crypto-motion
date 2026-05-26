@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { ArrowLeft, Newspaper } from "lucide-react";
 import PageShell from "@/components/PageShell";
 import { blogPosts } from "@/data/blogPosts";
 import NotFound from "./NotFound";
+
+const SITE_URL = "https://pagopay-crypto-motion.lovable.app";
 
 const BlogPost = () => {
   const { slug } = useParams();
@@ -50,10 +53,48 @@ const BlogPost = () => {
     );
   }
 
+  const url = `${SITE_URL}/blog/${post.slug}`;
+  const pageTitle = `${post.title} | PagoPay Blog`;
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.metaDescription,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: { "@type": "Organization", name: "PagoPay Editorial" },
+    publisher: {
+      "@type": "Organization",
+      name: "PagoPay",
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/favicon.ico`,
+      },
+    },
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    keywords: post.keywords.join(", "),
+  };
+
   const related = blogPosts.filter((p) => p.slug !== slug).slice(0, 2);
 
   return (
     <PageShell>
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta name="description" content={post.metaDescription} />
+        <meta name="keywords" content={post.keywords.join(", ")} />
+        <link rel="canonical" href={url} />
+        <meta property="og:title" content={post.title} />
+        <meta property="og:description" content={post.metaDescription} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={url} />
+        <meta property="article:published_time" content={post.date} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={post.title} />
+        <meta name="twitter:description" content={post.metaDescription} />
+        <script type="application/ld+json">{JSON.stringify(articleJsonLd)}</script>
+      </Helmet>
+
       <section className="bg-gradient-hero text-white pt-32 md:pt-40 pb-32 md:pb-44 relative overflow-hidden grain">
         <div className="pointer-events-none absolute -top-32 -left-20 w-[500px] h-[500px] rounded-full bg-accent/15 blur-3xl" />
         <div className="pointer-events-none absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full bg-primary-glow/30 blur-3xl" />
@@ -63,7 +104,7 @@ const BlogPost = () => {
           </Link>
           <div className="max-w-3xl">
             <div className="eyebrow text-accent mb-5">
-              <span className="h-1.5 w-1.5 rounded-full bg-accent" /> Guide · {post.date}
+              <span className="h-1.5 w-1.5 rounded-full bg-accent" /> {post.category} · {post.date}
             </div>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.05] text-balance">
               {post.title}
@@ -105,11 +146,17 @@ const BlogPost = () => {
                 <ReactMarkdown
                   remarkPlugins={[remarkGfm]}
                   components={{
-                    a: ({ href, children }) => (
-                      <a href={href} target="_blank" rel="noopener noreferrer">
-                        {children}
-                      </a>
-                    ),
+                    a: ({ href, children }) => {
+                      const isInternal = href?.startsWith("/");
+                      if (isInternal) {
+                        return <Link to={href!}>{children}</Link>;
+                      }
+                      return (
+                        <a href={href} target="_blank" rel="noopener noreferrer">
+                          {children}
+                        </a>
+                      );
+                    },
                   }}
                 >
                   {markdown}
@@ -132,7 +179,7 @@ const BlogPost = () => {
                       <Newspaper className="h-12 w-12 text-accent/40" strokeWidth={1} />
                     </div>
                     <div className="p-6">
-                      <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">{r.date}</p>
+                      <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">{r.category} · {r.date}</p>
                       <h4 className="text-base font-semibold text-foreground group-hover:text-primary transition-colors leading-snug">
                         {r.title}
                       </h4>
