@@ -1,39 +1,57 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Newspaper, Scale } from "lucide-react";
+import { Helmet } from "react-helmet-async";
+import { ArrowRight, Newspaper } from "lucide-react";
 import PageShell from "@/components/PageShell";
 import PageHero from "@/components/PageHero";
 import { blogPosts } from "@/data/blogPosts";
 
+const SITE_URL = "https://pagopay-crypto-motion.lovable.app";
+
 const BlogIndex = () => {
   const [featured, ...rest] = blogPosts;
 
+  const itemListJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: blogPosts.map((p, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: `${SITE_URL}/blog/${p.slug}`,
+      name: p.title,
+    })),
+  };
+
   return (
     <PageShell>
+      <Helmet>
+        <title>PagoPay Blog | Crypto Card Insights, Guides & Tips</title>
+        <meta
+          name="description"
+          content="Explore the PagoPay blog for guides on spending crypto, how crypto cards work, stablecoin spending, freelancer tips, travel advice, and more."
+        />
+        <link rel="canonical" href={`${SITE_URL}/blog`} />
+        <meta property="og:title" content="PagoPay Blog | Crypto Card Insights, Guides & Tips" />
+        <meta
+          property="og:description"
+          content="Guides on spending crypto, how crypto cards work, stablecoin spending, freelancer tips, travel advice, and more."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`${SITE_URL}/blog`} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="PagoPay Blog | Crypto Card Insights, Guides & Tips" />
+        <meta
+          name="twitter:description"
+          content="Guides on spending crypto, how crypto cards work, stablecoin spending, freelancer tips, travel advice, and more."
+        />
+        <script type="application/ld+json">{JSON.stringify(itemListJsonLd)}</script>
+      </Helmet>
+
       <PageHero
         eyebrow="Blog"
-        title="Guides, comparisons & ideas"
-        subtitle="Stories from the PagoPay team about spending crypto, sending money, and life beyond traditional banking."
+        title="PagoPay Blog"
+        subtitle="Crypto Card Insights, Guides, and Tips"
         align="left"
       />
-
-      <section className="pb-12 -mt-8">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-wrap gap-2">
-            {["All", "Guides", "Comparisons", "Product"].map((c, i) => (
-              <button
-                key={c}
-                className={`px-4 py-1.5 rounded-full text-xs font-medium border transition-colors ${
-                  i === 0
-                    ? "bg-primary text-primary-foreground border-primary"
-                    : "bg-card text-foreground/70 border-border hover:border-primary/30 hover:text-foreground"
-                }`}
-              >
-                {c}
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section className="pb-20 md:pb-28">
         <div className="container mx-auto px-4">
@@ -56,7 +74,7 @@ const BlogIndex = () => {
                 </div>
                 <div className="p-8 md:p-12 flex flex-col justify-center">
                   <p className="eyebrow text-primary mb-4">
-                    <span className="h-1.5 w-1.5 rounded-full bg-primary" /> Guide · {featured.date}
+                    <span className="h-1.5 w-1.5 rounded-full bg-primary" /> {featured.category} · {featured.date}
                   </p>
                   <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight leading-tight mb-4 group-hover:text-primary transition-colors">
                     {featured.title}
@@ -86,7 +104,7 @@ const BlogIndex = () => {
                   </div>
                 </div>
                 <div className="p-7 flex-1 flex flex-col">
-                  <p className="text-xs text-muted-foreground uppercase tracking-wider mb-3">Guide · {p.date}</p>
+                  <p className="text-xs text-muted-foreground uppercase tracking-wider mb-3">{p.category} · {p.date}</p>
                   <h3 className="text-lg font-semibold text-foreground leading-snug mb-3 group-hover:text-primary transition-colors">
                     {p.title}
                   </h3>
@@ -99,35 +117,6 @@ const BlogIndex = () => {
                 </div>
               </Link>
             ))}
-          </div>
-
-          {/* Comparison hubs */}
-          <div className="mt-16 rounded-3xl border border-border bg-card p-8 md:p-10">
-            <div className="flex items-start gap-4 mb-6">
-              <div className="p-3 rounded-2xl bg-accent text-primary">
-                <Scale className="h-5 w-5" strokeWidth={1.5} />
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-foreground tracking-tight">Comparison hubs</h3>
-                <p className="text-sm text-muted-foreground mt-1">See how PagoPay stacks up against other crypto cards.</p>
-              </div>
-            </div>
-            <div className="grid sm:grid-cols-2 gap-3">
-              <Link
-                to="/compare/pagopay-vs-coinbase-card"
-                className="group flex items-center justify-between rounded-2xl border border-border bg-background px-5 py-4 hover:border-primary/30 transition-colors"
-              >
-                <span className="text-sm font-semibold text-foreground">PagoPay vs Coinbase Card</span>
-                <ArrowRight className="h-4 w-4 text-primary group-hover:translate-x-1 transition-transform" />
-              </Link>
-              <Link
-                to="/compare/pagopay-vs-crypto-com-card"
-                className="group flex items-center justify-between rounded-2xl border border-border bg-background px-5 py-4 hover:border-primary/30 transition-colors"
-              >
-                <span className="text-sm font-semibold text-foreground">PagoPay vs Crypto.com Card</span>
-                <ArrowRight className="h-4 w-4 text-primary group-hover:translate-x-1 transition-transform" />
-              </Link>
-            </div>
           </div>
         </div>
       </section>
