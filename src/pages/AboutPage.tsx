@@ -44,7 +44,7 @@ const AboutPage = () => {
             </div>
             <div className="space-y-8 text-foreground/90 text-lg leading-relaxed">
               <p>
-                <strong>PagoPay</strong> is a crypto-to-fiat payment platform operated from Québec, Canada. You deposit Bitcoin,
+                <strong>PagoPay</strong> is a crypto-to-fiat payment platform. You deposit Bitcoin,
                 Ethereum, stablecoins, or other supported crypto; funds are converted to USD at market rates; you spend with a prepaid
                 card with <strong>zero foreign exchange markup</strong> on international purchases.
               </p>
