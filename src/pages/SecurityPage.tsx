@@ -27,7 +27,6 @@ const features = [
 ];
 
 const badges = [
-  "FINTRAC Registered MSB",
   "Licensed by Revenu Québec",
   "Mastercard Network",
   "Bank-level encryption",
