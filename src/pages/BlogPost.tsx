@@ -141,7 +141,6 @@ const BlogPost = () => {
                 prose-li:text-foreground/85 prose-li:marker:text-primary
                 prose-blockquote:border-l-4 prose-blockquote:border-accent prose-blockquote:bg-accent/15 prose-blockquote:rounded-r-2xl prose-blockquote:py-1 prose-blockquote:px-5 prose-blockquote:not-italic prose-blockquote:text-foreground
                 prose-table:text-sm
-                first-letter:prose-p:first-of-type:float-left first-letter:prose-p:first-of-type:text-6xl first-letter:prose-p:first-of-type:font-bold first-letter:prose-p:first-of-type:leading-none first-letter:prose-p:first-of-type:pr-2 first-letter:prose-p:first-of-type:pt-1 first-letter:prose-p:first-of-type:text-primary
               ">
                 <ReactMarkdown
                   remarkPlugins={[remarkGfm]}
