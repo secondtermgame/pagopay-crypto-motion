@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Shield, Lock, Eye, FileCheck, Check } from "lucide-react";
+import { Shield, Lock, Eye, FileCheck } from "lucide-react";
 import PageShell from "@/components/PageShell";
 import PageHero from "@/components/PageHero";
 
@@ -26,9 +26,7 @@ const features = [
   },
 ];
 
-const badges = [
-  "Bank-level encryption",
-];
+const badges: string[] = [];
 
 const SecurityPage = () => {
   return (
