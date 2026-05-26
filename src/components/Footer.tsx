@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Linkedin, ArrowRight } from "lucide-react";
-import { PrivacyPolicyDialog, TermsOfServiceDialog, CookiePolicyDialog } from "./LegalPolicies";
 import { Button } from "./ui/button";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
@@ -70,45 +69,29 @@ const Footer = () => {
             <h4 className="text-xs font-semibold uppercase tracking-[0.18em] text-white/50 mb-5">Legal</h4>
             <ul className="space-y-3">
               <li>
-                <PrivacyPolicyDialog>
-                  <Button variant="link" className="text-sm text-white/80 hover:text-accent p-0 h-auto font-normal">
-                    {t("footer.privacy")}
-                  </Button>
-                </PrivacyPolicyDialog>
+                <button onClick={() => goTo("/privacy-policy")} className="text-sm text-white/80 hover:text-accent transition-colors text-left">
+                  {t("footer.privacy")}
+                </button>
               </li>
               <li>
-                <TermsOfServiceDialog>
-                  <Button variant="link" className="text-sm text-white/80 hover:text-accent p-0 h-auto font-normal">
-                    {t("footer.terms")}
-                  </Button>
-                </TermsOfServiceDialog>
+                <button onClick={() => goTo("/terms-of-service")} className="text-sm text-white/80 hover:text-accent transition-colors text-left">
+                  {t("footer.terms")}
+                </button>
               </li>
               <li>
-                <CookiePolicyDialog>
-                  <Button variant="link" className="text-sm text-white/80 hover:text-accent p-0 h-auto font-normal">
-                    {t("footer.cookies")}
-                  </Button>
-                </CookiePolicyDialog>
+                <button onClick={() => goTo("/cookie-policy")} className="text-sm text-white/80 hover:text-accent transition-colors text-left">
+                  {t("footer.cookies")}
+                </button>
               </li>
               <li>
-                <a
-                  href="https://mypagopay.com/cardholder-agreement/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-white/80 hover:text-accent transition-colors"
-                >
+                <button onClick={() => goTo("/cardholder-agreement")} className="text-sm text-white/80 hover:text-accent transition-colors text-left">
                   Cardholder Agreement
-                </a>
+                </button>
               </li>
               <li>
-                <a
-                  href="https://mypagopay.com/account-deletion/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-white/80 hover:text-accent transition-colors"
-                >
+                <button onClick={() => goTo("/account-deletion")} className="text-sm text-white/80 hover:text-accent transition-colors text-left">
                   Account Deletion
-                </a>
+                </button>
               </li>
             </ul>
           </div>
