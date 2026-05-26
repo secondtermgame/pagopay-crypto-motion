@@ -12,7 +12,7 @@ No hidden fees. No surprises. Choose the card that fits how you spend.
 
 - Monthly fee: $3.50/month (first month free)
 - Crypto conversion fee: 3%
-- FX markup on international spend: $0
+- FX markup on international spend: 0%
 - ATM withdrawals: $3 flat (up to $2,000/day)
 - Daily POS limit: $100,000
 - Daily transactions: 25
@@ -33,7 +33,7 @@ No hidden fees. No surprises. Choose the card that fits how you spend.
 
 - Monthly fee: $0 for first 2 years (saves $84)
 - Crypto conversion fee: 2.5% (lowest tier)
-- FX markup on international spend: $0
+- FX markup on international spend: 0%
 - ATM withdrawals: $3 flat (up to $2,000/day)
 - Daily POS limit: $100,000
 - Daily transactions: 25
