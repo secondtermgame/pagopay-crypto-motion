@@ -63,7 +63,7 @@ export function LatamPopup({ onSignup }: LatamPopupProps) {
       {/* Modal */}
       <div className="relative w-full sm:max-w-md overflow-hidden rounded-t-3xl sm:rounded-3xl shadow-2xl animate-in slide-in-from-bottom-4 duration-300 z-10">
         {/* Green gradient header */}
-        <div className="bg-gradient-to-br from-[hsl(163,65%,18%)] via-[hsl(174,72%,36%)] to-[hsl(84,81%,44%)] px-6 pt-6 pb-10 relative">
+        <div className="bg-gradient-to-br from-primary via-primary-glow to-accent px-6 pt-6 pb-10 relative">
           {/* Close */}
           <button
             onClick={dismiss}
@@ -83,7 +83,7 @@ export function LatamPopup({ onSignup }: LatamPopupProps) {
           {/* Visual flow: Crypto → USD → Card */}
           <div className="flex items-center justify-center gap-3 mb-5">
             <div className="flex flex-col items-center gap-1">
-              <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[hsl(163,65%,18%)] to-[hsl(174,72%,36%)] flex items-center justify-center shadow-md">
+              <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-glow flex items-center justify-center shadow-md">
                 <Bitcoin className="h-5 w-5 text-primary-foreground" />
               </div>
               <span className="text-[10px] font-semibold text-muted-foreground">{t("popup.crypto")}</span>
@@ -92,8 +92,8 @@ export function LatamPopup({ onSignup }: LatamPopupProps) {
             <ArrowRight className="h-4 w-4 text-muted-foreground shrink-0 mt-[-12px]" />
 
             <div className="flex flex-col items-center gap-1">
-              <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[hsl(84,81%,44%)] to-[hsl(163,50%,45%)] flex items-center justify-center shadow-md">
-                <DollarSign className="h-5 w-5 text-primary-foreground" />
+              <div className="w-11 h-11 rounded-xl bg-accent flex items-center justify-center shadow-md ring-1 ring-primary/10">
+                <DollarSign className="h-5 w-5 text-accent-foreground" />
               </div>
               <span className="text-[10px] font-semibold text-muted-foreground">{t("popup.usd")}</span>
             </div>
@@ -101,7 +101,7 @@ export function LatamPopup({ onSignup }: LatamPopupProps) {
             <ArrowRight className="h-4 w-4 text-muted-foreground shrink-0 mt-[-12px]" />
 
             <div className="flex flex-col items-center gap-1">
-              <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[hsl(163,65%,18%)] to-[hsl(163,50%,35%)] flex items-center justify-center shadow-md">
+              <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-glow flex items-center justify-center shadow-md">
                 <CreditCard className="h-5 w-5 text-primary-foreground" />
               </div>
               <span className="text-[10px] font-semibold text-muted-foreground">{t("popup.card")}</span>
@@ -116,7 +116,7 @@ export function LatamPopup({ onSignup }: LatamPopupProps) {
 
           {/* No FX badge */}
           <div className="flex items-center justify-center gap-1.5 mb-5">
-            <BadgeCheck className="h-4 w-4 text-[hsl(84,81%,44%)]" />
+            <BadgeCheck className="h-4 w-4 text-primary" fill="hsl(var(--accent))" />
             <span className="text-xs font-bold text-foreground">
               {t("popup.badge")}
             </span>
@@ -126,7 +126,7 @@ export function LatamPopup({ onSignup }: LatamPopupProps) {
           <Button
             onClick={handleCta}
             size="lg"
-            className="w-full bg-gradient-to-r from-[hsl(163,65%,18%)] to-[hsl(174,72%,36%)] text-primary-foreground hover:opacity-90 shadow-[var(--shadow-glow)] font-semibold text-base h-12 rounded-xl transition-all duration-300 hover:scale-[1.02]"
+            className="w-full bg-gradient-to-r from-primary to-primary-glow text-primary-foreground hover:opacity-90 shadow-[var(--shadow-glow)] font-semibold text-base h-12 rounded-xl transition-all duration-300 hover:scale-[1.02]"
           >
             {t("popup.cta")}
           </Button>
