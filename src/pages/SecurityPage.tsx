@@ -33,7 +33,7 @@ const SecurityPage = () => {
       <PageHero
         eyebrow="Security & Compliance"
         title="Security You Can Trust"
-        subtitle="At PagoPay, security and regulatory compliance are built in — not bolted on. Below is how we protect your account, funds, and data."
+        subtitle="At PagoPay, security and regulatory compliance are built in — not bolted on. Below is how we protect your account,  and data."
         align="left"
         variant="dark"
       />
