@@ -17,7 +17,7 @@ export const PrivacyPolicyDialog = ({ children }: { children: React.ReactNode })
       <DialogContent className="max-w-3xl max-h-[80vh]">
         <DialogHeader>
           <DialogTitle className="text-2xl">PagoPay Privacy Policy</DialogTitle>
-          <DialogDescription>Effective Date: November 18, 2025 — Last Updated: March 2026</DialogDescription>
+          <DialogDescription>Effective Date: May 26, 2026 — Last Updated: May 26, 2026</DialogDescription>
         </DialogHeader>
         <ScrollArea className="h-[60vh] pr-4">
           <div className="space-y-6 text-foreground">
@@ -37,34 +37,34 @@ export const PrivacyPolicyDialog = ({ children }: { children: React.ReactNode })
             <section>
               <h3 className="text-xl font-semibold mb-2">2. Operator of the Platform</h3>
               <p className="text-muted-foreground leading-relaxed">
-                PagoPay Payment Services is operated by 9538-8310 Québec Inc., a company incorporated in Québec, Canada.
+                PagoPay Payment Services is operated by 9538-8310 Québec Inc., a registered Money Services Business with the Financial Transactions and Reports Analysis Centre of Canada (FINTRAC) under registration N300000116, and licensed by Revenu Québec under permit 0000000000022125.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2">
                 Certain operational services may be conducted by 1001529768 Ontario Inc., acting as a registered MSB agent on behalf of the principal MSB.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                These entities are responsible for processing personal information collected through the Platform.
+                These entities are responsible for processing personal information collected through the Platform and act as the data controllers under applicable privacy laws.
               </p>
             </section>
 
             <section>
               <h3 className="text-xl font-semibold mb-2">3. Information We Collect</h3>
               <p className="text-muted-foreground leading-relaxed mb-2">
-                PagoPay may collect various categories of personal information in order to provide services and comply with legal and regulatory requirements.
+                PagoPay collects various categories of personal information in order to provide services and comply with legal and regulatory requirements.
               </p>
 
               <h4 className="text-lg font-semibold mt-4 mb-2">Identity Information</h4>
               <p className="text-muted-foreground leading-relaxed mb-2">
-                To verify user identity and comply with regulatory obligations, PagoPay may collect:
+                To verify user identity and comply with regulatory obligations, PagoPay collects:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li>full name</li>
-                <li>date of birth</li>
-                <li>residential address</li>
-                <li>email address</li>
-                <li>phone number</li>
-                <li>government-issued identification documents</li>
-                <li>proof of address documentation.</li>
+                <li>Full name</li>
+                <li>Date of birth</li>
+                <li>Residential address</li>
+                <li>Email address</li>
+                <li>Phone number</li>
+                <li>Government-issued identification documents</li>
+                <li>Proof of address documentation</li>
               </ul>
 
               <h4 className="text-lg font-semibold mt-4 mb-2">Biometric Verification Data</h4>
@@ -72,23 +72,23 @@ export const PrivacyPolicyDialog = ({ children }: { children: React.ReactNode })
                 Identity verification may require biometric verification procedures including:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li>live selfie verification</li>
-                <li>facial recognition comparisons between the user and identity documents.</li>
+                <li>Live selfie verification</li>
+                <li>Facial recognition comparisons between the user and identity documents</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                Biometric data is used solely for identity verification and fraud prevention purposes.
+                Biometric data is used solely for identity verification and fraud prevention. Biometric data is retained only for as long as necessary to complete the verification process and meet applicable record-keeping obligations, after which it is deleted or anonymized in accordance with applicable law.
               </p>
 
               <h4 className="text-lg font-semibold mt-4 mb-2">Financial and Transaction Information</h4>
               <p className="text-muted-foreground leading-relaxed mb-2">
-                PagoPay may collect financial and transactional information including:
+                PagoPay collects financial and transactional information including:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li>wallet balances</li>
-                <li>cryptocurrency wallet addresses</li>
-                <li>transaction history</li>
-                <li>payment transfers</li>
-                <li>prepaid card transactions.</li>
+                <li>Account balances</li>
+                <li>Cryptocurrency wallet addresses</li>
+                <li>Transaction history</li>
+                <li>Payment transfers</li>
+                <li>Prepaid card transactions</li>
               </ul>
 
               <h4 className="text-lg font-semibold mt-4 mb-2">Device and Technical Information</h4>
@@ -97,44 +97,39 @@ export const PrivacyPolicyDialog = ({ children }: { children: React.ReactNode })
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
                 <li>IP address</li>
-                <li>device identifiers</li>
-                <li>browser type</li>
-                <li>operating system</li>
-                <li>login activity and session information.</li>
+                <li>Device identifiers</li>
+                <li>Browser type</li>
+                <li>Operating system</li>
+                <li>Login activity and session information</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                This information helps maintain the security and performance of the Platform.
+                This information may be used to maintain the security and performance of the Platform.
               </p>
             </section>
 
             <section>
               <h3 className="text-xl font-semibold mb-2">4. How We Use Personal Information</h3>
               <p className="text-muted-foreground leading-relaxed mb-2">
-                Personal information may be used for the following purposes:
+                Personal information is used for the following purposes:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li>verifying user identity (KYC / KYB)</li>
-                <li>preventing fraud and financial crime</li>
-                <li>complying with anti-money laundering regulations</li>
-                <li>processing transactions and providing services</li>
-                <li>maintaining platform security</li>
-                <li>providing customer support.</li>
+                <li>Verifying user identity (KYC / KYB)</li>
+                <li>Preventing fraud and financial crime</li>
+                <li>Complying with anti-money laundering regulations</li>
+                <li>Processing transactions and providing services</li>
+                <li>Maintaining platform security</li>
+                <li>Providing customer support</li>
+                <li>Complying with legal, regulatory, and reporting obligations under Canadian and international law</li>
               </ul>
             </section>
 
             <section>
               <h3 className="text-xl font-semibold mb-2">5. Identity Verification Providers</h3>
               <p className="text-muted-foreground leading-relaxed mb-2">
-                PagoPay uses trusted third-party verification providers to confirm user identity and prevent fraud.
+                PagoPay uses trusted third-party verification providers to confirm user identity and prevent fraud. These providers may process identity documents and biometric verification data in order to verify user identity and comply with regulatory obligations.
               </p>
-              <p className="text-muted-foreground leading-relaxed mb-2">These providers may include:</p>
-              <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li>SumSub</li>
-                <li>Didit</li>
-                <li>Trulio</li>
-              </ul>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                These providers may process identity documents and biometric verification data in order to verify user identity and comply with regulatory obligations.
+                All verification providers are bound by strict contractual obligations regarding the confidentiality and security of personal information, and are required to comply with applicable privacy and data-protection laws.
               </p>
             </section>
 
@@ -145,12 +140,12 @@ export const PrivacyPolicyDialog = ({ children }: { children: React.ReactNode })
               </p>
               <p className="text-muted-foreground leading-relaxed mb-2">This may include sharing information with:</p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li>identity verification providers</li>
-                <li>payment processors</li>
-                <li>card issuing institutions</li>
-                <li>cryptocurrency liquidity providers</li>
-                <li>banking partners</li>
-                <li>regulatory authorities when required by law.</li>
+                <li>Identity verification providers</li>
+                <li>Payment processors</li>
+                <li>Card-issuing institutions</li>
+                <li>Cryptocurrency liquidity providers</li>
+                <li>Banking partners</li>
+                <li>Regulatory and law enforcement authorities when required by law</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-2">
                 PagoPay does not sell personal information to third parties.
@@ -164,40 +159,42 @@ export const PrivacyPolicyDialog = ({ children }: { children: React.ReactNode })
               </p>
               <p className="text-muted-foreground leading-relaxed mb-2">Security controls may include:</p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li>encrypted communications</li>
-                <li>secure data storage</li>
-                <li>restricted system access</li>
-                <li>monitoring for suspicious activity.</li>
+                <li>Encrypted communications</li>
+                <li>Secure data storage</li>
+                <li>Restricted system access</li>
+                <li>Monitoring for suspicious activity</li>
               </ul>
             </section>
 
             <section>
               <h3 className="text-xl font-semibold mb-2">8. Data Retention</h3>
               <p className="text-muted-foreground leading-relaxed mb-2">
-                Personal information may be retained for as long as necessary to:
+                Personal information is retained for as long as necessary to:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li>provide services</li>
-                <li>comply with legal and regulatory obligations</li>
-                <li>resolve disputes and enforce agreements.</li>
+                <li>Provide services</li>
+                <li>Comply with legal and regulatory obligations</li>
+                <li>Resolve disputes and enforce agreements</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                Certain financial records may be retained for longer periods where required by law.
+                Certain financial records are retained for a minimum of five (5) years following account closure, as required by Canadian anti-money-laundering regulations. Biometric data is retained only for the duration necessary to complete identity verification, unless longer retention is required by law.
               </p>
             </section>
 
             <section>
               <h3 className="text-xl font-semibold mb-2">9. User Rights</h3>
               <p className="text-muted-foreground leading-relaxed mb-2">
-                Users may have rights regarding their personal information, including the right to:
+                Users have rights regarding their personal information, including the right to:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li>request access to their personal information</li>
-                <li>request correction of inaccurate information</li>
-                <li>request deletion of personal data where permitted by law.</li>
+                <li>Request access to their personal information</li>
+                <li>Request correction of inaccurate information</li>
+                <li>Request deletion of personal data where permitted by law</li>
+                <li>Withdraw consent to processing where consent is the legal basis</li>
+                <li>Request restriction of processing where applicable</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                Requests may be submitted by contacting PagoPay support.
+                Requests may be submitted by contacting the Privacy Officer (see Section 13). PagoPay will respond to verified requests within the timeframes required by applicable law.
               </p>
             </section>
 
@@ -208,9 +205,9 @@ export const PrivacyPolicyDialog = ({ children }: { children: React.ReactNode })
               </p>
               <p className="text-muted-foreground leading-relaxed mb-2">Cookies may be used to:</p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li>maintain login sessions</li>
-                <li>improve user experience</li>
-                <li>analyze platform performance.</li>
+                <li>Maintain login sessions</li>
+                <li>Improve user experience</li>
+                <li>Analyze platform performance</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-2">
                 Users may adjust cookie preferences through their browser settings.
@@ -220,23 +217,17 @@ export const PrivacyPolicyDialog = ({ children }: { children: React.ReactNode })
             <section>
               <h3 className="text-xl font-semibold mb-2">11. International Data Transfers</h3>
               <p className="text-muted-foreground leading-relaxed">
-                PagoPay services may involve data processing by service providers located in multiple jurisdictions.
+                PagoPay services may involve data processing by service providers located in multiple jurisdictions, including outside Canada.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                Personal information may therefore be transferred to and processed in countries outside the user's jurisdiction when necessary to provide services.
-              </p>
-              <p className="text-muted-foreground leading-relaxed mt-2">
-                PagoPay takes reasonable steps to ensure that such transfers comply with applicable privacy laws.
+                Personal information may therefore be transferred to and processed in countries outside the user's jurisdiction when necessary to provide services. PagoPay takes reasonable steps to ensure that such transfers comply with applicable privacy laws and that appropriate safeguards are in place to protect personal information.
               </p>
             </section>
 
             <section>
               <h3 className="text-xl font-semibold mb-2">12. Updates to This Policy</h3>
               <p className="text-muted-foreground leading-relaxed">
-                PagoPay may update this Privacy Policy from time to time.
-              </p>
-              <p className="text-muted-foreground leading-relaxed mt-2">
-                Updated versions will be published on the Platform with a revised effective date.
+                PagoPay may update this Privacy Policy from time to time. Updated versions will be published on the Platform with a revised effective date.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2">
                 Continued use of the Platform after updates constitutes acceptance of the revised policy.
@@ -244,14 +235,21 @@ export const PrivacyPolicyDialog = ({ children }: { children: React.ReactNode })
             </section>
 
             <section>
-              <h3 className="text-xl font-semibold mb-2">13. Contact</h3>
+              <h3 className="text-xl font-semibold mb-2">13. Privacy Officer and Contact</h3>
               <p className="text-muted-foreground leading-relaxed">
-                For privacy-related questions or requests, please contact:
+                For privacy-related questions, requests, or complaints, users may contact PagoPay's Privacy Officer:
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                <a href="mailto:privacy@mypagopay.com" className="text-primary hover:underline">privacy@mypagopay.com</a>
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                For all other support matters, users may contact:
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2">
                 <a href="mailto:support@mypagopay.com" className="text-primary hover:underline">support@mypagopay.com</a>
-                <br />
-                <a href="mailto:privacy@mypagopay.com" className="text-primary hover:underline">privacy@mypagopay.com</a>
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                Users in Québec also have the right to lodge a complaint with the Commission d'accès à l'information du Québec (CAI). Users in other Canadian provinces may lodge complaints with the Office of the Privacy Commissioner of Canada (OPC).
               </p>
             </section>
           </div>
