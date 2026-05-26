@@ -11,8 +11,6 @@ import AboutPage from "./pages/AboutPage";
 import PricingPage from "./pages/PricingPage";
 import SecurityPage from "./pages/SecurityPage";
 import FaqPage from "./pages/FaqPage";
-import CompareCoinbasePage from "./pages/CompareCoinbasePage";
-import CompareCryptoComPage from "./pages/CompareCryptoComPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -35,13 +33,16 @@ const App = () => (
           <Route path="/security" element={<SecurityPage />} />
           <Route path="/faq" element={<FaqPage />} />
           <Route path="/blog" element={<BlogIndex />} />
-          <Route path="/blog/best-crypto-cards" element={<Navigate to="/blog/best-crypto-debit-cards-2026" replace />} />
-          <Route path="/blog/how-to-spend-crypto" element={<Navigate to="/blog/how-to-spend-bitcoin-at-any-store" replace />} />
+          <Route path="/blog/best-crypto-cards" element={<Navigate to="/blog/what-is-a-crypto-card" replace />} />
+          <Route path="/blog/best-crypto-debit-cards-2026" element={<Navigate to="/blog/what-is-a-crypto-card" replace />} />
+          <Route path="/blog/how-to-spend-crypto" element={<Navigate to="/blog/how-to-spend-crypto-in-real-life" replace />} />
+          <Route path="/blog/how-to-spend-bitcoin-at-any-store" element={<Navigate to="/blog/how-to-spend-crypto-in-real-life" replace />} />
+          <Route path="/blog/pagopay-vs-coinbase-card" element={<Navigate to="/blog/plastic-vs-metal-pagopay-card" replace />} />
+          <Route path="/compare/coinbase-card" element={<Navigate to="/blog" replace />} />
+          <Route path="/compare/crypto-com" element={<Navigate to="/blog" replace />} />
+          <Route path="/compare/pagopay-vs-coinbase-card" element={<Navigate to="/blog" replace />} />
+          <Route path="/compare/pagopay-vs-crypto-com-card" element={<Navigate to="/blog" replace />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
-          <Route path="/compare/coinbase-card" element={<Navigate to="/compare/pagopay-vs-coinbase-card" replace />} />
-          <Route path="/compare/crypto-com" element={<Navigate to="/compare/pagopay-vs-crypto-com-card" replace />} />
-          <Route path="/compare/pagopay-vs-coinbase-card" element={<CompareCoinbasePage />} />
-          <Route path="/compare/pagopay-vs-crypto-com-card" element={<CompareCryptoComPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
