@@ -11,10 +11,12 @@
     "blog": "Blog"
   },
   "hero": {
-    "heading1": "YOUR MONEY,",
-    "heading2": "IN MOTION",
-    "subtitle": "The crypto card that lets you spend Bitcoin, Ethereum, and stablecoins anywhere — instantly converted, zero hassle.",
-    "cta": "Create your account"
+    "pill": "Licensed Canadian MSB",
+    "heading1": "Your crypto.",
+    "heading2": "Spendable anywhere.",
+    "subtitle": "The simplest way to turn digital assets into everyday spending power.",
+    "cta": "Get Account",
+    "secondary": "Learn more"
   },
   "balance": {
     "title": "Balance",
@@ -22,65 +24,45 @@
     "topup": "Top up"
   },
   "features": {
-    "heading": "Your Money, In Motion",
-    "subtitle": "One app to store, send, swap, and spend crypto like cash. Instant transfers, real-time conversions, and a prepaid card that works worldwide.",
-    "walletHeading": "All-In-One Digital Wallet for Crypto and Fiat",
+    "eyebrow": "Why PagoPay",
+    "heading": "Built for how you actually spend.",
+    "subtitle": "Everything you need to move from holding to spending — designed around clarity, speed, and trust.",
     "items": [
-      {
-        "title": "Secure Non-Custodial Wallets",
-        "description": "Easily store and manage your crypto assets in a secure, non-custodial wallet — you hold the keys, connected to your prepaid card and accessible anywhere, anytime. Coming soon..."
-      },
-      {
-        "title": "Instant Wallet-to-Wallet Transfers",
-        "description": "Send crypto or fiat instantly to other PagoPay users — whether they're across the street or across the world. Transfers settle in seconds with zero hassle. Coming soon..."
-      },
-      {
-        "title": "Smart Currency Swaps",
-        "description": "Convert between crypto and fiat at real-time rates with a clear, low-margin spread. No hidden fees — just transparent, competitive pricing."
-      },
-      {
-        "title": "Enterprise-Grade Security",
-        "description": "Your funds are protected by industry-standard encryption, secure infrastructure, and verified KYC. All payments and exchanges are safeguarded via our regulated partners."
-      }
+      { "title": "Borderless Spending", "description": "Use your card seamlessly, wherever life takes you." },
+      { "title": "Real-Time Access", "description": "Move from digital assets to spending in moments, not days." },
+      { "title": "Transparent by Design", "description": "Clear pricing, no surprises, no hidden charges." },
+      { "title": "Built on Trust", "description": "A platform designed with security and compliance at its core." },
+      { "title": "Premium Experience", "description": "Card options crafted for every kind of spender." },
+      { "title": "Licensed & Regulated", "description": "Operated from Canada under federal and provincial registration." }
     ]
   },
-  "benefits": {
-    "heading": "Built for Every Asset You Own",
-    "subtitle": "Whether you hold Bitcoin, Ethereum, or stablecoins — spend them like cash with the PagoPay crypto card. No delays, no complexity.",
-    "slogan": "Freedom to Move. Power to Spend.",
-    "items": [
-      "Instant Crypto-to-USD Conversion",
-      "Spend Globally with Virtual or Physical Cards",
-      "Real-Time Exchange Rates, No Surprises",
-      "Zero FX Fees — Pay Internationally for Free",
-      "Zero Hidden Fees — What You See Is What You Pay",
-      "Low Conversion Fees — More Crypto in Your Pocket",
-      "Bank-Grade Security on Every Transaction",
-      "24/7 Human Support When You Need It",
-      "Spend Up to $100K Per Transaction"
-    ]
+  "assets": {
+    "eyebrow": "Digital assets, simplified",
+    "heading": "The assets you already hold.",
+    "subtitle": "Support for major cryptocurrencies, with more on the horizon.",
+    "logos": ["Bitcoin", "Ethereum", "USDC", "USDT", "and more"]
+  },
+  "cards": {
+    "eyebrow": "Choose your way to spend",
+    "heading": "One platform. Multiple ways to belong.",
+    "plastic": { "title": "Plastic", "description": "For everyday spending, with the essentials covered." },
+    "metal": { "title": "Metal", "description": "A premium tier with exclusive benefits for those who expect more." },
+    "link": "Explore card options"
   },
   "security": {
-    "heading": "Security You Can Trust",
-    "subtitle": "At <strong>PagoPay</strong>, your security isn't an afterthought — it's our foundation. We use advanced technology and adhere to the highest industry standards to ensure your funds, data, and identity remain safe at all times.",
-    "items": [
-      {
-        "title": "Military-Grade Encryption",
-        "description": "All sensitive data is protected using <strong>AES-256 encryption</strong>, the same military-grade standard trusted by banks and governments across the globe."
-      },
-      {
-        "title": "Multi-Factor & Biometric Authentication",
-        "description": "Secure your account with <strong>two-factor authentication (2FA)</strong> and <strong>biometric login</strong>, giving you full control and added protection from unauthorized access."
-      },
-      {
-        "title": "Real-Time AI-Powered Monitoring",
-        "description": "Our systems are continuously monitored by <strong>AI-driven fraud detection engines</strong>, scanning for suspicious activity 24/7 and automatically blocking threats in real time."
-      },
-      {
-        "title": "Full Regulatory Compliance",
-        "description": "PagoPay is in process of registering with <strong>FINTRAC (Canada)</strong> and operates under strict adherence to <strong>international AML, KYC, and data privacy regulations</strong>, including GDPR and PCI DSS standards."
-      }
+    "eyebrow": "Trust & Compliance",
+    "heading": "Compliance you can rely on.",
+    "subtitle": "PagoPay operates as a registered Money Services Business in Canada, under federal and provincial oversight.",
+    "pills": [
+      "Federally Registered MSB",
+      "Provincially Licensed",
+      "Issued on a Global Card Network"
     ]
+  },
+  "finalCta": {
+    "heading": "Ready when you are.",
+    "subtitle": "Your card. Your crypto. Your move.",
+    "button": "Get Account"
   },
   "faq": {
     "heading": "Frequently Asked Questions",
