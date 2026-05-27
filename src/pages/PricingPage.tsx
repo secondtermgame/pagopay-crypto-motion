@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
 import { Check } from "lucide-react";
+import PageShell from "@/components/PageShell";
+import PageHero from "@/components/PageHero";
 import plasticCard from "@/assets/plastic-card.png";
 import metalCard from "@/assets/metal-card.png";
 
