@@ -1,8 +1,10 @@
 import { useState } from "react";
-import { Linkedin, ArrowRight } from "lucide-react";
+import { Linkedin, ArrowRight, CheckCircle } from "lucide-react";
+import { toast } from "sonner";
 
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
+import { supabase } from "@/integrations/supabase/client";
 import logoWhite from "@/assets/pagopay-white.png";
 
 const productLinks = [
