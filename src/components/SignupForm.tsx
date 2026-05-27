@@ -1,31 +1,29 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command";
 import { Link } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { z } from "zod";
-import { Loader2, CheckCircle2 } from "lucide-react";
-import { COUNTRIES } from "@/lib/countries";
+import { Loader2, CheckCircle2, Check, ChevronsUpDown } from "lucide-react";
+import { cn } from "@/lib/utils";
+import countries from "i18n-iso-countries";
+import enLocale from "i18n-iso-countries/langs/en.json";
+
+countries.registerLocale(enLocale);
+const COUNTRY_LIST = Object.entries(countries.getNames("en", { select: "official" }))
+  .map(([code, name]) => ({ code, name }))
+  .sort((a, b) => a.name.localeCompare(b.name));
 
 interface SignupFormProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
   source?: string;
 }
-
-// Sanctioned country codes to exclude entirely
-const SANCTIONED = new Set(["KP", "IR", "SY", "CU"]);
-const AVAILABLE_COUNTRIES = COUNTRIES.filter((c) => !SANCTIONED.has(c.code));
 
 const schema = z.object({
   full_name: z.string().trim().min(1, "Full name is required").max(120),
@@ -35,6 +33,7 @@ const schema = z.object({
 });
 
 type FormState = z.infer<typeof schema>;
+
 
 export function SignupForm({ open, onOpenChange, source }: SignupFormProps) {
   const [values, setValues] = useState<FormState>({ full_name: "", email: "", phone: "", country: "" });
@@ -152,22 +151,11 @@ export function SignupForm({ open, onOpenChange, source }: SignupFormProps) {
               {errors.phone && <p className="text-xs text-destructive">{errors.phone}</p>}
             </div>
 
-            <div className="space-y-1.5">
-              <Label htmlFor="country">Country <span className="text-destructive">*</span></Label>
-              <Select value={values.country} onValueChange={(v) => set("country", v)}>
-                <SelectTrigger id="country">
-                  <SelectValue placeholder="Select your country" />
-                </SelectTrigger>
-                <SelectContent>
-                  {AVAILABLE_COUNTRIES.map((c) => (
-                    <SelectItem key={c.code} value={c.name}>
-                      {c.name}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-              {errors.country && <p className="text-xs text-destructive">{errors.country}</p>}
-            </div>
+            <CountryCombobox
+              value={values.country}
+              onChange={(v) => set("country", v)}
+              error={errors.country}
+            />
 
             <Button
               type="submit"
@@ -184,19 +172,86 @@ export function SignupForm({ open, onOpenChange, source }: SignupFormProps) {
               )}
             </Button>
             <p className="text-[11px] text-muted-foreground text-center leading-relaxed">
-              By submitting, you agree to receive updates from PagoPay about our launch and services.
-              You can unsubscribe at any time. See our{" "}
+              By submitting, you consent to receive launch updates from PagoPay by email and you confirm you've read our{" "}
               <Link to="/privacy" className="text-primary underline hover:no-underline">
                 Privacy Policy
-              </Link>{" "}
-              for how we handle your information.
+              </Link>
+              . You can unsubscribe at any time.
             </p>
+
           </form>
         )}
       </DialogContent>
     </Dialog>
   );
 }
+
+function CountryCombobox({
+  value,
+  onChange,
+  error,
+}: {
+  value: string;
+  onChange: (v: string) => void;
+  error?: string;
+}) {
+  const [open, setOpen] = useState(false);
+  const list = useMemo(() => COUNTRY_LIST, []);
+
+  return (
+    <div className="space-y-1.5">
+      <Label htmlFor="country">Country <span className="text-destructive">*</span></Label>
+      <Popover open={open} onOpenChange={setOpen}>
+        <PopoverTrigger asChild>
+          <Button
+            id="country"
+            type="button"
+            variant="outline"
+            role="combobox"
+            aria-expanded={open}
+            className={cn(
+              "w-full justify-between font-normal",
+              !value && "text-muted-foreground"
+            )}
+          >
+            {value || "Select your country"}
+            <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+          </Button>
+        </PopoverTrigger>
+        <PopoverContent className="w-[--radix-popover-trigger-width] p-0" align="start">
+          <Command>
+            <CommandInput placeholder="Search country..." />
+            <CommandList className="max-h-[260px]">
+              <CommandEmpty>No country found.</CommandEmpty>
+              <CommandGroup>
+                {list.map((c) => (
+                  <CommandItem
+                    key={c.code}
+                    value={c.name}
+                    onSelect={(v) => {
+                      onChange(v);
+                      setOpen(false);
+                    }}
+                  >
+                    <Check
+                      className={cn(
+                        "mr-2 h-4 w-4",
+                        value === c.name ? "opacity-100" : "opacity-0"
+                      )}
+                    />
+                    {c.name}
+                  </CommandItem>
+                ))}
+              </CommandGroup>
+            </CommandList>
+          </Command>
+        </PopoverContent>
+      </Popover>
+      {error && <p className="text-xs text-destructive">{error}</p>}
+    </div>
+  );
+}
+
 
 declare global {
   interface Window {
