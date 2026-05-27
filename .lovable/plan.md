@@ -1,14 +1,13 @@
-## Plan: Show LATAM popup on global home page
+## Update popup CTAs to "Get Started"
 
-Add the existing `LatamPopup` component to the global landing page (`src/pages/Index.tsx`), keeping the same trigger behavior (3s delay or 25% scroll, dismissable, remembers dismissal in localStorage).
+Update the signup form submit button (currently "Join the waitlist") to "Get Started" in all three languages. The LATAM intro popup already says "Get Started" — verify and leave as-is.
 
 ### Changes
 
-**`src/pages/Index.tsx`**
-- Import `LatamPopup` and `SignupForm`.
-- Add `isSignupOpen` state.
-- Render `<LatamPopup onSignup={() => setIsSignupOpen(true)} />` and the signup dialog at the bottom of the page.
+**`src/i18n/en.json`** — `signup.submit`: `"Join the waitlist"` → `"Get Started"`
 
-### Notes
-- Popup copy is currently hard-coded Spanish (matches LATAM page). It will appear in Spanish on the global page too. If you want it localized to the user's current language (EN/ES/FR), say the word and I'll move the strings into the i18n files as a follow-up.
-- The dismissal key is shared (`pagopay_latam_popup_dismissed`), so users who already dismissed it on `/latam` won't see it again on `/`.
+**`src/i18n/es.json`** — `signup.submit`: → `"Empieza ahora"`
+
+**`src/i18n/fr.json`** — `signup.submit`: → `"Commencez"`
+
+No component changes needed — `SignupForm.tsx` already renders `t("signup.submit")`.
