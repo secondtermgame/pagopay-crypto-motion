@@ -24,7 +24,7 @@ const CardsSection = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
-          <div className="scroll-fade group glass-card rounded-3xl p-6 md:p-10 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_30px_80px_-20px_rgba(16,75,54,0.25)] overflow-hidden">
+          <Link to="/pricing" className="block scroll-fade group glass-card rounded-3xl p-6 md:p-10 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_30px_80px_-20px_rgba(16,75,54,0.25)] overflow-hidden">
             <div className="h-40 md:h-48 mb-8 flex items-center justify-center">
               <img
                 src={plasticCard}
@@ -34,9 +34,9 @@ const CardsSection = () => {
             </div>
             <h3 className="text-2xl font-semibold mb-3 text-foreground tracking-tight">{t("cards.plastic.title")}</h3>
             <p className="text-muted-foreground leading-relaxed">{t("cards.plastic.description")}</p>
-          </div>
+          </Link>
 
-          <div className="scroll-fade group glass-card rounded-3xl p-6 md:p-10 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_30px_80px_-20px_rgba(16,75,54,0.25)] overflow-hidden" style={{ transitionDelay: "80ms" }}>
+          <Link to="/pricing" className="block scroll-fade group glass-card rounded-3xl p-6 md:p-10 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_30px_80px_-20px_rgba(16,75,54,0.25)] overflow-hidden" style={{ transitionDelay: "80ms" }}>
             <div className="h-40 md:h-48 mb-8 flex items-center justify-center">
               <img
                 src={metalCard}
@@ -46,7 +46,7 @@ const CardsSection = () => {
             </div>
             <h3 className="text-2xl font-semibold mb-3 text-foreground tracking-tight">{t("cards.metal.title")}</h3>
             <p className="text-muted-foreground leading-relaxed">{t("cards.metal.description")}</p>
-          </div>
+          </Link>
         </div>
 
         <div className="text-center mt-12 scroll-fade">
