@@ -1,6 +1,9 @@
+import { useState } from "react";
 import { Check } from "lucide-react";
 import PageShell from "@/components/PageShell";
 import PageHero from "@/components/PageHero";
+import { SignupForm } from "@/components/SignupForm";
+import { Button } from "@/components/ui/button";
 import plasticCard from "@/assets/plastic-card.png";
 import metalCard from "@/assets/metal-card.png";
 
