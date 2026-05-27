@@ -122,7 +122,7 @@ const Footer = () => {
 
           <div>
             <h4 className="text-xs font-semibold uppercase tracking-[0.18em] text-white/50 mb-5">Stay in the loop</h4>
-            <form onSubmit={(e) => { e.preventDefault(); setEmail(""); }} className="flex items-center gap-2 rounded-full bg-white/5 border border-white/10 p-1 pl-4 focus-within:border-accent/50 transition-colors">
+            <form onSubmit={handleSubscribe} className="flex items-center gap-2 rounded-full bg-white/5 border border-white/10 p-1 pl-4 focus-within:border-accent/50 transition-colors">
               <input
                 type="email"
                 required
