@@ -114,7 +114,15 @@ const Navbar = () => {
                 </div>
               )}
             </div>
+            <button
+              onClick={() => setSignupOpen(true)}
+              className="btn-lime px-4 py-2 text-sm"
+            >
+              {t("hero.cta")}
+              <ArrowRight className="h-4 w-4" />
+            </button>
           </div>
+
 
           <button
             className={`md:hidden p-2 rounded-full ${scrolled ? "text-primary" : "text-white"}`}
