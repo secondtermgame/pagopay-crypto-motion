@@ -22,10 +22,32 @@ const Footer = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const goTo = (href: string) => {
     if (href.startsWith("/")) navigate(href);
     else document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email || isSubmitting) return;
+
+    setIsSubmitting(true);
+    const { error } = await supabase
+      .from("newsletter_subscribers")
+      .insert({ email: email.trim().toLowerCase() });
+
+    if (error && error.code !== "23505") {
+      toast.error("Something went wrong. Please try again.");
+    } else {
+      toast.success("You're subscribed!", {
+        description: "Welcome to the PagoPay newsletter.",
+        icon: <CheckCircle className="h-4 w-4 text-accent" />,
+      });
+      setEmail("");
+    }
+    setIsSubmitting(false);
   };
 
   return (
