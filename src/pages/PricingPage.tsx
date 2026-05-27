@@ -147,9 +147,9 @@ const PricingPage = () => {
             <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6 tracking-tight">
               Included with every card
             </h2>
-            <ul className="grid sm:grid-cols-2 gap-3">
+            <ul className="columns-1 sm:columns-2 gap-x-8 gap-y-3 space-y-3">
               {includedAll.map((f) => (
-                <li key={f} className="flex gap-3 text-foreground/90">
+                <li key={f} className="flex gap-3 text-foreground/90 break-inside-avoid">
                   <Check className="h-4 w-4 text-primary mt-1 shrink-0" />
                   <span>{f}</span>
                 </li>
