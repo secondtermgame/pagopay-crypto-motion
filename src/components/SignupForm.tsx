@@ -19,7 +19,7 @@ const schema = z.object({
   full_name: z.string().trim().min(1, "Full name is required").max(120),
   email: z.string().trim().email("Enter a valid email").max(255),
   phone: z.string().trim().min(5, "Phone number is required").max(40),
-  country: z.string().trim().max(80).optional(),
+  country: z.string().trim().min(1, "Country is required").max(80),
 });
 
 type FormState = z.infer<typeof schema>;
@@ -143,14 +143,16 @@ export function SignupForm({ open, onOpenChange, source }: SignupFormProps) {
             </div>
 
             <div className="space-y-1.5">
-              <Label htmlFor="country">Country <span className="text-muted-foreground text-xs">(optional)</span></Label>
+              <Label htmlFor="country">Country <span className="text-destructive">*</span></Label>
               <Input
                 id="country"
                 value={values.country}
                 onChange={(e) => set("country", e.target.value)}
                 placeholder="Canada"
                 autoComplete="country-name"
+                required
               />
+              {errors.country && <p className="text-xs text-destructive">{errors.country}</p>}
             </div>
 
             <Button
