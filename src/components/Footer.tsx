@@ -1,8 +1,10 @@
 import { useState } from "react";
-import { Linkedin, ArrowRight } from "lucide-react";
+import { Linkedin, ArrowRight, CheckCircle } from "lucide-react";
+import { toast } from "sonner";
 
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
+import { supabase } from "@/integrations/supabase/client";
 import logoWhite from "@/assets/pagopay-white.png";
 
 const productLinks = [
@@ -20,10 +22,32 @@ const Footer = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const goTo = (href: string) => {
     if (href.startsWith("/")) navigate(href);
     else document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email || isSubmitting) return;
+
+    setIsSubmitting(true);
+    const { error } = await supabase
+      .from("newsletter_subscribers")
+      .insert({ email: email.trim().toLowerCase() });
+
+    if (error && error.code !== "23505") {
+      toast.error("Something went wrong. Please try again.");
+    } else {
+      toast.success("You're subscribed!", {
+        description: "Welcome to the PagoPay newsletter.",
+        icon: <CheckCircle className="h-4 w-4 text-accent" />,
+      });
+      setEmail("");
+    }
+    setIsSubmitting(false);
   };
 
   return (
@@ -98,7 +122,7 @@ const Footer = () => {
 
           <div>
             <h4 className="text-xs font-semibold uppercase tracking-[0.18em] text-white/50 mb-5">Stay in the loop</h4>
-            <form onSubmit={(e) => { e.preventDefault(); setEmail(""); }} className="flex items-center gap-2 rounded-full bg-white/5 border border-white/10 p-1 pl-4 focus-within:border-accent/50 transition-colors">
+            <form onSubmit={handleSubscribe} className="flex items-center gap-2 rounded-full bg-white/5 border border-white/10 p-1 pl-4 focus-within:border-accent/50 transition-colors">
               <input
                 type="email"
                 required
@@ -107,7 +131,12 @@ const Footer = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 className="bg-transparent flex-1 text-sm text-white placeholder:text-white/40 outline-none min-w-0"
               />
-              <button type="submit" className="shrink-0 rounded-full bg-accent text-accent-foreground p-2 hover:scale-105 transition-transform" aria-label="Subscribe">
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="shrink-0 rounded-full bg-accent text-accent-foreground p-2 hover:scale-105 transition-transform disabled:opacity-60 disabled:hover:scale-100"
+                aria-label="Subscribe"
+              >
                 <ArrowRight className="h-4 w-4" />
               </button>
             </form>
