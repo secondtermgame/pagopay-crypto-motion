@@ -23,9 +23,7 @@ interface SignupFormProps {
   source?: string;
 }
 
-// Sanctioned country codes to exclude entirely
-const SANCTIONED = new Set(["KP", "IR", "SY", "CU"]);
-const AVAILABLE_COUNTRIES = COUNTRIES.filter((c) => !SANCTIONED.has(c.code));
+const AVAILABLE_COUNTRIES = COUNTRIES;
 
 const schema = z.object({
   full_name: z.string().trim().min(1, "Full name is required").max(120),
@@ -160,7 +158,7 @@ export function SignupForm({ open, onOpenChange, source }: SignupFormProps) {
                 </SelectTrigger>
                 <SelectContent>
                   {AVAILABLE_COUNTRIES.map((c) => (
-                    <SelectItem key={c.code} value={c.name}>
+                    <SelectItem key={c.name} value={c.name}>
                       {c.name}
                     </SelectItem>
                   ))}
