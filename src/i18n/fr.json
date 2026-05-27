@@ -126,8 +126,32 @@
     "cookies": "Politique de Cookies"
   },
   "signup": {
-    "title": "Obtenez votre carte PagoPay",
-    "description": "Remplissez le formulaire ci-dessous pour commencer votre demande. Nous vous contacterons sous peu."
+    "title": "Rejoignez la liste d'attente PagoPay",
+    "description": "Soyez le premier à savoir quand PagoPay se lance dans votre région. Remplissez le formulaire ci-dessous et nous vous contacterons.",
+    "successTitle": "Vous êtes sur la liste !",
+    "successDescription": "Merci de votre inscription. Nous vous enverrons un e-mail dès que PagoPay sera disponible dans votre région. Surveillez votre boîte de réception.",
+    "close": "Fermer",
+    "fullName": "Nom complet",
+    "fullNamePlaceholder": "Jean Dupont",
+    "email": "E-mail",
+    "emailPlaceholder": "vous@exemple.com",
+    "phone": "Numéro de téléphone",
+    "phonePlaceholder": "Incluez l'indicatif du pays (ex. +33 6 12 34 56 78)",
+    "country": "Pays",
+    "countryPlaceholder": "Sélectionnez votre pays",
+    "submit": "Rejoindre la liste d'attente",
+    "submitting": "Envoi en cours...",
+    "successToast": "Vous êtes sur la liste !",
+    "errorToast": "Une erreur est survenue. Veuillez réessayer.",
+    "consent": "En soumettant, vous acceptez de recevoir les mises à jour de lancement de PagoPay par e-mail et vous confirmez avoir lu notre",
+    "privacyPolicy": "Politique de Confidentialité",
+    "consentSuffix": ". Vous pouvez vous désabonner à tout moment.",
+    "errors": {
+      "fullName": "Le nom complet est requis",
+      "email": "Entrez un e-mail valide",
+      "phone": "Le numéro de téléphone est requis",
+      "country": "Le pays est requis"
+    }
   },
   "region": {
     "global": "Mondial",
