@@ -135,7 +135,7 @@ const PricingPage = () => {
                   ))}
                 </ul>
               </div>
-              <div className="mt-8">
+              <div className="mt-auto pt-8">
                 <Button className="w-full" size="lg" onClick={() => setIsSignupOpen(true)}>
                   Get started
                 </Button>
