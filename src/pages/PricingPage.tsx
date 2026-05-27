@@ -3,6 +3,7 @@ import CardsSection from "@/components/CardsSection";
 
 const PricingPage = () => (
   <>
+    <CardsSection />
     <MarkdownArticlePage
       title="Pricing"
       date="Last updated: May 2026"
@@ -12,7 +13,6 @@ const PricingPage = () => (
       stripFirstHeading
       eyebrow="Pricing"
     />
-    <CardsSection />
   </>
 );
 
