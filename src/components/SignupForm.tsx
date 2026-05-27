@@ -1,31 +1,29 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command";
 import { Link } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { z } from "zod";
-import { Loader2, CheckCircle2 } from "lucide-react";
-import { COUNTRIES } from "@/lib/countries";
+import { Loader2, CheckCircle2, Check, ChevronsUpDown } from "lucide-react";
+import { cn } from "@/lib/utils";
+import countries from "i18n-iso-countries";
+import enLocale from "i18n-iso-countries/langs/en.json";
+
+countries.registerLocale(enLocale);
+const COUNTRY_LIST = Object.entries(countries.getNames("en", { select: "official" }))
+  .map(([code, name]) => ({ code, name }))
+  .sort((a, b) => a.name.localeCompare(b.name));
 
 interface SignupFormProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
   source?: string;
 }
-
-// Sanctioned country codes to exclude entirely
-const SANCTIONED = new Set(["KP", "IR", "SY", "CU"]);
-const AVAILABLE_COUNTRIES = COUNTRIES.filter((c) => !SANCTIONED.has(c.code));
 
 const schema = z.object({
   full_name: z.string().trim().min(1, "Full name is required").max(120),
@@ -35,6 +33,7 @@ const schema = z.object({
 });
 
 type FormState = z.infer<typeof schema>;
+
 
 export function SignupForm({ open, onOpenChange, source }: SignupFormProps) {
   const [values, setValues] = useState<FormState>({ full_name: "", email: "", phone: "", country: "" });
