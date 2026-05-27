@@ -19,7 +19,7 @@ const schema = z.object({
   full_name: z.string().trim().min(1, "Full name is required").max(120),
   email: z.string().trim().email("Enter a valid email").max(255),
   phone: z.string().trim().min(5, "Phone number is required").max(40),
-  country: z.string().trim().max(80).optional(),
+  country: z.string().trim().min(1, "Country is required").max(80),
 });
 
 type FormState = z.infer<typeof schema>;
