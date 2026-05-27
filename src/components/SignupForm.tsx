@@ -3,17 +3,29 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
-import { useTranslation } from "react-i18next";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Link } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { z } from "zod";
 import { Loader2, CheckCircle2 } from "lucide-react";
+import { COUNTRIES } from "@/lib/countries";
 
 interface SignupFormProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
   source?: string;
 }
+
+// Sanctioned country codes to exclude entirely
+const SANCTIONED = new Set(["KP", "IR", "SY", "CU"]);
+const AVAILABLE_COUNTRIES = COUNTRIES.filter((c) => !SANCTIONED.has(c.code));
 
 const schema = z.object({
   full_name: z.string().trim().min(1, "Full name is required").max(120),
@@ -25,7 +37,6 @@ const schema = z.object({
 type FormState = z.infer<typeof schema>;
 
 export function SignupForm({ open, onOpenChange, source }: SignupFormProps) {
-  const { t } = useTranslation();
   const [values, setValues] = useState<FormState>({ full_name: "", email: "", phone: "", country: "" });
   const [errors, setErrors] = useState<Partial<Record<keyof FormState, string>>>({});
   const [submitting, setSubmitting] = useState(false);
@@ -56,10 +67,10 @@ export function SignupForm({ open, onOpenChange, source }: SignupFormProps) {
       if (error) throw error;
 
       if (typeof window !== "undefined" && window.dataLayer) {
-        window.dataLayer.push({ event: "pagopay_signup_submitted", form: "Get PagoPay Card" });
+        window.dataLayer.push({ event: "pagopay_signup_submitted", form: "PagoPay Waitlist" });
       }
       setSubmitted(true);
-      toast.success("Thanks! We'll be in touch soon.");
+      toast.success("You're on the list!");
     } catch (err) {
       console.error(err);
       toast.error("Something went wrong. Please try again.");
@@ -70,7 +81,6 @@ export function SignupForm({ open, onOpenChange, source }: SignupFormProps) {
 
   const handleOpenChange = (next: boolean) => {
     if (!next) {
-      // Reset after close animation
       setTimeout(() => {
         setValues({ full_name: "", email: "", phone: "", country: "" });
         setErrors({});
@@ -85,12 +95,12 @@ export function SignupForm({ open, onOpenChange, source }: SignupFormProps) {
       <DialogContent className="sm:max-w-[480px]">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold">
-            {submitted ? "You're on the list!" : t("signup.title")}
+            {submitted ? "You're on the list!" : "Join the PagoPay waitlist"}
           </DialogTitle>
           <DialogDescription>
             {submitted
-              ? "Thanks for signing up. We'll email you as soon as PagoPay launches."
-              : t("signup.description")}
+              ? "Thanks for signing up. We'll send you an email as soon as PagoPay is available in your region. Keep an eye on your inbox."
+              : "Be the first to know when PagoPay launches in your region. Fill out the form below and we'll be in touch."}
           </DialogDescription>
         </DialogHeader>
 
@@ -135,7 +145,7 @@ export function SignupForm({ open, onOpenChange, source }: SignupFormProps) {
                 type="tel"
                 value={values.phone}
                 onChange={(e) => set("phone", e.target.value)}
-                placeholder="+1 555 123 4567"
+                placeholder="Include country code (e.g. +1 555 123 4567)"
                 autoComplete="tel"
                 required
               />
@@ -144,14 +154,18 @@ export function SignupForm({ open, onOpenChange, source }: SignupFormProps) {
 
             <div className="space-y-1.5">
               <Label htmlFor="country">Country <span className="text-destructive">*</span></Label>
-              <Input
-                id="country"
-                value={values.country}
-                onChange={(e) => set("country", e.target.value)}
-                placeholder="Canada"
-                autoComplete="country-name"
-                required
-              />
+              <Select value={values.country} onValueChange={(v) => set("country", v)}>
+                <SelectTrigger id="country">
+                  <SelectValue placeholder="Select your country" />
+                </SelectTrigger>
+                <SelectContent>
+                  {AVAILABLE_COUNTRIES.map((c) => (
+                    <SelectItem key={c.code} value={c.name}>
+                      {c.name}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
               {errors.country && <p className="text-xs text-destructive">{errors.country}</p>}
             </div>
 
@@ -166,11 +180,16 @@ export function SignupForm({ open, onOpenChange, source }: SignupFormProps) {
                   Submitting...
                 </>
               ) : (
-                "Get my free account"
+                "Join the waitlist"
               )}
             </Button>
-            <p className="text-[11px] text-muted-foreground text-center">
-              By submitting, you agree to be contacted by PagoPay about our launch.
+            <p className="text-[11px] text-muted-foreground text-center leading-relaxed">
+              By submitting, you agree to receive updates from PagoPay about our launch and services.
+              You can unsubscribe at any time. See our{" "}
+              <Link to="/privacy" className="text-primary underline hover:no-underline">
+                Privacy Policy
+              </Link>{" "}
+              for how we handle your information.
             </p>
           </form>
         )}
