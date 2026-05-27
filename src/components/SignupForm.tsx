@@ -143,14 +143,16 @@ export function SignupForm({ open, onOpenChange, source }: SignupFormProps) {
             </div>
 
             <div className="space-y-1.5">
-              <Label htmlFor="country">Country <span className="text-muted-foreground text-xs">(optional)</span></Label>
+              <Label htmlFor="country">Country <span className="text-destructive">*</span></Label>
               <Input
                 id="country"
                 value={values.country}
                 onChange={(e) => set("country", e.target.value)}
                 placeholder="Canada"
                 autoComplete="country-name"
+                required
               />
+              {errors.country && <p className="text-xs text-destructive">{errors.country}</p>}
             </div>
 
             <Button
