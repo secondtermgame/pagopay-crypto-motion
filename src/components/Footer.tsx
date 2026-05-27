@@ -131,7 +131,12 @@ const Footer = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 className="bg-transparent flex-1 text-sm text-white placeholder:text-white/40 outline-none min-w-0"
               />
-              <button type="submit" className="shrink-0 rounded-full bg-accent text-accent-foreground p-2 hover:scale-105 transition-transform" aria-label="Subscribe">
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="shrink-0 rounded-full bg-accent text-accent-foreground p-2 hover:scale-105 transition-transform disabled:opacity-60 disabled:hover:scale-100"
+                aria-label="Subscribe"
+              >
                 <ArrowRight className="h-4 w-4" />
               </button>
             </form>
