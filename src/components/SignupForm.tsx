@@ -186,6 +186,73 @@ export function SignupForm({ open, onOpenChange, source }: SignupFormProps) {
   );
 }
 
+function CountryCombobox({
+  value,
+  onChange,
+  error,
+}: {
+  value: string;
+  onChange: (v: string) => void;
+  error?: string;
+}) {
+  const [open, setOpen] = useState(false);
+  const list = useMemo(() => COUNTRY_LIST, []);
+
+  return (
+    <div className="space-y-1.5">
+      <Label htmlFor="country">Country <span className="text-destructive">*</span></Label>
+      <Popover open={open} onOpenChange={setOpen}>
+        <PopoverTrigger asChild>
+          <Button
+            id="country"
+            type="button"
+            variant="outline"
+            role="combobox"
+            aria-expanded={open}
+            className={cn(
+              "w-full justify-between font-normal",
+              !value && "text-muted-foreground"
+            )}
+          >
+            {value || "Select your country"}
+            <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+          </Button>
+        </PopoverTrigger>
+        <PopoverContent className="w-[--radix-popover-trigger-width] p-0" align="start">
+          <Command>
+            <CommandInput placeholder="Search country..." />
+            <CommandList className="max-h-[260px]">
+              <CommandEmpty>No country found.</CommandEmpty>
+              <CommandGroup>
+                {list.map((c) => (
+                  <CommandItem
+                    key={c.code}
+                    value={c.name}
+                    onSelect={(v) => {
+                      onChange(v);
+                      setOpen(false);
+                    }}
+                  >
+                    <Check
+                      className={cn(
+                        "mr-2 h-4 w-4",
+                        value === c.name ? "opacity-100" : "opacity-0"
+                      )}
+                    />
+                    {c.name}
+                  </CommandItem>
+                ))}
+              </CommandGroup>
+            </CommandList>
+          </Command>
+        </PopoverContent>
+      </Popover>
+      {error && <p className="text-xs text-destructive">{error}</p>}
+    </div>
+  );
+}
+
+
 declare global {
   interface Window {
     dataLayer?: any[];
