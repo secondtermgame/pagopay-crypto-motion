@@ -188,7 +188,11 @@ export function SignupForm({ open, onOpenChange, source }: SignupFormProps) {
             </Button>
             <p className="text-[11px] text-muted-foreground text-center leading-relaxed">
               {t("signup.consent")}{" "}
-              <Link to="/privacy" className="text-primary underline hover:no-underline">
+              <Link
+                to="/privacy-policy"
+                onClick={() => handleOpenChange(false)}
+                className="text-primary underline hover:no-underline"
+              >
                 {t("signup.privacyPolicy")}
               </Link>
               {t("signup.consentSuffix")}
