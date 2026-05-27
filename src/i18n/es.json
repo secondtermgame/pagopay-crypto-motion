@@ -128,8 +128,32 @@
     "cookies": "Política de Cookies"
   },
   "signup": {
-    "title": "Obtén tu cuenta PagoPay",
-    "description": "Completa el formulario a continuación para iniciar tu solicitud. Nos pondremos en contacto contigo pronto."
+    "title": "Únete a la lista de espera de PagoPay",
+    "description": "Sé el primero en saber cuándo PagoPay se lanza en tu región. Completa el formulario a continuación y nos pondremos en contacto contigo.",
+    "successTitle": "¡Estás en la lista!",
+    "successDescription": "Gracias por registrarte. Te enviaremos un correo electrónico tan pronto como PagoPay esté disponible en tu región. Mantente atento a tu bandeja de entrada.",
+    "close": "Cerrar",
+    "fullName": "Nombre completo",
+    "fullNamePlaceholder": "Juan Pérez",
+    "email": "Correo electrónico",
+    "emailPlaceholder": "tu@ejemplo.com",
+    "phone": "Número de teléfono",
+    "phonePlaceholder": "Incluye el código de país (ej. +52 555 123 4567)",
+    "country": "País",
+    "countryPlaceholder": "Selecciona tu país",
+    "submit": "Únete a la lista",
+    "submitting": "Enviando...",
+    "successToast": "¡Estás en la lista!",
+    "errorToast": "Algo salió mal. Por favor inténtalo de nuevo.",
+    "consent": "Al enviar, aceptas recibir actualizaciones de lanzamiento de PagoPay por correo electrónico y confirmas que has leído nuestra",
+    "privacyPolicy": "Política de Privacidad",
+    "consentSuffix": ". Puedes darte de baja en cualquier momento.",
+    "errors": {
+      "fullName": "El nombre completo es obligatorio",
+      "email": "Ingresa un correo electrónico válido",
+      "phone": "El número de teléfono es obligatorio",
+      "country": "El país es obligatorio"
+    }
   },
   "region": {
     "global": "Mundial",

@@ -110,8 +110,32 @@
     "cookies": "Cookie Policy"
   },
   "signup": {
-    "title": "Get your PagoPay account",
-    "description": "Fill out the form below to start your application. We'll get back to you shortly."
+    "title": "Join the PagoPay waitlist",
+    "description": "Be the first to know when PagoPay launches in your region. Fill out the form below and we'll be in touch.",
+    "successTitle": "You're on the list!",
+    "successDescription": "Thanks for signing up. We'll send you an email as soon as PagoPay is available in your region. Keep an eye on your inbox.",
+    "close": "Close",
+    "fullName": "Full name",
+    "fullNamePlaceholder": "Jane Doe",
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "phone": "Phone number",
+    "phonePlaceholder": "Include country code (e.g. +1 555 123 4567)",
+    "country": "Country",
+    "countryPlaceholder": "Select your country",
+    "submit": "Join the waitlist",
+    "submitting": "Submitting...",
+    "successToast": "You're on the list!",
+    "errorToast": "Something went wrong. Please try again.",
+    "consent": "By submitting, you consent to receive launch updates from PagoPay by email and you confirm you've read our",
+    "privacyPolicy": "Privacy Policy",
+    "consentSuffix": ". You can unsubscribe at any time.",
+    "errors": {
+      "fullName": "Full name is required",
+      "email": "Enter a valid email",
+      "phone": "Phone number is required",
+      "country": "Country is required"
+    }
   },
   "region": {
     "global": "Global",
