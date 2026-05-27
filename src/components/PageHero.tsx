@@ -14,7 +14,7 @@ const PageHero = ({ eyebrow, title, subtitle, align = "center", variant = "light
     <section
       className={`relative overflow-hidden ${
         dark ? "bg-gradient-hero text-white grain" : "bg-background text-foreground"
-      } pt-24 md:pt-32 pb-16 md:pb-20`}
+      } pt-16 md:pt-24 pb-16 md:pb-20`}
     >
       {dark ? (
         <>
