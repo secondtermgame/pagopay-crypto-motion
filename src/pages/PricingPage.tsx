@@ -163,7 +163,7 @@ const PricingPage = () => {
             </h2>
             <ol className="space-y-4">
               {[
-                ["Sign up", "Create your free account at mypagopay.com"],
+                ["Sign up", "Create your account at mypagopay.com"],
                 ["Complete verification", "Verify your identity (KYC) to unlock card features"],
                 ["Deposit and spend", "Deposit crypto, auto-converted to USD, ready to spend on your card"],
               ].map(([title, desc], i) => (
