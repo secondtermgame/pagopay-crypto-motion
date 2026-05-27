@@ -163,8 +163,9 @@ const PricingPage = () => (
           ))}
         </ol>
       </div>
-    </div>
-  </section>
+      </div>
+    </section>
+  </PageShell>
 );
 
 export default PricingPage;
