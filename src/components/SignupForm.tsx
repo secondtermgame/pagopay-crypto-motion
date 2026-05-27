@@ -182,12 +182,11 @@ export function SignupForm({ open, onOpenChange, source }: SignupFormProps) {
               )}
             </Button>
             <p className="text-[11px] text-muted-foreground text-center leading-relaxed">
-              By submitting, you agree to receive updates from PagoPay about our launch and services.
-              You can unsubscribe at any time. See our{" "}
+              By submitting, you consent to receive launch updates from PagoPay by email and you confirm you've read our{" "}
               <Link to="/privacy" className="text-primary underline hover:no-underline">
                 Privacy Policy
-              </Link>{" "}
-              for how we handle your information.
+              </Link>
+              . You can unsubscribe at any time.
             </p>
           </form>
         )}
