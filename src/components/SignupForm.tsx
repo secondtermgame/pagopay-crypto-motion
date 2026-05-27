@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -25,20 +26,26 @@ interface SignupFormProps {
 
 const AVAILABLE_COUNTRIES = COUNTRIES;
 
-const schema = z.object({
-  full_name: z.string().trim().min(1, "Full name is required").max(120),
-  email: z.string().trim().email("Enter a valid email").max(255),
-  phone: z.string().trim().min(5, "Phone number is required").max(40),
-  country: z.string().trim().min(1, "Country is required").max(80),
-});
-
-type FormState = z.infer<typeof schema>;
+type FormState = {
+  full_name: string;
+  email: string;
+  phone: string;
+  country: string;
+};
 
 export function SignupForm({ open, onOpenChange, source }: SignupFormProps) {
+  const { t } = useTranslation();
   const [values, setValues] = useState<FormState>({ full_name: "", email: "", phone: "", country: "" });
   const [errors, setErrors] = useState<Partial<Record<keyof FormState, string>>>({});
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+
+  const schema = z.object({
+    full_name: z.string().trim().min(1, t("signup.errors.fullName")).max(120),
+    email: z.string().trim().email(t("signup.errors.email")).max(255),
+    phone: z.string().trim().min(5, t("signup.errors.phone")).max(40),
+    country: z.string().trim().min(1, t("signup.errors.country")).max(80),
+  });
 
   const set = <K extends keyof FormState>(k: K, v: FormState[K]) => {
     setValues((prev) => ({ ...prev, [k]: v }));
@@ -68,10 +75,10 @@ export function SignupForm({ open, onOpenChange, source }: SignupFormProps) {
         window.dataLayer.push({ event: "pagopay_signup_submitted", form: "PagoPay Waitlist" });
       }
       setSubmitted(true);
-      toast.success("You're on the list!");
+      toast.success(t("signup.successToast"));
     } catch (err) {
       console.error(err);
-      toast.error("Something went wrong. Please try again.");
+      toast.error(t("signup.errorToast"));
     } finally {
       setSubmitting(false);
     }
@@ -93,29 +100,27 @@ export function SignupForm({ open, onOpenChange, source }: SignupFormProps) {
       <DialogContent className="sm:max-w-[480px]">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold">
-            {submitted ? "You're on the list!" : "Join the PagoPay waitlist"}
+            {submitted ? t("signup.successTitle") : t("signup.title")}
           </DialogTitle>
           <DialogDescription>
-            {submitted
-              ? "Thanks for signing up. We'll send you an email as soon as PagoPay is available in your region. Keep an eye on your inbox."
-              : "Be the first to know when PagoPay launches in your region. Fill out the form below and we'll be in touch."}
+            {submitted ? t("signup.successDescription") : t("signup.description")}
           </DialogDescription>
         </DialogHeader>
 
         {submitted ? (
           <div className="flex flex-col items-center gap-4 py-6">
             <CheckCircle2 className="h-14 w-14 text-primary" />
-            <Button onClick={() => handleOpenChange(false)} className="w-full">Close</Button>
+            <Button onClick={() => handleOpenChange(false)} className="w-full">{t("signup.close")}</Button>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4 pt-2" noValidate>
             <div className="space-y-1.5">
-              <Label htmlFor="full_name">Full name <span className="text-destructive">*</span></Label>
+              <Label htmlFor="full_name">{t("signup.fullName")} <span className="text-destructive">*</span></Label>
               <Input
                 id="full_name"
                 value={values.full_name}
                 onChange={(e) => set("full_name", e.target.value)}
-                placeholder="Jane Doe"
+                placeholder={t("signup.fullNamePlaceholder")}
                 autoComplete="name"
                 required
               />
@@ -123,13 +128,13 @@ export function SignupForm({ open, onOpenChange, source }: SignupFormProps) {
             </div>
 
             <div className="space-y-1.5">
-              <Label htmlFor="email">Email <span className="text-destructive">*</span></Label>
+              <Label htmlFor="email">{t("signup.email")} <span className="text-destructive">*</span></Label>
               <Input
                 id="email"
                 type="email"
                 value={values.email}
                 onChange={(e) => set("email", e.target.value)}
-                placeholder="you@example.com"
+                placeholder={t("signup.emailPlaceholder")}
                 autoComplete="email"
                 required
               />
@@ -137,13 +142,13 @@ export function SignupForm({ open, onOpenChange, source }: SignupFormProps) {
             </div>
 
             <div className="space-y-1.5">
-              <Label htmlFor="phone">Phone number <span className="text-destructive">*</span></Label>
+              <Label htmlFor="phone">{t("signup.phone")} <span className="text-destructive">*</span></Label>
               <Input
                 id="phone"
                 type="tel"
                 value={values.phone}
                 onChange={(e) => set("phone", e.target.value)}
-                placeholder="Include country code (e.g. +1 555 123 4567)"
+                placeholder={t("signup.phonePlaceholder")}
                 autoComplete="tel"
                 required
               />
@@ -151,10 +156,10 @@ export function SignupForm({ open, onOpenChange, source }: SignupFormProps) {
             </div>
 
             <div className="space-y-1.5">
-              <Label htmlFor="country">Country <span className="text-destructive">*</span></Label>
+              <Label htmlFor="country">{t("signup.country")} <span className="text-destructive">*</span></Label>
               <Select value={values.country} onValueChange={(v) => set("country", v)}>
                 <SelectTrigger id="country">
-                  <SelectValue placeholder="Select your country" />
+                  <SelectValue placeholder={t("signup.countryPlaceholder")} />
                 </SelectTrigger>
                 <SelectContent>
                   {AVAILABLE_COUNTRIES.map((c) => (
@@ -175,18 +180,18 @@ export function SignupForm({ open, onOpenChange, source }: SignupFormProps) {
               {submitting ? (
                 <>
                   <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                  Submitting...
+                  {t("signup.submitting")}
                 </>
               ) : (
-                "Join the waitlist"
+                t("signup.submit")
               )}
             </Button>
             <p className="text-[11px] text-muted-foreground text-center leading-relaxed">
-              By submitting, you consent to receive launch updates from PagoPay by email and you confirm you've read our{" "}
+              {t("signup.consent")}{" "}
               <Link to="/privacy" className="text-primary underline hover:no-underline">
-                Privacy Policy
+                {t("signup.privacyPolicy")}
               </Link>
-              . You can unsubscribe at any time.
+              {t("signup.consentSuffix")}
             </p>
           </form>
         )}
