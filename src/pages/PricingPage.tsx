@@ -50,25 +50,16 @@ const includedAll = [
 ];
 
 const PricingPage = () => (
-  <section className="py-24 md:py-32 bg-background relative overflow-hidden">
-    <div className="pointer-events-none absolute -bottom-40 -left-40 w-[500px] h-[500px] rounded-full bg-primary/5 blur-3xl" />
-    <div className="container mx-auto px-4 relative">
-      <div className="mb-8">
-        <Link to="/" className="text-sm text-muted-foreground hover:text-foreground">← Home</Link>
-      </div>
-
-      <div className="max-w-3xl mx-auto text-center mb-16">
-        <div className="eyebrow text-primary mb-5 justify-center">
-          <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-          Pricing
-        </div>
-        <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-[1.05] tracking-tight text-balance">
-          Simple, transparent pricing.
-        </h1>
-        <p className="mt-5 text-lg text-muted-foreground">
-          No hidden fees. No surprises. Choose the card that fits how you spend.
-        </p>
-      </div>
+  <PageShell>
+    <PageHero
+      eyebrow="Pricing"
+      title="Simple, transparent pricing."
+      subtitle="No hidden fees. No surprises. Choose the card that fits how you spend."
+      align="center"
+    />
+    <section className="pb-20 md:pb-28 relative overflow-hidden">
+      <div className="pointer-events-none absolute -bottom-40 -left-40 w-[500px] h-[500px] rounded-full bg-primary/5 blur-3xl" />
+      <div className="container mx-auto px-4 relative">
 
       <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
         {/* Plastic */}
