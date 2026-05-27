@@ -151,22 +151,11 @@ export function SignupForm({ open, onOpenChange, source }: SignupFormProps) {
               {errors.phone && <p className="text-xs text-destructive">{errors.phone}</p>}
             </div>
 
-            <div className="space-y-1.5">
-              <Label htmlFor="country">Country <span className="text-destructive">*</span></Label>
-              <Select value={values.country} onValueChange={(v) => set("country", v)}>
-                <SelectTrigger id="country">
-                  <SelectValue placeholder="Select your country" />
-                </SelectTrigger>
-                <SelectContent>
-                  {AVAILABLE_COUNTRIES.map((c) => (
-                    <SelectItem key={c.code} value={c.name}>
-                      {c.name}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-              {errors.country && <p className="text-xs text-destructive">{errors.country}</p>}
-            </div>
+            <CountryCombobox
+              value={values.country}
+              onChange={(v) => set("country", v)}
+              error={errors.country}
+            />
 
             <Button
               type="submit"
@@ -183,13 +172,13 @@ export function SignupForm({ open, onOpenChange, source }: SignupFormProps) {
               )}
             </Button>
             <p className="text-[11px] text-muted-foreground text-center leading-relaxed">
-              By submitting, you agree to receive updates from PagoPay about our launch and services.
-              You can unsubscribe at any time. See our{" "}
+              By submitting, you consent to receive launch updates from PagoPay by email and you confirm you've read our{" "}
               <Link to="/privacy" className="text-primary underline hover:no-underline">
                 Privacy Policy
-              </Link>{" "}
-              for how we handle your information.
+              </Link>
+              . You can unsubscribe at any time.
             </p>
+
           </form>
         )}
       </DialogContent>
