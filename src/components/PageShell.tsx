@@ -10,9 +10,10 @@ import { useTranslation } from "react-i18next";
 interface Props {
   children: ReactNode;
   showCtaBand?: boolean;
+  afterCta?: ReactNode;
 }
 
-const PageShell = ({ children, showCtaBand = true }: Props) => {
+const PageShell = ({ children, showCtaBand = true, afterCta }: Props) => {
   const { t } = useTranslation();
   const [signupOpen, setSignupOpen] = useState(false);
   const navigate = useNavigate();
@@ -48,6 +49,8 @@ const PageShell = ({ children, showCtaBand = true }: Props) => {
           </div>
         </section>
       )}
+
+      {afterCta}
 
       <Footer />
       <FloatingCTA onClick={() => setSignupOpen(true)} label={t("hero.cta")} />

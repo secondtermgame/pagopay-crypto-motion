@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Check } from "lucide-react";
+import { Link } from "react-router-dom";
 import PageShell from "@/components/PageShell";
 import PageHero from "@/components/PageHero";
 import { SignupForm } from "@/components/SignupForm";
@@ -57,8 +58,20 @@ const includedAll = [
 const CardsPage = () => {
   const [isSignupOpen, setIsSignupOpen] = useState(false);
 
+  const feeDisclosure = (
+    <div className="py-6 text-center">
+      <p className="max-w-[800px] mx-auto text-sm text-muted-foreground italic">
+        Account Setup Fee, monthly maintenance fees, and crypto conversion fees apply. Full details in the app and{" "}
+        <Link to="/cardholder-agreement" className="underline hover:text-foreground transition-colors">
+          Cardholder Agreement
+        </Link>
+        .
+      </p>
+    </div>
+  );
+
   return (
-    <PageShell>
+    <PageShell afterCta={feeDisclosure}>
       <PageHero
         eyebrow="Cards"
         title="Choose your PagoPay card."
