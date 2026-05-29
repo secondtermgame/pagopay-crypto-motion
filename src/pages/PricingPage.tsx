@@ -10,7 +10,6 @@ import metalCard from "@/assets/metal-card.png";
 const plasticFeatures = [
   "Free Physical Pago Pay card",
   "Delivered to your door",
-  "Free virtual card while you wait",
   "Zero FX markup",
   "ATM withdrawals",
   "Zero load fees",
