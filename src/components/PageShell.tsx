@@ -13,7 +13,7 @@ interface Props {
   afterCta?: ReactNode;
 }
 
-const PageShell = ({ children, showCtaBand = true }: Props) => {
+const PageShell = ({ children, showCtaBand = true, afterCta }: Props) => {
   const { t } = useTranslation();
   const [signupOpen, setSignupOpen] = useState(false);
   const navigate = useNavigate();

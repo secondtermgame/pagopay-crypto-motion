@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Check } from "lucide-react";
+import { Link } from "react-router-dom";
 import PageShell from "@/components/PageShell";
 import PageHero from "@/components/PageHero";
 import { SignupForm } from "@/components/SignupForm";
