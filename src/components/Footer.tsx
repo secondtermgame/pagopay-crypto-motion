@@ -10,12 +10,12 @@ import logoWhite from "@/assets/pagopay-white.png";
 const productLinks = [
   { key: "aboutPage", href: "/about" },
   { key: "cards", href: "/cards" },
-  { key: "security", href: "/security" },
 ] as const;
 
 const companyLinks = [
   { key: "faq", href: "/faq" },
   { key: "blog", href: "/blog" },
+  { key: "contact", href: "/contact" },
 ] as const;
 
 const Footer = () => {

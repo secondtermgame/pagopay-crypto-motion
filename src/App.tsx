@@ -10,7 +10,7 @@ import BlogPost from "./pages/BlogPost";
 import AboutPage from "./pages/AboutPage";
 
 import CardsPage from "./pages/CardsPage";
-import SecurityPage from "./pages/SecurityPage";
+import ContactPage from "./pages/ContactPage";
 import FaqPage from "./pages/FaqPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import TermsOfServicePage from "./pages/TermsOfServicePage";
@@ -37,7 +37,8 @@ const App = () => (
           <Route path="/how-it-works" element={<Navigate to="/about" replace />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/cards" element={<CardsPage />} />
-          <Route path="/security" element={<SecurityPage />} />
+          <Route path="/security" element={<Navigate to="/" replace />} />
+          <Route path="/contact" element={<ContactPage />} />
           <Route path="/faq" element={<FaqPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/terms-of-service" element={<TermsOfServicePage />} />
