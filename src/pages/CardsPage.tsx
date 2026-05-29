@@ -8,7 +8,7 @@ import plasticCard from "@/assets/plastic-card.png";
 import metalCard from "@/assets/metal-card.png";
 
 const plasticFeatures = [
-  "Free Physical Pago Pay card",
+  "Free Physical PagoPay card",
   "Delivered to your door",
   "Zero FX markup",
   "ATM withdrawals",
