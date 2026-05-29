@@ -22,7 +22,7 @@ const SiteHeader = () => {
             <Link to="/" className={linkClass}>{t("nav.home")}</Link>
             <Link to="/cards" className={linkClass}>{t("nav.cards")}</Link>
             <Link to="/about" className={linkClass}>{t("nav.aboutPage")}</Link>
-            <Link to="/security" className={linkClass}>{t("nav.security")}</Link>
+            <Link to="/contact" className={linkClass}>{t("nav.contact")}</Link>
             <Link to="/faq" className={linkClass}>{t("nav.faq")}</Link>
             <Link to="/blog" className={linkClass}>{t("nav.blog")}</Link>
             <button onClick={() => setSignupOpen(true)} className="btn-lime px-4 py-2 text-sm ml-2">
