@@ -82,10 +82,6 @@ const PricingPage = () => {
               </div>
               <h2 className="text-2xl font-semibold mb-2 text-foreground tracking-tight">Plastic</h2>
               <p className="text-muted-foreground mb-5">Start spending fast.</p>
-              <div className="mb-6">
-                <span className="text-4xl font-bold text-foreground">$19.99</span>
-                <span className="text-muted-foreground ml-2">one-time setup</span>
-              </div>
               <ul className="space-y-3">
                 {plasticFeatures.map((f) => (
                   <li key={f} className="flex gap-3 text-sm text-foreground/90">
