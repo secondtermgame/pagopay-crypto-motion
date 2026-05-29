@@ -50,6 +50,8 @@ const PageShell = ({ children, showCtaBand = true, afterCta }: Props) => {
         </section>
       )}
 
+      {afterCta}
+
       <Footer />
       <FloatingCTA onClick={() => setSignupOpen(true)} label={t("hero.cta")} />
       <SignupForm open={signupOpen} onOpenChange={setSignupOpen} />
