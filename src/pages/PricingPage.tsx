@@ -8,29 +8,32 @@ import plasticCard from "@/assets/plastic-card.png";
 import metalCard from "@/assets/metal-card.png";
 
 const plasticFeatures = [
-  "Monthly fee: $3.50/month (first month free)",
-  "Crypto conversion fee: 3%",
-  "FX markup on international spend: 0%",
-  "ATM withdrawals: $3 flat (up to $2,000/day)",
-  "Daily POS limit: $100,000",
-  "Daily transactions: 25",
-  "KYC required: Yes",
+  "Free Physical Pago Pay card",
+  "Delivered to your door",
+  "Free virtual card while you wait",
+  "Zero FX markup",
+  "ATM withdrawals",
+  "Zero load fees",
+  "No transaction fees",
+  "No cross-border fees",
+  "No decline fees",
+  "3D Secure online protection",
   "Accepted anywhere Mastercard is accepted",
-  "3D Secure enabled",
   "Supports BTC, ETH, USDC, USDT, and more",
 ];
 
 const metalFeatures = [
-  "Monthly fee: $0 for first 2 years (saves $84)",
-  "Crypto conversion fee: 2.5% (lowest tier)",
-  "FX markup on international spend: 0%",
-  "ATM withdrawals: $3 flat (up to $2,000/day)",
+  "Premium metal Pago Pay Card",
+  "Lowest conversion rate available",
+  "Zero FX markup",
+  "ATM withdrawals (up to $2,000 per withdrawal)",
+  "Zero load fees",
+  "No transaction fees",
+  "No cross-border fees",
+  "No decline fees",
   "Daily POS limit: $100,000",
-  "Daily transactions: 25",
-  "KYC required: Yes",
-  "Premium metal Mastercard",
+  "3D Secure online protection",
   "Accepted anywhere Mastercard is accepted",
-  "3D Secure enabled",
   "Supports BTC, ETH, USDC, USDT, and more",
 ];
 
