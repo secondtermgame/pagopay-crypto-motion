@@ -10,7 +10,7 @@ import BlogPost from "./pages/BlogPost";
 import AboutPage from "./pages/AboutPage";
 
 import CardsPage from "./pages/CardsPage";
-import SecurityPage from "./pages/SecurityPage";
+import ContactPage from "./pages/ContactPage";
 import FaqPage from "./pages/FaqPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import TermsOfServicePage from "./pages/TermsOfServicePage";
