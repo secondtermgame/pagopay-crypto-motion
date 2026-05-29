@@ -9,7 +9,7 @@ import BlogIndex from "./pages/BlogIndex";
 import BlogPost from "./pages/BlogPost";
 import AboutPage from "./pages/AboutPage";
 
-import PricingPage from "./pages/PricingPage";
+import CardsPage from "./pages/CardsPage";
 import SecurityPage from "./pages/SecurityPage";
 import FaqPage from "./pages/FaqPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
@@ -36,7 +36,7 @@ const App = () => (
           <Route path="/africa/how-it-works" element={<Navigate to="/about" replace />} />
           <Route path="/how-it-works" element={<Navigate to="/about" replace />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/pricing" element={<PricingPage />} />
+          <Route path="/cards" element={<CardsPage />} />
           <Route path="/security" element={<SecurityPage />} />
           <Route path="/faq" element={<FaqPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
