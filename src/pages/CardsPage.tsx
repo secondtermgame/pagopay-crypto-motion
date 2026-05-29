@@ -54,14 +54,14 @@ const includedAll = [
   "Accepted anywhere Mastercard is accepted",
 ];
 
-const PricingPage = () => {
+const CardsPage = () => {
   const [isSignupOpen, setIsSignupOpen] = useState(false);
 
   return (
     <PageShell>
       <PageHero
-        eyebrow="Pricing"
-        title="Simple, transparent pricing."
+        eyebrow="Cards"
+        title="Choose your PagoPay card."
         subtitle="No hidden fees. No surprises. Choose the card that fits how you spend."
         align="center"
       />
@@ -180,4 +180,4 @@ const PricingPage = () => {
   );
 };
 
-export default PricingPage;
+export default CardsPage;

@@ -20,7 +20,7 @@ const SiteHeader = () => {
           </Link>
           <nav className="flex flex-wrap items-center gap-1 text-sm font-medium justify-end">
             <Link to="/" className={linkClass}>{t("nav.home")}</Link>
-            <Link to="/pricing" className={linkClass}>{t("nav.pricing")}</Link>
+            <Link to="/cards" className={linkClass}>{t("nav.cards")}</Link>
             <Link to="/about" className={linkClass}>{t("nav.aboutPage")}</Link>
             <Link to="/security" className={linkClass}>{t("nav.security")}</Link>
             <Link to="/faq" className={linkClass}>{t("nav.faq")}</Link>

@@ -48,7 +48,7 @@ const MarkdownArticlePage = ({
     };
   }, [markdownPath, stripFirstHeading]);
 
-  const guessedEyebrow = eyebrow ?? (title.toLowerCase().includes("pricing") ? "Pricing" : "Article");
+  const guessedEyebrow = eyebrow ?? (title.toLowerCase().includes("cards") ? "Cards" : "Article");
 
   if (failed) {
     return (
