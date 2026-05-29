@@ -109,7 +109,7 @@ const CardsPage = () => {
                 <h2 className="text-2xl font-semibold text-foreground tracking-tight">Metal</h2>
                 <span className="text-xs font-medium px-2 py-1 rounded-full bg-primary/10 text-primary">Best Value</span>
               </div>
-              <p className="text-muted-foreground mb-5">Premium. Lifetime value.</p>
+              <p className="text-muted-foreground mb-5">Premium.</p>
               <ul className="space-y-3">
                 {metalFeatures.map((f) => (
                   <li key={f} className="flex gap-3 text-sm text-foreground/90">
