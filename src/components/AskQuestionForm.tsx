@@ -22,7 +22,8 @@ const AskQuestionForm = () => {
       return;
     }
     setSubmitting(true);
-    const { error } = await supabase.from("faq_questions").insert([parsed.data]);
+    const { name, email, question } = parsed.data;
+    const { error } = await supabase.from("faq_questions").insert([{ name, email, question }]);
     setSubmitting(false);
     if (error) {
       toast.error("Could not submit your question. Please try again.");
