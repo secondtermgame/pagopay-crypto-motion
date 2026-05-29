@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import PageShell from "@/components/PageShell";
 import PageHero from "@/components/PageHero";
 import FaqAccordion from "@/components/FaqAccordion";
+import AskQuestionForm from "@/components/AskQuestionForm";
 
 const FaqPage = () => {
   const { t } = useTranslation();
@@ -29,6 +30,7 @@ const FaqPage = () => {
               />
             </div>
             <FaqAccordion />
+            <AskQuestionForm />
             <p className="mt-12 text-center">
               <Link to="/" className="text-primary font-semibold hover:underline">
                 ← Home
