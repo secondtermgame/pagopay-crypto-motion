@@ -10,6 +10,7 @@ import { useTranslation } from "react-i18next";
 interface Props {
   children: ReactNode;
   showCtaBand?: boolean;
+  afterCta?: ReactNode;
 }
 
 const PageShell = ({ children, showCtaBand = true }: Props) => {
