@@ -22,7 +22,7 @@ const plasticFeatures = [
 ];
 
 const metalFeatures = [
-  "Premium metal Pago Pay Card",
+  "Premium metal PagoPay Card",
   "Lowest conversion rate available",
   "Zero FX markup",
   "ATM withdrawals (up to $2,000 per withdrawal)",
