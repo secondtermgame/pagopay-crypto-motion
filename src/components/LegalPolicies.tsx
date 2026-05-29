@@ -531,7 +531,7 @@ export const TermsOfServiceContent = () => (
             <section>
               <h3 className="text-xl font-semibold mb-2">19. Inactive or Dormant Accounts</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Accounts that remain inactive for twelve (12) consecutive months may be classified as dormant. PagoPay may apply a monthly inactivity maintenance fee to dormant accounts, as disclosed on the PagoPay pricing page and within the Platform.
+                Accounts that remain inactive for twelve (12) consecutive months may be classified as dormant. PagoPay may apply a monthly inactivity maintenance fee to dormant accounts, as disclosed on the PagoPay cards page and within the Platform.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2">
                 Users will be notified by email at least thirty (30) days before any inactivity fee is applied. Users may avoid inactivity fees by logging into their account or conducting a transaction.

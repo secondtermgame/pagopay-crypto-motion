@@ -36,7 +36,7 @@ const CardsSection = () => {
             <p className="text-muted-foreground leading-relaxed">{t("cards.plastic.description")}</p>
           </Link>
 
-          <Link to="/pricing" className="block scroll-fade group glass-card rounded-3xl p-6 md:p-10 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_30px_80px_-20px_rgba(16,75,54,0.25)] overflow-hidden" style={{ transitionDelay: "80ms" }}>
+          <Link to="/cards" className="block scroll-fade group glass-card rounded-3xl p-6 md:p-10 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_30px_80px_-20px_rgba(16,75,54,0.25)] overflow-hidden" style={{ transitionDelay: "80ms" }}>
             <div className="h-40 md:h-48 mb-8 flex items-center justify-center">
               <img
                 src={metalCard}
@@ -50,7 +50,7 @@ const CardsSection = () => {
         </div>
 
         <div className="text-center mt-12 scroll-fade">
-          <Link to="/pricing" className="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all">
+          <Link to="/cards" className="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all">
             {t("cards.link")}
             <ArrowRight className="h-4 w-4" />
           </Link>
