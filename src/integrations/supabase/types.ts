@@ -14,6 +14,30 @@ export type Database = {
   }
   public: {
     Tables: {
+      faq_questions: {
+        Row: {
+          created_at: string
+          email: string
+          id: string
+          name: string
+          question: string
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          id?: string
+          name: string
+          question: string
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          id?: string
+          name?: string
+          question?: string
+        }
+        Relationships: []
+      }
       newsletter_subscribers: {
         Row: {
           created_at: string
