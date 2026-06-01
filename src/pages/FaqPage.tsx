@@ -5,6 +5,7 @@ import PageShell from "@/components/PageShell";
 import PageHero from "@/components/PageHero";
 import FaqAccordion from "@/components/FaqAccordion";
 import AskQuestionForm from "@/components/AskQuestionForm";
+import Seo from "@/components/Seo";
 
 const FaqPage = () => {
   const { t } = useTranslation();
