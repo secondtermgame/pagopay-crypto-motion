@@ -5,6 +5,7 @@ import PageShell from "@/components/PageShell";
 import PageHero from "@/components/PageHero";
 import { SignupForm } from "@/components/SignupForm";
 import { Button } from "@/components/ui/button";
+import JsonLd from "@/components/JsonLd";
 import plasticCard from "@/assets/plastic-card.png";
 import metalCard from "@/assets/metal-card.png";
 
@@ -72,6 +73,34 @@ const CardsPage = () => {
 
   return (
     <PageShell afterCta={feeDisclosure}>
+      <JsonLd
+        data={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: "PagoPay Plastic Card",
+            description: "Physical prepaid Mastercard for everyday crypto-to-fiat spending. Zero FX markup, ATM withdrawals, no transaction fees.",
+            brand: { "@type": "Brand", name: "PagoPay" },
+            category: "Prepaid Card",
+            additionalProperty: plasticFeatures.map((f) => ({
+              "@type": "PropertyValue",
+              name: f,
+            })),
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: "PagoPay Metal Card",
+            description: "Premium metal prepaid Mastercard with lowest conversion rate, luxury marketplace access, and 24/7 concierge support.",
+            brand: { "@type": "Brand", name: "PagoPay" },
+            category: "Prepaid Card",
+            additionalProperty: [...metalFeatures, ...metalBenefits].map((f) => ({
+              "@type": "PropertyValue",
+              name: f,
+            })),
+          },
+        ]}
+      />
       <PageHero
         eyebrow="Cards"
         title="Choose your PagoPay card."
