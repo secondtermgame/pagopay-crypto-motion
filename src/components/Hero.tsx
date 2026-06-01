@@ -78,6 +78,10 @@ const Hero = () => {
             <img
               src={heroCard}
               alt="PagoPay card"
+              width={1024}
+              height={1024}
+              fetchPriority="high"
+              decoding="async"
               className="relative w-full max-w-lg mx-auto h-auto drop-shadow-2xl animate-float"
             />
           </div>
