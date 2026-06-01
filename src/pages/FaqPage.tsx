@@ -12,6 +12,11 @@ const FaqPage = () => {
 
   return (
     <PageShell>
+      <Seo
+        title="PagoPay FAQ — Answers about crypto cards, fees & verification"
+        description="Frequently asked questions about PagoPay: how the prepaid Mastercard works, supported cryptocurrencies, fees, KYC verification, shipping, and account support."
+        path="/faq"
+      />
       <PageHero
         eyebrow="FAQ"
         title={t("faq.heading")}
