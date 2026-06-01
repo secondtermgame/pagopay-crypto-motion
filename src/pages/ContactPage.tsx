@@ -41,6 +41,11 @@ const ContactPage = () => {
 
   return (
     <PageShell>
+      <Seo
+        title="Contact PagoPay — Support, compliance & partnerships"
+        description="Reach the PagoPay team for support, compliance questions, or partnership inquiries. Send a message or email info@mypagopay.com and we'll get back to you."
+        path="/contact"
+      />
       <PageHero
         eyebrow="Contact us"
         title="Get in touch"
