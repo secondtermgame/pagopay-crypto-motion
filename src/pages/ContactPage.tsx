@@ -4,6 +4,7 @@ import { Mail, MessageSquare, Send } from "lucide-react";
 import { toast } from "sonner";
 import PageShell from "@/components/PageShell";
 import PageHero from "@/components/PageHero";
+import Seo from "@/components/Seo";
 import { supabase } from "@/integrations/supabase/client";
 
 const Schema = z.object({
