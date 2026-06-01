@@ -241,7 +241,7 @@ PagoPay is committed to resolving user complaints fairly and efficiently.
 
 Users may submit complaints by contacting [compliance@mypagopay.com](mailto:compliance@mypagopay.com). PagoPay will acknowledge receipt of complaints within five (5) business days and provide a substantive response within thirty (30) days where possible.
 
-If a complaint is not resolved to the user's satisfaction, users in Canada may escalate to the relevant regulatory authority, including FINTRAC or the appropriate provincial consumer protection office.
+If a complaint is not resolved to the user's satisfaction, users in Canada may escalate to the appropriate provincial consumer protection office.
 
 ## 23. DISCLAIMERS AND LIMITATION OF LIABILITY
 
@@ -291,7 +291,7 @@ Material changes will be communicated to users with reasonable advance notice wh
 
 ## 28. PRIVACY POLICY
 
-The collection and use of personal information is governed by the PagoPay Privacy Policy, which forms part of these Terms and is incorporated by reference.
+The collection, use, and disclosure of personal information is governed by the PagoPay Privacy Policy, which forms part of these Terms and is incorporated by reference. PagoPay handles personal information in accordance with applicable privacy and data protection laws.
 
 ## 29. GENERAL PROVISIONS
 
