@@ -58,7 +58,7 @@ const Navbar = () => {
           <Link to="/" onClick={() => setMobileOpen(false)} className="flex items-center shrink-0">
             <img
               src={scrolled ? logoColor : logoWhite}
-              alt="PagoPay"
+              alt="PagoPay logo — crypto-to-fiat prepaid Mastercard"
               className="h-7 w-auto transition-opacity"
             />
           </Link>

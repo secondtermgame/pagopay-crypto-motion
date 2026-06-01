@@ -10,6 +10,7 @@ import Footer from "@/components/Footer";
 import { LatamPopup } from "@/components/LatamPopup";
 import { SignupForm } from "@/components/SignupForm";
 import FloatingCTA from "@/components/FloatingCTA";
+import Seo from "@/components/Seo";
 import { useTranslation } from "react-i18next";
 
 const Index = () => {
@@ -18,6 +19,11 @@ const Index = () => {
 
   return (
     <div className="min-h-screen scroll-smooth">
+      <Seo
+        title="PagoPay — Spend your crypto anywhere with a prepaid Mastercard"
+        description="PagoPay turns Bitcoin, Ethereum, USDC, and USDT into everyday spending power. Zero FX markup, global ATM access, and a prepaid Mastercard accepted worldwide."
+        path="/"
+      />
       <Navbar />
       <Hero />
       <Features />

@@ -61,7 +61,7 @@ const ContactPage = () => {
               <div className="inline-flex p-3 rounded-2xl bg-primary/10 text-primary mb-4">
                 <Mail className="h-5 w-5" />
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-1">General</h3>
+              <h2 className="text-lg font-semibold text-foreground mb-1">General</h2>
               <a href="mailto:info@mypagopay.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                 info@mypagopay.com
               </a>
@@ -70,7 +70,7 @@ const ContactPage = () => {
               <div className="inline-flex p-3 rounded-2xl bg-primary/10 text-primary mb-4">
                 <MessageSquare className="h-5 w-5" />
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-1">Support</h3>
+              <h2 className="text-lg font-semibold text-foreground mb-1">Support</h2>
               <a href="mailto:support@mypagopay.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                 support@mypagopay.com
               </a>
@@ -79,7 +79,7 @@ const ContactPage = () => {
               <div className="inline-flex p-3 rounded-2xl bg-primary/10 text-primary mb-4">
                 <MessageSquare className="h-5 w-5" />
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-1">Compliance</h3>
+              <h2 className="text-lg font-semibold text-foreground mb-1">Compliance</h2>
               <a href="mailto:compliance@mypagopay.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                 compliance@mypagopay.com
               </a>
@@ -87,9 +87,9 @@ const ContactPage = () => {
           </div>
 
           <div className="rounded-3xl border border-border bg-card/80 backdrop-blur-md p-6 md:p-10">
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground tracking-tight mb-2">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground tracking-tight mb-2">
               Send us a message
-            </h3>
+            </h2>
             <p className="text-muted-foreground mb-6">We typically reply within 1–2 business days.</p>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid md:grid-cols-2 gap-4">

@@ -129,7 +129,7 @@ const Footer = () => {
                 placeholder="you@email.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="bg-transparent flex-1 text-sm text-white placeholder:text-white/40 outline-none min-w-0"
+                className="bg-transparent flex-1 text-sm text-white placeholder:text-white/70 outline-none min-w-0"
               />
               <button
                 type="submit"
@@ -154,7 +154,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-white/10 pt-8">
-          <p className="text-xs text-white/40 leading-relaxed mb-4 max-w-5xl">
+          <p className="text-xs text-white/70 leading-relaxed mb-4 max-w-5xl">
             {t("footer.disclaimer")}
           </p>
           <p className="text-xs text-white/50">{t("footer.copyright")}</p>

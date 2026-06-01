@@ -16,7 +16,7 @@ const SiteHeader = () => {
       <header className="sticky top-0 z-40 bg-background/70 backdrop-blur-xl border-b border-border/60">
         <div className="container mx-auto px-4 min-h-16 py-3 flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
           <Link to="/" className="flex items-center shrink-0">
-            <img src={logoColor} alt="PagoPay" className="h-7 w-auto" />
+            <img src={logoColor} alt="PagoPay logo — crypto-to-fiat prepaid Mastercard" className="h-7 w-auto" />
           </Link>
           <nav className="flex flex-wrap items-center gap-1 text-sm font-medium justify-end">
             <Link to="/" className={linkClass}>{t("nav.home")}</Link>
