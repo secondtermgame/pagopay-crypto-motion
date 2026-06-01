@@ -16,22 +16,24 @@
 - Security: AES-256 encryption, 2FA, biometric login, AI-powered fraud monitoring
 - Compliance: AML, KYC, GDPR, PCI DSS
 
-## Key Links
-- Homepage: https://mypagopay.com
-- About: https://mypagopay.com/about
-- How it works: https://mypagopay.com/how-it-works
-- Pricing: https://mypagopay.com/pricing
-- Security: https://mypagopay.com/security
-- FAQ: https://mypagopay.com/faq
-- Blog: https://mypagopay.com/blog
-- Compare vs Coinbase Card: https://mypagopay.com/compare/pagopay-vs-coinbase-card
-- Compare vs Crypto.com Card: https://mypagopay.com/compare/pagopay-vs-crypto-com-card
-- Latin America: https://mypagopay.com/latam
-- LATAM how it works: https://mypagopay.com/latam/how-it-works
-- Africa: https://mypagopay.com/africa
-- Africa how it works: https://mypagopay.com/africa/how-it-works
-- Twitter/X: https://x.com/mypagopay
-- LinkedIn: https://linkedin.com/company/mypagopay
+## Pages
+- [Home](/): Overview of PagoPay's crypto-to-fiat prepaid Mastercard.
+- [About](/about): Who PagoPay is and how the platform works end-to-end.
+- [Cards](/cards): Plastic and Metal prepaid Mastercard tiers, features, and limits.
+- [FAQ](/faq): Answers about fees, supported cryptocurrencies, KYC, and shipping.
+- [Contact](/contact): Support, compliance, and partnership contact details.
+- [Blog](/blog): Guides on crypto cards, stablecoins, travel, and getting paid in crypto.
+- [Latin America](/latam): Spanish-language landing for LATAM users.
+- [Africa](/africa): French/English landing focused on remittances and cross-border spend.
+- [Privacy Policy](/privacy-policy): How PagoPay handles personal data.
+- [Terms of Service](/terms-of-service): Legal terms governing use of PagoPay.
+- [Cardholder Agreement](/cardholder-agreement): Prepaid Mastercard cardholder agreement.
+- [Cookie Policy](/cookie-policy): Use of cookies and similar technologies.
+- [Account Deletion](/account-deletion): How to request account and data deletion.
+
+## Optional
+- [X / Twitter](https://x.com/mypagopay): Product updates and announcements.
+- [LinkedIn](https://linkedin.com/company/mypagopay): Company news and team updates.
 
 ## How It Works
 1. Create a free account and complete identity verification
