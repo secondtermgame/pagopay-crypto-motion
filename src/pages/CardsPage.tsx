@@ -6,6 +6,7 @@ import PageHero from "@/components/PageHero";
 import { SignupForm } from "@/components/SignupForm";
 import { Button } from "@/components/ui/button";
 import JsonLd from "@/components/JsonLd";
+import Seo from "@/components/Seo";
 import plasticCard from "@/assets/plastic-card.png";
 import metalCard from "@/assets/metal-card.png";
 
