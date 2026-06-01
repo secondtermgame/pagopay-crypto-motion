@@ -4,6 +4,7 @@ import { Mail, MessageSquare, Send } from "lucide-react";
 import { toast } from "sonner";
 import PageShell from "@/components/PageShell";
 import PageHero from "@/components/PageHero";
+import Seo from "@/components/Seo";
 import { supabase } from "@/integrations/supabase/client";
 
 const Schema = z.object({
@@ -40,6 +41,11 @@ const ContactPage = () => {
 
   return (
     <PageShell>
+      <Seo
+        title="Contact PagoPay — Support, compliance & partnerships"
+        description="Reach the PagoPay team for support, compliance questions, or partnership inquiries. Send a message or email info@mypagopay.com and we'll get back to you."
+        path="/contact"
+      />
       <PageHero
         eyebrow="Contact us"
         title="Get in touch"

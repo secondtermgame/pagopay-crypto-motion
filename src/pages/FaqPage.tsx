@@ -5,12 +5,18 @@ import PageShell from "@/components/PageShell";
 import PageHero from "@/components/PageHero";
 import FaqAccordion from "@/components/FaqAccordion";
 import AskQuestionForm from "@/components/AskQuestionForm";
+import Seo from "@/components/Seo";
 
 const FaqPage = () => {
   const { t } = useTranslation();
 
   return (
     <PageShell>
+      <Seo
+        title="PagoPay FAQ — Answers about crypto cards, fees & verification"
+        description="Frequently asked questions about PagoPay: how the prepaid Mastercard works, supported cryptocurrencies, fees, KYC verification, shipping, and account support."
+        path="/faq"
+      />
       <PageHero
         eyebrow="FAQ"
         title={t("faq.heading")}

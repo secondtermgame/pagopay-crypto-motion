@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { UserCheck, Wallet, CreditCard } from "lucide-react";
 import PageShell from "@/components/PageShell";
 import PageHero from "@/components/PageHero";
+import Seo from "@/components/Seo";
 
 const AboutPage = () => {
   const steps = [
@@ -24,6 +25,11 @@ const AboutPage = () => {
 
   return (
     <PageShell>
+      <Seo
+        title="About PagoPay — How crypto-to-fiat spending works"
+        description="Meet PagoPay: a crypto-to-fiat payment platform built for travelers, remote workers, and freelancers. Learn how our Mastercard prepaid cards turn digital assets into everyday spending power."
+        path="/about"
+      />
       <PageHero
         eyebrow="About PagoPay"
         title={<>About PagoPay <span className="text-primary">&amp; How It Works</span></>}
