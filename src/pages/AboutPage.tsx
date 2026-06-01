@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { UserCheck, Wallet, CreditCard } from "lucide-react";
 import PageShell from "@/components/PageShell";
 import PageHero from "@/components/PageHero";
+import Seo from "@/components/Seo";
 
 const AboutPage = () => {
   const steps = [
