@@ -25,6 +25,11 @@ const AboutPage = () => {
 
   return (
     <PageShell>
+      <Seo
+        title="About PagoPay — How crypto-to-fiat spending works"
+        description="Meet PagoPay: a crypto-to-fiat payment platform built for travelers, remote workers, and freelancers. Learn how our Mastercard prepaid cards turn digital assets into everyday spending power."
+        path="/about"
+      />
       <PageHero
         eyebrow="About PagoPay"
         title={<>About PagoPay <span className="text-primary">&amp; How It Works</span></>}
